@@ -1,0 +1,442 @@
+[{
+    names: ["dog"],
+    surrogates: "🐶"
+}, {
+    names: ["cat"],
+    surrogates: "🐱"
+}, {
+    names: ["mouse"],
+    surrogates: "🐭"
+}, {
+    names: ["hamster"],
+    surrogates: "🐹"
+}, {
+    names: ["rabbit"],
+    surrogates: "🐰"
+}, {
+    names: ["bear"],
+    surrogates: "🐻"
+}, {
+    names: ["panda_face"],
+    surrogates: "🐼"
+}, {
+    names: ["koala"],
+    surrogates: "🐨"
+}, {
+    names: ["tiger"],
+    surrogates: "🐯"
+}, {
+    names: ["lion_face"],
+    surrogates: "🦁"
+}, {
+    names: ["cow"],
+    surrogates: "🐮"
+}, {
+    names: ["pig"],
+    surrogates: "🐷"
+}, {
+    names: ["pig_nose"],
+    surrogates: "🐽"
+}, {
+    names: ["frog"],
+    surrogates: "🐸"
+}, {
+    names: ["octopus"],
+    surrogates: "🐙"
+}, {
+    names: ["monkey_face"],
+    surrogates: "🐵"
+}, {
+    names: ["see_no_evil"],
+    surrogates: "🙈"
+}, {
+    names: ["hear_no_evil"],
+    surrogates: "🙉"
+}, {
+    names: ["speak_no_evil"],
+    surrogates: "🙊"
+}, {
+    names: ["monkey"],
+    surrogates: "🐒"
+}, {
+    names: ["chicken"],
+    surrogates: "🐔"
+}, {
+    names: ["penguin"],
+    surrogates: "🐧"
+}, {
+    names: ["bird"],
+    surrogates: "🐦"
+}, {
+    names: ["baby_chick"],
+    surrogates: "🐤"
+}, {
+    names: ["hatching_chick"],
+    surrogates: "🐣"
+}, {
+    names: ["hatched_chick"],
+    surrogates: "🐥"
+}, {
+    names: ["wolf"],
+    surrogates: "🐺"
+}, {
+    names: ["boar"],
+    surrogates: "🐗"
+}, {
+    names: ["horse"],
+    surrogates: "🐴"
+}, {
+    names: ["unicorn"],
+    surrogates: "🦄"
+}, {
+    names: ["bee", "honeybee"],
+    surrogates: "🐝"
+}, {
+    names: ["bug"],
+    surrogates: "🐛"
+}, {
+    names: ["snail"],
+    surrogates: "🐌"
+}, {
+    names: ["beetle"],
+    surrogates: "🐞"
+}, {
+    names: ["ant"],
+    surrogates: "🐜"
+}, {
+    names: ["spider"],
+    surrogates: "🕷"
+}, {
+    names: ["scorpion"],
+    surrogates: "🦂"
+}, {
+    names: ["crab"],
+    surrogates: "🦀"
+}, {
+    names: ["snake"],
+    surrogates: "🐍"
+}, {
+    names: ["turtle"],
+    surrogates: "🐢"
+}, {
+    names: ["tropical_fish"],
+    surrogates: "🐠"
+}, {
+    names: ["fish"],
+    surrogates: "🐟"
+}, {
+    names: ["blowfish"],
+    surrogates: "🐡"
+}, {
+    names: ["dolphin", "flipper"],
+    surrogates: "🐬"
+}, {
+    names: ["whale"],
+    surrogates: "🐳"
+}, {
+    names: ["whale2"],
+    surrogates: "🐋"
+}, {
+    names: ["crocodile"],
+    surrogates: "🐊"
+}, {
+    names: ["leopard"],
+    surrogates: "🐆"
+}, {
+    names: ["tiger2"],
+    surrogates: "🐅"
+}, {
+    names: ["water_buffalo"],
+    surrogates: "🐃"
+}, {
+    names: ["ox"],
+    surrogates: "🐂"
+}, {
+    names: ["cow2"],
+    surrogates: "🐄"
+}, {
+    names: ["dromedary_camel"],
+    surrogates: "🐪"
+}, {
+    names: ["camel"],
+    surrogates: "🐫"
+}, {
+    names: ["elephant"],
+    surrogates: "🐘"
+}, {
+    names: ["goat"],
+    surrogates: "🐐"
+}, {
+    names: ["ram"],
+    surrogates: "🐏"
+}, {
+    names: ["sheep"],
+    surrogates: "🐑"
+}, {
+    names: ["racehorse"],
+    surrogates: "🐎"
+}, {
+    names: ["pig2"],
+    surrogates: "🐖"
+}, {
+    names: ["rat"],
+    surrogates: "🐀"
+}, {
+    names: ["mouse2"],
+    surrogates: "🐁"
+}, {
+    names: ["rooster"],
+    surrogates: "🐓"
+}, {
+    names: ["turkey"],
+    surrogates: "🦃"
+}, {
+    names: ["dove"],
+    surrogates: "🕊"
+}, {
+    names: ["dog2"],
+    surrogates: "🐕"
+}, {
+    names: ["poodle"],
+    surrogates: "🐩"
+}, {
+    names: ["cat2"],
+    surrogates: "🐈"
+}, {
+    names: ["rabbit2"],
+    surrogates: "🐇"
+}, {
+    names: ["chipmunk"],
+    surrogates: "🐿"
+}, {
+    names: ["feet", "paw_prints"],
+    surrogates: "🐾"
+}, {
+    names: ["dragon"],
+    surrogates: "🐉"
+}, {
+    names: ["dragon_face"],
+    surrogates: "🐲"
+}, {
+    names: ["cactus"],
+    surrogates: "🌵"
+}, {
+    names: ["christmas_tree"],
+    surrogates: "🎄"
+}, {
+    names: ["evergreen_tree"],
+    surrogates: "🌲"
+}, {
+    names: ["deciduous_tree"],
+    surrogates: "🌳"
+}, {
+    names: ["palm_tree"],
+    surrogates: "🌴"
+}, {
+    names: ["seedling"],
+    surrogates: "🌱"
+}, {
+    names: ["herb"],
+    surrogates: "🌿"
+}, {
+    names: ["shamrock"],
+    surrogates: "☘"
+}, {
+    names: ["four_leaf_clover"],
+    surrogates: "🍀"
+}, {
+    names: ["bamboo"],
+    surrogates: "🎍"
+}, {
+    names: ["tanabata_tree"],
+    surrogates: "🎋"
+}, {
+    names: ["leaves"],
+    surrogates: "🍃"
+}, {
+    names: ["fallen_leaf"],
+    surrogates: "🍂"
+}, {
+    names: ["maple_leaf"],
+    surrogates: "🍁"
+}, {
+    names: ["ear_of_rice"],
+    surrogates: "🌾"
+}, {
+    names: ["hibiscus"],
+    surrogates: "🌺"
+}, {
+    names: ["sunflower"],
+    surrogates: "🌻"
+}, {
+    names: ["rose"],
+    surrogates: "🌹"
+}, {
+    names: ["tulip"],
+    surrogates: "🌷"
+}, {
+    names: ["blossom"],
+    surrogates: "🌼"
+}, {
+    names: ["cherry_blossom"],
+    surrogates: "🌸"
+}, {
+    names: ["bouquet"],
+    surrogates: "💐"
+}, {
+    names: ["mushroom"],
+    surrogates: "🍄"
+}, {
+    names: ["chestnut"],
+    surrogates: "🌰"
+}, {
+    names: ["jack_o_lantern"],
+    surrogates: "🎃"
+}, {
+    names: ["shell"],
+    surrogates: "🐚"
+}, {
+    names: ["spider_web"],
+    surrogates: "🕸"
+}, {
+    names: ["earth_americas"],
+    surrogates: "🌎"
+}, {
+    names: ["earth_africa"],
+    surrogates: "🌍"
+}, {
+    names: ["earth_asia"],
+    surrogates: "🌏"
+}, {
+    names: ["full_moon"],
+    surrogates: "🌕"
+}, {
+    names: ["waning_gibbous_moon"],
+    surrogates: "🌖"
+}, {
+    names: ["last_quarter_moon"],
+    surrogates: "🌗"
+}, {
+    names: ["waning_crescent_moon"],
+    surrogates: "🌘"
+}, {
+    names: ["new_moon"],
+    surrogates: "🌑"
+}, {
+    names: ["waxing_crescent_moon"],
+    surrogates: "🌒"
+}, {
+    names: ["first_quarter_moon"],
+    surrogates: "🌓"
+}, {
+    names: ["waxing_gibbous_moon", "moon"],
+    surrogates: "🌔"
+}, {
+    names: ["new_moon_with_face"],
+    surrogates: "🌚"
+}, {
+    names: ["full_moon_with_face"],
+    surrogates: "🌝"
+}, {
+    names: ["first_quarter_moon_with_face"],
+    surrogates: "🌛"
+}, {
+    names: ["last_quarter_moon_with_face"],
+    surrogates: "🌜"
+}, {
+    names: ["sun_with_face"],
+    surrogates: "🌞"
+}, {
+    names: ["crescent_moon"],
+    surrogates: "🌙"
+}, {
+    names: ["star"],
+    surrogates: "⭐"
+}, {
+    names: ["star2"],
+    surrogates: "🌟"
+}, {
+    names: ["dizzy"],
+    surrogates: "💫"
+}, {
+    names: ["sparkles"],
+    surrogates: "✨"
+}, {
+    names: ["comet"],
+    surrogates: "☄"
+}, {
+    names: ["sunny"],
+    surrogates: "☀"
+}, {
+    names: ["white_sun_small_cloud"],
+    surrogates: "🌤"
+}, {
+    names: ["partly_sunny"],
+    surrogates: "⛅"
+}, {
+    names: ["white_sun_cloud"],
+    surrogates: "🌥"
+}, {
+    names: ["white_sun_rain_cloud"],
+    surrogates: "🌦"
+}, {
+    names: ["cloud"],
+    surrogates: "☁"
+}, {
+    names: ["cloud_rain"],
+    surrogates: "🌧"
+}, {
+    names: ["thunder_cloud_rain"],
+    surrogates: "⛈"
+}, {
+    names: ["cloud_lightning"],
+    surrogates: "🌩"
+}, {
+    names: ["zap"],
+    surrogates: "⚡"
+}, {
+    names: ["fire"],
+    surrogates: "🔥"
+}, {
+    names: ["boom", "collision"],
+    surrogates: "💥"
+}, {
+    names: ["snowflake"],
+    surrogates: "❄"
+}, {
+    names: ["cloud_snow"],
+    surrogates: "🌨"
+}, {
+    names: ["snowman2"],
+    surrogates: "☃"
+}, {
+    names: ["snowman"],
+    surrogates: "⛄"
+}, {
+    names: ["wind_blowing_face"],
+    surrogates: "🌬"
+}, {
+    names: ["dash"],
+    surrogates: "💨"
+}, {
+    names: ["cloud_tornado"],
+    surrogates: "🌪"
+}, {
+    names: ["fog"],
+    surrogates: "🌫"
+}, {
+    names: ["umbrella2"],
+    surrogates: "☂"
+}, {
+    names: ["umbrella"],
+    surrogates: "☔"
+}, {
+    names: ["droplet"],
+    surrogates: "💧"
+}, {
+    names: ["sweat_drops"],
+    surrogates: "💦"
+}, {
+    names: ["ocean"],
+    surrogates: "🌊"
+}]

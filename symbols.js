@@ -1,0 +1,814 @@
+[{
+    names: ["heart"],
+    surrogates: "❤"
+}, {
+    names: ["yellow_heart"],
+    surrogates: "💛"
+}, {
+    names: ["green_heart"],
+    surrogates: "💚"
+}, {
+    names: ["blue_heart"],
+    surrogates: "💙"
+}, {
+    names: ["purple_heart"],
+    surrogates: "💜"
+}, {
+    names: ["broken_heart"],
+    surrogates: "💔"
+}, {
+    names: ["heart_exclamation"],
+    surrogates: "❣"
+}, {
+    names: ["two_hearts"],
+    surrogates: "💕"
+}, {
+    names: ["revolving_hearts"],
+    surrogates: "💞"
+}, {
+    names: ["heartbeat"],
+    surrogates: "💓"
+}, {
+    names: ["heartpulse"],
+    surrogates: "💗"
+}, {
+    names: ["sparkling_heart"],
+    surrogates: "💖"
+}, {
+    names: ["cupid"],
+    surrogates: "💘"
+}, {
+    names: ["gift_heart"],
+    surrogates: "💝"
+}, {
+    names: ["heart_decoration"],
+    surrogates: "💟"
+}, {
+    names: ["peace"],
+    surrogates: "☮"
+}, {
+    names: ["cross"],
+    surrogates: "✝"
+}, {
+    names: ["star_and_crescent"],
+    surrogates: "☪"
+}, {
+    names: ["om_symbol"],
+    surrogates: "🕉"
+}, {
+    names: ["wheel_of_dharma"],
+    surrogates: "☸"
+}, {
+    names: ["star_of_david"],
+    surrogates: "✡"
+}, {
+    names: ["six_pointed_star"],
+    surrogates: "🔯"
+}, {
+    names: ["menorah"],
+    surrogates: "🕎"
+}, {
+    names: ["yin_yang"],
+    surrogates: "☯"
+}, {
+    names: ["orthodox_cross"],
+    surrogates: "☦"
+}, {
+    names: ["place_of_worship"],
+    surrogates: "🛐"
+}, {
+    names: ["ophiuchus"],
+    surrogates: "⛎"
+}, {
+    names: ["aries"],
+    surrogates: "♈"
+}, {
+    names: ["taurus"],
+    surrogates: "♉"
+}, {
+    names: ["gemini"],
+    surrogates: "♊"
+}, {
+    names: ["cancer"],
+    surrogates: "♋"
+}, {
+    names: ["leo"],
+    surrogates: "♌"
+}, {
+    names: ["virgo"],
+    surrogates: "♍"
+}, {
+    names: ["libra"],
+    surrogates: "♎"
+}, {
+    names: ["scorpius"],
+    surrogates: "♏"
+}, {
+    names: ["sagittarius"],
+    surrogates: "♐"
+}, {
+    names: ["capricorn"],
+    surrogates: "♑"
+}, {
+    names: ["aquarius"],
+    surrogates: "♒"
+}, {
+    names: ["pisces"],
+    surrogates: "♓"
+}, {
+    names: ["id"],
+    surrogates: "🆔"
+}, {
+    names: ["atom"],
+    surrogates: "⚛"
+}, {
+    names: ["u7a7a"],
+    surrogates: "🈳"
+}, {
+    names: ["u5272"],
+    surrogates: "🈹"
+}, {
+    names: ["radioactive"],
+    surrogates: "☢"
+}, {
+    names: ["biohazard"],
+    surrogates: "☣"
+}, {
+    names: ["mobile_phone_off"],
+    surrogates: "📴"
+}, {
+    names: ["vibration_mode"],
+    surrogates: "📳"
+}, {
+    names: ["u6709"],
+    surrogates: "🈶"
+}, {
+    names: ["u7121"],
+    surrogates: "🈚"
+}, {
+    names: ["u7533"],
+    surrogates: "🈸"
+}, {
+    names: ["u55b6"],
+    surrogates: "🈺"
+}, {
+    names: ["u6708"],
+    surrogates: "🈷"
+}, {
+    names: ["eight_pointed_black_star"],
+    surrogates: "✴"
+}, {
+    names: ["vs"],
+    surrogates: "🆚"
+}, {
+    names: ["accept"],
+    surrogates: "🉑"
+}, {
+    names: ["white_flower"],
+    surrogates: "💮"
+}, {
+    names: ["ideograph_advantage"],
+    surrogates: "🉐"
+}, {
+    names: ["secret"],
+    surrogates: "㊙"
+}, {
+    names: ["congratulations"],
+    surrogates: "㊗"
+}, {
+    names: ["u5408"],
+    surrogates: "🈴"
+}, {
+    names: ["u6e80"],
+    surrogates: "🈵"
+}, {
+    names: ["u7981"],
+    surrogates: "🈲"
+}, {
+    names: ["a"],
+    surrogates: "🅰"
+}, {
+    names: ["b"],
+    surrogates: "🅱"
+}, {
+    names: ["ab"],
+    surrogates: "🆎"
+}, {
+    names: ["cl"],
+    surrogates: "🆑"
+}, {
+    names: ["o2"],
+    surrogates: "🅾"
+}, {
+    names: ["sos"],
+    surrogates: "🆘"
+}, {
+    names: ["no_entry"],
+    surrogates: "⛔"
+}, {
+    names: ["name_badge"],
+    surrogates: "📛"
+}, {
+    names: ["no_entry_sign"],
+    surrogates: "🚫"
+}, {
+    names: ["x"],
+    surrogates: "❌"
+}, {
+    names: ["o"],
+    surrogates: "⭕"
+}, {
+    names: ["anger"],
+    surrogates: "💢"
+}, {
+    names: ["hotsprings"],
+    surrogates: "♨"
+}, {
+    names: ["no_pedestrians"],
+    surrogates: "🚷"
+}, {
+    names: ["do_not_litter"],
+    surrogates: "🚯"
+}, {
+    names: ["no_bicycles"],
+    surrogates: "🚳"
+}, {
+    names: ["non_potable_water"],
+    surrogates: "🚱"
+}, {
+    names: ["underage"],
+    surrogates: "🔞"
+}, {
+    names: ["no_mobile_phones"],
+    surrogates: "📵"
+}, {
+    names: ["exclamation", "heavy_exclamation_mark"],
+    surrogates: "❗"
+}, {
+    names: ["grey_exclamation"],
+    surrogates: "❕"
+}, {
+    names: ["question"],
+    surrogates: "❓"
+}, {
+    names: ["grey_question"],
+    surrogates: "❔"
+}, {
+    names: ["bangbang"],
+    surrogates: "‼"
+}, {
+    names: ["interrobang"],
+    surrogates: "⁉"
+}, {
+    names: ["100"],
+    surrogates: "💯"
+}, {
+    names: ["low_brightness"],
+    surrogates: "🔅"
+}, {
+    names: ["high_brightness"],
+    surrogates: "🔆"
+}, {
+    names: ["trident"],
+    surrogates: "🔱"
+}, {
+    names: ["fleur_de_lis"],
+    surrogates: "⚜"
+}, {
+    names: ["part_alternation_mark"],
+    surrogates: "〽"
+}, {
+    names: ["warning"],
+    surrogates: "⚠"
+}, {
+    names: ["children_crossing"],
+    surrogates: "🚸"
+}, {
+    names: ["beginner"],
+    surrogates: "🔰"
+}, {
+    names: ["recycle"],
+    surrogates: "♻"
+}, {
+    names: ["u6307"],
+    surrogates: "🈯"
+}, {
+    names: ["chart"],
+    surrogates: "💹"
+}, {
+    names: ["sparkle"],
+    surrogates: "❇"
+}, {
+    names: ["eight_spoked_asterisk"],
+    surrogates: "✳"
+}, {
+    names: ["negative_squared_cross_mark"],
+    surrogates: "❎"
+}, {
+    names: ["white_check_mark"],
+    surrogates: "✅"
+}, {
+    names: ["diamond_shape_with_a_dot_inside"],
+    surrogates: "💠"
+}, {
+    names: ["cyclone"],
+    surrogates: "🌀"
+}, {
+    names: ["loop"],
+    surrogates: "➿"
+}, {
+    names: ["globe_with_meridians"],
+    surrogates: "🌐"
+}, {
+    names: ["m"],
+    surrogates: "Ⓜ"
+}, {
+    names: ["atm"],
+    surrogates: "🏧"
+}, {
+    names: ["sa"],
+    surrogates: "🈂"
+}, {
+    names: ["passport_control"],
+    surrogates: "🛂"
+}, {
+    names: ["customs"],
+    surrogates: "🛃"
+}, {
+    names: ["baggage_claim"],
+    surrogates: "🛄"
+}, {
+    names: ["left_luggage"],
+    surrogates: "🛅"
+}, {
+    names: ["wheelchair"],
+    surrogates: "♿"
+}, {
+    names: ["no_smoking"],
+    surrogates: "🚭"
+}, {
+    names: ["wc"],
+    surrogates: "🚾"
+}, {
+    names: ["parking"],
+    surrogates: "🅿"
+}, {
+    names: ["potable_water"],
+    surrogates: "🚰"
+}, {
+    names: ["mens"],
+    surrogates: "🚹"
+}, {
+    names: ["womens"],
+    surrogates: "🚺"
+}, {
+    names: ["baby_symbol"],
+    surrogates: "🚼"
+}, {
+    names: ["restroom"],
+    surrogates: "🚻"
+}, {
+    names: ["put_litter_in_its_place"],
+    surrogates: "🚮"
+}, {
+    names: ["cinema"],
+    surrogates: "🎦"
+}, {
+    names: ["signal_strength"],
+    surrogates: "📶"
+}, {
+    names: ["koko"],
+    surrogates: "🈁"
+}, {
+    names: ["ng"],
+    surrogates: "🆖"
+}, {
+    names: ["ok"],
+    surrogates: "🆗"
+}, {
+    names: ["up"],
+    surrogates: "🆙"
+}, {
+    names: ["cool"],
+    surrogates: "🆒"
+}, {
+    names: ["new"],
+    surrogates: "🆕"
+}, {
+    names: ["free"],
+    surrogates: "🆓"
+}, {
+    names: ["zero"],
+    surrogates: "0⃣"
+}, {
+    names: ["one"],
+    surrogates: "1⃣"
+}, {
+    names: ["two"],
+    surrogates: "2⃣"
+}, {
+    names: ["three"],
+    surrogates: "3⃣"
+}, {
+    names: ["four"],
+    surrogates: "4⃣"
+}, {
+    names: ["five"],
+    surrogates: "5⃣"
+}, {
+    names: ["six"],
+    surrogates: "6⃣"
+}, {
+    names: ["seven"],
+    surrogates: "7⃣"
+}, {
+    names: ["eight"],
+    surrogates: "8⃣"
+}, {
+    names: ["nine"],
+    surrogates: "9⃣"
+}, {
+    names: ["ten", "keycap_ten"],
+    surrogates: "🔟"
+}, {
+    names: ["1234"],
+    surrogates: "🔢"
+}, {
+    names: ["arrow_forward"],
+    surrogates: "▶"
+}, {
+    names: ["pause_button"],
+    surrogates: "⏸"
+}, {
+    names: ["play_pause"],
+    surrogates: "⏯"
+}, {
+    names: ["stop_button"],
+    surrogates: "⏹"
+}, {
+    names: ["record_button"],
+    surrogates: "⏺"
+}, {
+    names: ["track_next"],
+    surrogates: "⏭"
+}, {
+    names: ["track_previous"],
+    surrogates: "⏮"
+}, {
+    names: ["fast_forward"],
+    surrogates: "⏩"
+}, {
+    names: ["rewind"],
+    surrogates: "⏪"
+}, {
+    names: ["twisted_rightwards_arrows"],
+    surrogates: "🔀"
+}, {
+    names: ["repeat"],
+    surrogates: "🔁"
+}, {
+    names: ["repeat_one"],
+    surrogates: "🔂"
+}, {
+    names: ["arrow_backward"],
+    surrogates: "◀"
+}, {
+    names: ["arrow_up_small"],
+    surrogates: "🔼"
+}, {
+    names: ["arrow_down_small"],
+    surrogates: "🔽"
+}, {
+    names: ["arrow_double_up"],
+    surrogates: "⏫"
+}, {
+    names: ["arrow_double_down"],
+    surrogates: "⏬"
+}, {
+    names: ["arrow_right"],
+    surrogates: "➡"
+}, {
+    names: ["arrow_left"],
+    surrogates: "⬅"
+}, {
+    names: ["arrow_up"],
+    surrogates: "⬆"
+}, {
+    names: ["arrow_down"],
+    surrogates: "⬇"
+}, {
+    names: ["arrow_upper_right"],
+    surrogates: "↗"
+}, {
+    names: ["arrow_lower_right"],
+    surrogates: "↘"
+}, {
+    names: ["arrow_lower_left"],
+    surrogates: "↙"
+}, {
+    names: ["arrow_upper_left"],
+    surrogates: "↖"
+}, {
+    names: ["arrow_up_down"],
+    surrogates: "↕"
+}, {
+    names: ["left_right_arrow"],
+    surrogates: "↔"
+}, {
+    names: ["arrows_counterclockwise"],
+    surrogates: "🔄"
+}, {
+    names: ["arrow_right_hook"],
+    surrogates: "↪"
+}, {
+    names: ["leftwards_arrow_with_hook"],
+    surrogates: "↩"
+}, {
+    names: ["arrow_heading_up"],
+    surrogates: "⤴"
+}, {
+    names: ["arrow_heading_down"],
+    surrogates: "⤵"
+}, {
+    names: ["hash"],
+    surrogates: "#⃣"
+}, {
+    names: ["asterisk"],
+    surrogates: "*⃣"
+}, {
+    names: ["information_source"],
+    surrogates: "ℹ"
+}, {
+    names: ["abc"],
+    surrogates: "🔤"
+}, {
+    names: ["abcd"],
+    surrogates: "🔡"
+}, {
+    names: ["capital_abcd"],
+    surrogates: "🔠"
+}, {
+    names: ["symbols"],
+    surrogates: "🔣"
+}, {
+    names: ["musical_note"],
+    surrogates: "🎵"
+}, {
+    names: ["notes"],
+    surrogates: "🎶"
+}, {
+    names: ["wavy_dash"],
+    surrogates: "〰"
+}, {
+    names: ["curly_loop"],
+    surrogates: "➰"
+}, {
+    names: ["heavy_check_mark"],
+    surrogates: "✔"
+}, {
+    names: ["arrows_clockwise"],
+    surrogates: "🔃"
+}, {
+    names: ["heavy_plus_sign"],
+    surrogates: "➕"
+}, {
+    names: ["heavy_minus_sign"],
+    surrogates: "➖"
+}, {
+    names: ["heavy_division_sign"],
+    surrogates: "➗"
+}, {
+    names: ["heavy_multiplication_x"],
+    surrogates: "✖"
+}, {
+    names: ["heavy_dollar_sign"],
+    surrogates: "💲"
+}, {
+    names: ["currency_exchange"],
+    surrogates: "💱"
+}, {
+    names: ["copyright"],
+    surrogates: "©"
+}, {
+    names: ["registered"],
+    surrogates: "®"
+}, {
+    names: ["tm"],
+    surrogates: "™"
+}, {
+    names: ["end"],
+    surrogates: "🔚"
+}, {
+    names: ["back"],
+    surrogates: "🔙"
+}, {
+    names: ["on"],
+    surrogates: "🔛"
+}, {
+    names: ["top"],
+    surrogates: "🔝"
+}, {
+    names: ["soon"],
+    surrogates: "🔜"
+}, {
+    names: ["ballot_box_with_check"],
+    surrogates: "☑"
+}, {
+    names: ["radio_button"],
+    surrogates: "🔘"
+}, {
+    names: ["white_circle"],
+    surrogates: "⚪"
+}, {
+    names: ["black_circle"],
+    surrogates: "⚫"
+}, {
+    names: ["red_circle"],
+    surrogates: "🔴"
+}, {
+    names: ["large_blue_circle"],
+    surrogates: "🔵"
+}, {
+    names: ["small_orange_diamond"],
+    surrogates: "🔸"
+}, {
+    names: ["small_blue_diamond"],
+    surrogates: "🔹"
+}, {
+    names: ["large_orange_diamond"],
+    surrogates: "🔶"
+}, {
+    names: ["large_blue_diamond"],
+    surrogates: "🔷"
+}, {
+    names: ["small_red_triangle"],
+    surrogates: "🔺"
+}, {
+    names: ["black_small_square"],
+    surrogates: "▪"
+}, {
+    names: ["white_small_square"],
+    surrogates: "▫"
+}, {
+    names: ["black_large_square"],
+    surrogates: "⬛"
+}, {
+    names: ["white_large_square"],
+    surrogates: "⬜"
+}, {
+    names: ["small_red_triangle_down"],
+    surrogates: "🔻"
+}, {
+    names: ["black_medium_square"],
+    surrogates: "◼"
+}, {
+    names: ["white_medium_square"],
+    surrogates: "◻"
+}, {
+    names: ["black_medium_small_square"],
+    surrogates: "◾"
+}, {
+    names: ["white_medium_small_square"],
+    surrogates: "◽"
+}, {
+    names: ["black_square_button"],
+    surrogates: "🔲"
+}, {
+    names: ["white_square_button"],
+    surrogates: "🔳"
+}, {
+    names: ["speaker"],
+    surrogates: "🔈"
+}, {
+    names: ["sound"],
+    surrogates: "🔉"
+}, {
+    names: ["loud_sound"],
+    surrogates: "🔊"
+}, {
+    names: ["mute"],
+    surrogates: "🔇"
+}, {
+    names: ["mega"],
+    surrogates: "📣"
+}, {
+    names: ["loudspeaker"],
+    surrogates: "📢"
+}, {
+    names: ["bell"],
+    surrogates: "🔔"
+}, {
+    names: ["no_bell"],
+    surrogates: "🔕"
+}, {
+    names: ["black_joker"],
+    surrogates: "🃏"
+}, {
+    names: ["mahjong"],
+    surrogates: "🀄"
+}, {
+    names: ["spades"],
+    surrogates: "♠"
+}, {
+    names: ["clubs"],
+    surrogates: "♣"
+}, {
+    names: ["hearts"],
+    surrogates: "♥"
+}, {
+    names: ["diamonds"],
+    surrogates: "♦"
+}, {
+    names: ["flower_playing_cards"],
+    surrogates: "🎴"
+}, {
+    names: ["thought_balloon"],
+    surrogates: "💭"
+}, {
+    names: ["anger_right"],
+    surrogates: "🗯"
+}, {
+    names: ["speech_balloon"],
+    surrogates: "💬"
+}, {
+    names: ["clock1"],
+    surrogates: "🕐"
+}, {
+    names: ["clock2"],
+    surrogates: "🕑"
+}, {
+    names: ["clock3"],
+    surrogates: "🕒"
+}, {
+    names: ["clock4"],
+    surrogates: "🕓"
+}, {
+    names: ["clock5"],
+    surrogates: "🕔"
+}, {
+    names: ["clock6"],
+    surrogates: "🕕"
+}, {
+    names: ["clock7"],
+    surrogates: "🕖"
+}, {
+    names: ["clock8"],
+    surrogates: "🕗"
+}, {
+    names: ["clock9"],
+    surrogates: "🕘"
+}, {
+    names: ["clock10"],
+    surrogates: "🕙"
+}, {
+    names: ["clock11"],
+    surrogates: "🕚"
+}, {
+    names: ["clock12"],
+    surrogates: "🕛"
+}, {
+    names: ["clock130"],
+    surrogates: "🕜"
+}, {
+    names: ["clock230"],
+    surrogates: "🕝"
+}, {
+    names: ["clock330"],
+    surrogates: "🕞"
+}, {
+    names: ["clock430"],
+    surrogates: "🕟"
+}, {
+    names: ["clock530"],
+    surrogates: "🕠"
+}, {
+    names: ["clock630"],
+    surrogates: "🕡"
+}, {
+    names: ["clock730"],
+    surrogates: "🕢"
+}, {
+    names: ["clock830"],
+    surrogates: "🕣"
+}, {
+    names: ["clock930"],
+    surrogates: "🕤"
+}, {
+    names: ["clock1030"],
+    surrogates: "🕥"
+}, {
+    names: ["clock1130"],
+    surrogates: "🕦"
+}, {
+    names: ["clock1230"],
+    surrogates: "🕧"
+}, {
+    names: ["eye_in_speech_bubble"],
+    surrogates: "👁‍🗨"
+}, {
+    names: ["speech_left"],
+    surrogates: "🗨"
+}, {
+    names: ["eject"],
+    surrogates: "⏏"
+}]
