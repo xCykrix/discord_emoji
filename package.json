@@ -1,0 +1,19 @@
+{
+    "name": "discord-emoji",
+    "version": "1.0.0",
+    "description": "Emoji naming tables from Discord https://discordapp.com/",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Necktrox/discord-emoji.git"
+    },
+    "keywords": [
+        "discord",
+        "emoji"
+    ],
+    "author": "Marek Kulik",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Necktrox/discord-emoji/issues"
+    }
+}
