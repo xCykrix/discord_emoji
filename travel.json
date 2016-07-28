@@ -1,346 +1,120 @@
-[{
-    "names": ["red_car", "car"],
-    "surrogates": "🚗"
-}, {
-    "names": ["taxi"],
-    "surrogates": "🚕"
-}, {
-    "names": ["blue_car"],
-    "surrogates": "🚙"
-}, {
-    "names": ["bus"],
-    "surrogates": "🚌"
-}, {
-    "names": ["trolleybus"],
-    "surrogates": "🚎"
-}, {
-    "names": ["race_car"],
-    "surrogates": "🏎"
-}, {
-    "names": ["police_car"],
-    "surrogates": "🚓"
-}, {
-    "names": ["ambulance"],
-    "surrogates": "🚑"
-}, {
-    "names": ["fire_engine"],
-    "surrogates": "🚒"
-}, {
-    "names": ["minibus"],
-    "surrogates": "🚐"
-}, {
-    "names": ["truck"],
-    "surrogates": "🚚"
-}, {
-    "names": ["articulated_lorry"],
-    "surrogates": "🚛"
-}, {
-    "names": ["tractor"],
-    "surrogates": "🚜"
-}, {
-    "names": ["motorcycle"],
-    "surrogates": "🏍"
-}, {
-    "names": ["bike"],
-    "surrogates": "🚲"
-}, {
-    "names": ["rotating_light"],
-    "surrogates": "🚨"
-}, {
-    "names": ["oncoming_police_car"],
-    "surrogates": "🚔"
-}, {
-    "names": ["oncoming_bus"],
-    "surrogates": "🚍"
-}, {
-    "names": ["oncoming_automobile"],
-    "surrogates": "🚘"
-}, {
-    "names": ["oncoming_taxi"],
-    "surrogates": "🚖"
-}, {
-    "names": ["aerial_tramway"],
-    "surrogates": "🚡"
-}, {
-    "names": ["mountain_cableway"],
-    "surrogates": "🚠"
-}, {
-    "names": ["suspension_railway"],
-    "surrogates": "🚟"
-}, {
-    "names": ["railway_car"],
-    "surrogates": "🚃"
-}, {
-    "names": ["train"],
-    "surrogates": "🚋"
-}, {
-    "names": ["monorail"],
-    "surrogates": "🚝"
-}, {
-    "names": ["bullettrain_side"],
-    "surrogates": "🚄"
-}, {
-    "names": ["bullettrain_front"],
-    "surrogates": "🚅"
-}, {
-    "names": ["light_rail"],
-    "surrogates": "🚈"
-}, {
-    "names": ["mountain_railway"],
-    "surrogates": "🚞"
-}, {
-    "names": ["steam_locomotive"],
-    "surrogates": "🚂"
-}, {
-    "names": ["train2"],
-    "surrogates": "🚆"
-}, {
-    "names": ["metro"],
-    "surrogates": "🚇"
-}, {
-    "names": ["tram"],
-    "surrogates": "🚊"
-}, {
-    "names": ["station"],
-    "surrogates": "🚉"
-}, {
-    "names": ["helicopter"],
-    "surrogates": "🚁"
-}, {
-    "names": ["airplane_small"],
-    "surrogates": "🛩"
-}, {
-    "names": ["airplane"],
-    "surrogates": "✈"
-}, {
-    "names": ["airplane_departure"],
-    "surrogates": "🛫"
-}, {
-    "names": ["airplane_arriving"],
-    "surrogates": "🛬"
-}, {
-    "names": ["sailboat", "boat"],
-    "surrogates": "⛵"
-}, {
-    "names": ["motorboat"],
-    "surrogates": "🛥"
-}, {
-    "names": ["speedboat"],
-    "surrogates": "🚤"
-}, {
-    "names": ["ferry"],
-    "surrogates": "⛴"
-}, {
-    "names": ["cruise_ship"],
-    "surrogates": "🛳"
-}, {
-    "names": ["rocket"],
-    "surrogates": "🚀"
-}, {
-    "names": ["satellite_orbital"],
-    "surrogates": "🛰"
-}, {
-    "names": ["seat"],
-    "surrogates": "💺"
-}, {
-    "names": ["anchor"],
-    "surrogates": "⚓"
-}, {
-    "names": ["construction"],
-    "surrogates": "🚧"
-}, {
-    "names": ["fuelpump"],
-    "surrogates": "⛽"
-}, {
-    "names": ["busstop"],
-    "surrogates": "🚏"
-}, {
-    "names": ["vertical_traffic_light"],
-    "surrogates": "🚦"
-}, {
-    "names": ["traffic_light"],
-    "surrogates": "🚥"
-}, {
-    "names": ["checkered_flag"],
-    "surrogates": "🏁"
-}, {
-    "names": ["ship"],
-    "surrogates": "🚢"
-}, {
-    "names": ["ferris_wheel"],
-    "surrogates": "🎡"
-}, {
-    "names": ["roller_coaster"],
-    "surrogates": "🎢"
-}, {
-    "names": ["carousel_horse"],
-    "surrogates": "🎠"
-}, {
-    "names": ["construction_site"],
-    "surrogates": "🏗"
-}, {
-    "names": ["foggy"],
-    "surrogates": "🌁"
-}, {
-    "names": ["tokyo_tower"],
-    "surrogates": "🗼"
-}, {
-    "names": ["factory"],
-    "surrogates": "🏭"
-}, {
-    "names": ["fountain"],
-    "surrogates": "⛲"
-}, {
-    "names": ["rice_scene", "rice_scene"],
-    "surrogates": "🎑"
-}, {
-    "names": ["mountain"],
-    "surrogates": "⛰"
-}, {
-    "names": ["mountain_snow"],
-    "surrogates": "🏔"
-}, {
-    "names": ["mount_fuji"],
-    "surrogates": "🗻"
-}, {
-    "names": ["volcano"],
-    "surrogates": "🌋"
-}, {
-    "names": ["japan"],
-    "surrogates": "🗾"
-}, {
-    "names": ["camping"],
-    "surrogates": "🏕"
-}, {
-    "names": ["tent"],
-    "surrogates": "⛺"
-}, {
-    "names": ["park"],
-    "surrogates": "🏞"
-}, {
-    "names": ["motorway"],
-    "surrogates": "🛣"
-}, {
-    "names": ["railway_track"],
-    "surrogates": "🛤"
-}, {
-    "names": ["sunrise"],
-    "surrogates": "🌅"
-}, {
-    "names": ["sunrise_over_mountains"],
-    "surrogates": "🌄"
-}, {
-    "names": ["desert"],
-    "surrogates": "🏜"
-}, {
-    "names": ["beach"],
-    "surrogates": "🏖"
-}, {
-    "names": ["island"],
-    "surrogates": "🏝"
-}, {
-    "names": ["city_sunset", "city_sunrise"],
-    "surrogates": "🌇"
-}, {
-    "names": ["city_dusk"],
-    "surrogates": "🌆"
-}, {
-    "names": ["cityscape"],
-    "surrogates": "🏙"
-}, {
-    "names": ["night_with_stars"],
-    "surrogates": "🌃"
-}, {
-    "names": ["bridge_at_night"],
-    "surrogates": "🌉"
-}, {
-    "names": ["milky_way"],
-    "surrogates": "🌌"
-}, {
-    "names": ["stars"],
-    "surrogates": "🌠"
-}, {
-    "names": ["sparkler"],
-    "surrogates": "🎇"
-}, {
-    "names": ["fireworks"],
-    "surrogates": "🎆"
-}, {
-    "names": ["rainbow"],
-    "surrogates": "🌈"
-}, {
-    "names": ["homes"],
-    "surrogates": "🏘"
-}, {
-    "names": ["european_castle"],
-    "surrogates": "🏰"
-}, {
-    "names": ["japanese_castle"],
-    "surrogates": "🏯"
-}, {
-    "names": ["stadium"],
-    "surrogates": "🏟"
-}, {
-    "names": ["statue_of_liberty"],
-    "surrogates": "🗽"
-}, {
-    "names": ["house"],
-    "surrogates": "🏠"
-}, {
-    "names": ["house_with_garden"],
-    "surrogates": "🏡"
-}, {
-    "names": ["house_abandoned"],
-    "surrogates": "🏚"
-}, {
-    "names": ["office"],
-    "surrogates": "🏢"
-}, {
-    "names": ["department_store"],
-    "surrogates": "🏬"
-}, {
-    "names": ["post_office"],
-    "surrogates": "🏣"
-}, {
-    "names": ["european_post_office"],
-    "surrogates": "🏤"
-}, {
-    "names": ["hospital"],
-    "surrogates": "🏥"
-}, {
-    "names": ["bank"],
-    "surrogates": "🏦"
-}, {
-    "names": ["hotel"],
-    "surrogates": "🏨"
-}, {
-    "names": ["convenience_store"],
-    "surrogates": "🏪"
-}, {
-    "names": ["school"],
-    "surrogates": "🏫"
-}, {
-    "names": ["love_hotel"],
-    "surrogates": "🏩"
-}, {
-    "names": ["wedding"],
-    "surrogates": "💒"
-}, {
-    "names": ["classical_building"],
-    "surrogates": "🏛"
-}, {
-    "names": ["church"],
-    "surrogates": "⛪"
-}, {
-    "names": ["mosque"],
-    "surrogates": "🕌"
-}, {
-    "names": ["synagogue"],
-    "surrogates": "🕍"
-}, {
-    "names": ["kaaba"],
-    "surrogates": "🕋"
-}, {
-    "names": ["shinto_shrine"],
-    "surrogates": "⛩"
-}]
+{
+    "red_car": "🚗",
+    "car": "🚗",
+    "taxi": "🚕",
+    "blue_car": "🚙",
+    "bus": "🚌",
+    "trolleybus": "🚎",
+    "race_car": "🏎",
+    "police_car": "🚓",
+    "ambulance": "🚑",
+    "fire_engine": "🚒",
+    "minibus": "🚐",
+    "truck": "🚚",
+    "articulated_lorry": "🚛",
+    "tractor": "🚜",
+    "motorcycle": "🏍",
+    "bike": "🚲",
+    "rotating_light": "🚨",
+    "oncoming_police_car": "🚔",
+    "oncoming_bus": "🚍",
+    "oncoming_automobile": "🚘",
+    "oncoming_taxi": "🚖",
+    "aerial_tramway": "🚡",
+    "mountain_cableway": "🚠",
+    "suspension_railway": "🚟",
+    "railway_car": "🚃",
+    "train": "🚋",
+    "monorail": "🚝",
+    "bullettrain_side": "🚄",
+    "bullettrain_front": "🚅",
+    "light_rail": "🚈",
+    "mountain_railway": "🚞",
+    "steam_locomotive": "🚂",
+    "train2": "🚆",
+    "metro": "🚇",
+    "tram": "🚊",
+    "station": "🚉",
+    "helicopter": "🚁",
+    "airplane_small": "🛩",
+    "airplane": "✈",
+    "airplane_departure": "🛫",
+    "airplane_arriving": "🛬",
+    "sailboat": "⛵",
+    "boat": "⛵",
+    "motorboat": "🛥",
+    "speedboat": "🚤",
+    "ferry": "⛴",
+    "cruise_ship": "🛳",
+    "rocket": "🚀",
+    "satellite_orbital": "🛰",
+    "seat": "💺",
+    "anchor": "⚓",
+    "construction": "🚧",
+    "fuelpump": "⛽",
+    "busstop": "🚏",
+    "vertical_traffic_light": "🚦",
+    "traffic_light": "🚥",
+    "checkered_flag": "🏁",
+    "ship": "🚢",
+    "ferris_wheel": "🎡",
+    "roller_coaster": "🎢",
+    "carousel_horse": "🎠",
+    "construction_site": "🏗",
+    "foggy": "🌁",
+    "tokyo_tower": "🗼",
+    "factory": "🏭",
+    "fountain": "⛲",
+    "rice_scene": "🎑",
+    "mountain": "⛰",
+    "mountain_snow": "🏔",
+    "mount_fuji": "🗻",
+    "volcano": "🌋",
+    "japan": "🗾",
+    "camping": "🏕",
+    "tent": "⛺",
+    "park": "🏞",
+    "motorway": "🛣",
+    "railway_track": "🛤",
+    "sunrise": "🌅",
+    "sunrise_over_mountains": "🌄",
+    "desert": "🏜",
+    "beach": "🏖",
+    "island": "🏝",
+    "city_sunset": "🌇",
+    "city_sunrise": "🌇",
+    "city_dusk": "🌆",
+    "cityscape": "🏙",
+    "night_with_stars": "🌃",
+    "bridge_at_night": "🌉",
+    "milky_way": "🌌",
+    "stars": "🌠",
+    "sparkler": "🎇",
+    "fireworks": "🎆",
+    "rainbow": "🌈",
+    "homes": "🏘",
+    "european_castle": "🏰",
+    "japanese_castle": "🏯",
+    "stadium": "🏟",
+    "statue_of_liberty": "🗽",
+    "house": "🏠",
+    "house_with_garden": "🏡",
+    "house_abandoned": "🏚",
+    "office": "🏢",
+    "department_store": "🏬",
+    "post_office": "🏣",
+    "european_post_office": "🏤",
+    "hospital": "🏥",
+    "bank": "🏦",
+    "hotel": "🏨",
+    "convenience_store": "🏪",
+    "school": "🏫",
+    "love_hotel": "🏩",
+    "wedding": "💒",
+    "classical_building": "🏛",
+    "church": "⛪",
+    "mosque": "🕌",
+    "synagogue": "🕍",
+    "kaaba": "🕋",
+    "shinto_shrine": "⛩"
+}

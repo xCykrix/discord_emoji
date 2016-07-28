@@ -1,772 +1,259 @@
-[{
-    "names": ["flag_ac"],
-    "surrogates": "🇦🇨"
-}, {
-    "names": ["flag_af"],
-    "surrogates": "🇦🇫"
-}, {
-    "names": ["flag_al"],
-    "surrogates": "🇦🇱"
-}, {
-    "names": ["flag_dz"],
-    "surrogates": "🇩🇿"
-}, {
-    "names": ["flag_ad"],
-    "surrogates": "🇦🇩"
-}, {
-    "names": ["flag_ao"],
-    "surrogates": "🇦🇴"
-}, {
-    "names": ["flag_ai"],
-    "surrogates": "🇦🇮"
-}, {
-    "names": ["flag_ag"],
-    "surrogates": "🇦🇬"
-}, {
-    "names": ["flag_ar"],
-    "surrogates": "🇦🇷"
-}, {
-    "names": ["flag_am"],
-    "surrogates": "🇦🇲"
-}, {
-    "names": ["flag_aw"],
-    "surrogates": "🇦🇼"
-}, {
-    "names": ["flag_au"],
-    "surrogates": "🇦🇺"
-}, {
-    "names": ["flag_at"],
-    "surrogates": "🇦🇹"
-}, {
-    "names": ["flag_az"],
-    "surrogates": "🇦🇿"
-}, {
-    "names": ["flag_bs"],
-    "surrogates": "🇧🇸"
-}, {
-    "names": ["flag_bh"],
-    "surrogates": "🇧🇭"
-}, {
-    "names": ["flag_bd"],
-    "surrogates": "🇧🇩"
-}, {
-    "names": ["flag_bb"],
-    "surrogates": "🇧🇧"
-}, {
-    "names": ["flag_by"],
-    "surrogates": "🇧🇾"
-}, {
-    "names": ["flag_be"],
-    "surrogates": "🇧🇪"
-}, {
-    "names": ["flag_bz"],
-    "surrogates": "🇧🇿"
-}, {
-    "names": ["flag_bj"],
-    "surrogates": "🇧🇯"
-}, {
-    "names": ["flag_bm"],
-    "surrogates": "🇧🇲"
-}, {
-    "names": ["flag_bt"],
-    "surrogates": "🇧🇹"
-}, {
-    "names": ["flag_bo"],
-    "surrogates": "🇧🇴"
-}, {
-    "names": ["flag_ba"],
-    "surrogates": "🇧🇦"
-}, {
-    "names": ["flag_bw"],
-    "surrogates": "🇧🇼"
-}, {
-    "names": ["flag_br"],
-    "surrogates": "🇧🇷"
-}, {
-    "names": ["flag_bn"],
-    "surrogates": "🇧🇳"
-}, {
-    "names": ["flag_bg"],
-    "surrogates": "🇧🇬"
-}, {
-    "names": ["flag_bf"],
-    "surrogates": "🇧🇫"
-}, {
-    "names": ["flag_bi"],
-    "surrogates": "🇧🇮"
-}, {
-    "names": ["flag_cv"],
-    "surrogates": "🇨🇻"
-}, {
-    "names": ["flag_kh"],
-    "surrogates": "🇰🇭"
-}, {
-    "names": ["flag_cm"],
-    "surrogates": "🇨🇲"
-}, {
-    "names": ["flag_ca"],
-    "surrogates": "🇨🇦"
-}, {
-    "names": ["flag_ky"],
-    "surrogates": "🇰🇾"
-}, {
-    "names": ["flag_cf"],
-    "surrogates": "🇨🇫"
-}, {
-    "names": ["flag_td"],
-    "surrogates": "🇹🇩"
-}, {
-    "names": ["flag_cl"],
-    "surrogates": "🇨🇱"
-}, {
-    "names": ["flag_cn"],
-    "surrogates": "🇨🇳"
-}, {
-    "names": ["flag_co"],
-    "surrogates": "🇨🇴"
-}, {
-    "names": ["flag_km"],
-    "surrogates": "🇰🇲"
-}, {
-    "names": ["flag_cg"],
-    "surrogates": "🇨🇬"
-}, {
-    "names": ["flag_cd"],
-    "surrogates": "🇨🇩"
-}, {
-    "names": ["flag_cr"],
-    "surrogates": "🇨🇷"
-}, {
-    "names": ["flag_hr"],
-    "surrogates": "🇭🇷"
-}, {
-    "names": ["flag_cu"],
-    "surrogates": "🇨🇺"
-}, {
-    "names": ["flag_cy"],
-    "surrogates": "🇨🇾"
-}, {
-    "names": ["flag_cz"],
-    "surrogates": "🇨🇿"
-}, {
-    "names": ["flag_dk"],
-    "surrogates": "🇩🇰"
-}, {
-    "names": ["flag_dj"],
-    "surrogates": "🇩🇯"
-}, {
-    "names": ["flag_dm"],
-    "surrogates": "🇩🇲"
-}, {
-    "names": ["flag_do"],
-    "surrogates": "🇩🇴"
-}, {
-    "names": ["flag_ec"],
-    "surrogates": "🇪🇨"
-}, {
-    "names": ["flag_eg"],
-    "surrogates": "🇪🇬"
-}, {
-    "names": ["flag_sv"],
-    "surrogates": "🇸🇻"
-}, {
-    "names": ["flag_gq"],
-    "surrogates": "🇬🇶"
-}, {
-    "names": ["flag_er"],
-    "surrogates": "🇪🇷"
-}, {
-    "names": ["flag_ee"],
-    "surrogates": "🇪🇪"
-}, {
-    "names": ["flag_et"],
-    "surrogates": "🇪🇹"
-}, {
-    "names": ["flag_fk"],
-    "surrogates": "🇫🇰"
-}, {
-    "names": ["flag_fo"],
-    "surrogates": "🇫🇴"
-}, {
-    "names": ["flag_fj"],
-    "surrogates": "🇫🇯"
-}, {
-    "names": ["flag_fi"],
-    "surrogates": "🇫🇮"
-}, {
-    "names": ["flag_fr"],
-    "surrogates": "🇫🇷"
-}, {
-    "names": ["flag_pf"],
-    "surrogates": "🇵🇫"
-}, {
-    "names": ["flag_ga"],
-    "surrogates": "🇬🇦"
-}, {
-    "names": ["flag_gm"],
-    "surrogates": "🇬🇲"
-}, {
-    "names": ["flag_ge"],
-    "surrogates": "🇬🇪"
-}, {
-    "names": ["flag_de"],
-    "surrogates": "🇩🇪"
-}, {
-    "names": ["flag_gh"],
-    "surrogates": "🇬🇭"
-}, {
-    "names": ["flag_gi"],
-    "surrogates": "🇬🇮"
-}, {
-    "names": ["flag_gr"],
-    "surrogates": "🇬🇷"
-}, {
-    "names": ["flag_gl"],
-    "surrogates": "🇬🇱"
-}, {
-    "names": ["flag_gd"],
-    "surrogates": "🇬🇩"
-}, {
-    "names": ["flag_gu"],
-    "surrogates": "🇬🇺"
-}, {
-    "names": ["flag_gt"],
-    "surrogates": "🇬🇹"
-}, {
-    "names": ["flag_gn"],
-    "surrogates": "🇬🇳"
-}, {
-    "names": ["flag_gw"],
-    "surrogates": "🇬🇼"
-}, {
-    "names": ["flag_gy"],
-    "surrogates": "🇬🇾"
-}, {
-    "names": ["flag_ht"],
-    "surrogates": "🇭🇹"
-}, {
-    "names": ["flag_hn"],
-    "surrogates": "🇭🇳"
-}, {
-    "names": ["flag_hk"],
-    "surrogates": "🇭🇰"
-}, {
-    "names": ["flag_hu"],
-    "surrogates": "🇭🇺"
-}, {
-    "names": ["flag_is"],
-    "surrogates": "🇮🇸"
-}, {
-    "names": ["flag_in"],
-    "surrogates": "🇮🇳"
-}, {
-    "names": ["flag_id"],
-    "surrogates": "🇮🇩"
-}, {
-    "names": ["flag_ir"],
-    "surrogates": "🇮🇷"
-}, {
-    "names": ["flag_iq"],
-    "surrogates": "🇮🇶"
-}, {
-    "names": ["flag_ie"],
-    "surrogates": "🇮🇪"
-}, {
-    "names": ["flag_il"],
-    "surrogates": "🇮🇱"
-}, {
-    "names": ["flag_it"],
-    "surrogates": "🇮🇹"
-}, {
-    "names": ["flag_ci"],
-    "surrogates": "🇨🇮"
-}, {
-    "names": ["flag_jm"],
-    "surrogates": "🇯🇲"
-}, {
-    "names": ["flag_jp"],
-    "surrogates": "🇯🇵"
-}, {
-    "names": ["flag_je"],
-    "surrogates": "🇯🇪"
-}, {
-    "names": ["flag_jo"],
-    "surrogates": "🇯🇴"
-}, {
-    "names": ["flag_kz"],
-    "surrogates": "🇰🇿"
-}, {
-    "names": ["flag_ke"],
-    "surrogates": "🇰🇪"
-}, {
-    "names": ["flag_ki"],
-    "surrogates": "🇰🇮"
-}, {
-    "names": ["flag_xk"],
-    "surrogates": "🇽🇰"
-}, {
-    "names": ["flag_kw"],
-    "surrogates": "🇰🇼"
-}, {
-    "names": ["flag_kg"],
-    "surrogates": "🇰🇬"
-}, {
-    "names": ["flag_la"],
-    "surrogates": "🇱🇦"
-}, {
-    "names": ["flag_lv"],
-    "surrogates": "🇱🇻"
-}, {
-    "names": ["flag_lb"],
-    "surrogates": "🇱🇧"
-}, {
-    "names": ["flag_ls"],
-    "surrogates": "🇱🇸"
-}, {
-    "names": ["flag_lr"],
-    "surrogates": "🇱🇷"
-}, {
-    "names": ["flag_ly"],
-    "surrogates": "🇱🇾"
-}, {
-    "names": ["flag_li"],
-    "surrogates": "🇱🇮"
-}, {
-    "names": ["flag_lt"],
-    "surrogates": "🇱🇹"
-}, {
-    "names": ["flag_lu"],
-    "surrogates": "🇱🇺"
-}, {
-    "names": ["flag_mo"],
-    "surrogates": "🇲🇴"
-}, {
-    "names": ["flag_mk"],
-    "surrogates": "🇲🇰"
-}, {
-    "names": ["flag_mg"],
-    "surrogates": "🇲🇬"
-}, {
-    "names": ["flag_mw"],
-    "surrogates": "🇲🇼"
-}, {
-    "names": ["flag_my"],
-    "surrogates": "🇲🇾"
-}, {
-    "names": ["flag_mv"],
-    "surrogates": "🇲🇻"
-}, {
-    "names": ["flag_ml"],
-    "surrogates": "🇲🇱"
-}, {
-    "names": ["flag_mt"],
-    "surrogates": "🇲🇹"
-}, {
-    "names": ["flag_mh"],
-    "surrogates": "🇲🇭"
-}, {
-    "names": ["flag_mr"],
-    "surrogates": "🇲🇷"
-}, {
-    "names": ["flag_mu"],
-    "surrogates": "🇲🇺"
-}, {
-    "names": ["flag_mx"],
-    "surrogates": "🇲🇽"
-}, {
-    "names": ["flag_fm"],
-    "surrogates": "🇫🇲"
-}, {
-    "names": ["flag_md"],
-    "surrogates": "🇲🇩"
-}, {
-    "names": ["flag_mc"],
-    "surrogates": "🇲🇨"
-}, {
-    "names": ["flag_mn"],
-    "surrogates": "🇲🇳"
-}, {
-    "names": ["flag_me"],
-    "surrogates": "🇲🇪"
-}, {
-    "names": ["flag_ms"],
-    "surrogates": "🇲🇸"
-}, {
-    "names": ["flag_ma"],
-    "surrogates": "🇲🇦"
-}, {
-    "names": ["flag_mz"],
-    "surrogates": "🇲🇿"
-}, {
-    "names": ["flag_mm"],
-    "surrogates": "🇲🇲"
-}, {
-    "names": ["flag_na"],
-    "surrogates": "🇳🇦"
-}, {
-    "names": ["flag_nr"],
-    "surrogates": "🇳🇷"
-}, {
-    "names": ["flag_np"],
-    "surrogates": "🇳🇵"
-}, {
-    "names": ["flag_nl"],
-    "surrogates": "🇳🇱"
-}, {
-    "names": ["flag_nc"],
-    "surrogates": "🇳🇨"
-}, {
-    "names": ["flag_nz"],
-    "surrogates": "🇳🇿"
-}, {
-    "names": ["flag_ni"],
-    "surrogates": "🇳🇮"
-}, {
-    "names": ["flag_ne"],
-    "surrogates": "🇳🇪"
-}, {
-    "names": ["flag_ng"],
-    "surrogates": "🇳🇬"
-}, {
-    "names": ["flag_nu"],
-    "surrogates": "🇳🇺"
-}, {
-    "names": ["flag_kp"],
-    "surrogates": "🇰🇵"
-}, {
-    "names": ["flag_no"],
-    "surrogates": "🇳🇴"
-}, {
-    "names": ["flag_om"],
-    "surrogates": "🇴🇲"
-}, {
-    "names": ["flag_pk"],
-    "surrogates": "🇵🇰"
-}, {
-    "names": ["flag_pw"],
-    "surrogates": "🇵🇼"
-}, {
-    "names": ["flag_ps"],
-    "surrogates": "🇵🇸"
-}, {
-    "names": ["flag_pa"],
-    "surrogates": "🇵🇦"
-}, {
-    "names": ["flag_pg"],
-    "surrogates": "🇵🇬"
-}, {
-    "names": ["flag_py"],
-    "surrogates": "🇵🇾"
-}, {
-    "names": ["flag_pe"],
-    "surrogates": "🇵🇪"
-}, {
-    "names": ["flag_ph"],
-    "surrogates": "🇵🇭"
-}, {
-    "names": ["flag_pl"],
-    "surrogates": "🇵🇱"
-}, {
-    "names": ["flag_pt"],
-    "surrogates": "🇵🇹"
-}, {
-    "names": ["flag_pr"],
-    "surrogates": "🇵🇷"
-}, {
-    "names": ["flag_qa"],
-    "surrogates": "🇶🇦"
-}, {
-    "names": ["flag_ro"],
-    "surrogates": "🇷🇴"
-}, {
-    "names": ["flag_ru"],
-    "surrogates": "🇷🇺"
-}, {
-    "names": ["flag_rw"],
-    "surrogates": "🇷🇼"
-}, {
-    "names": ["flag_sh"],
-    "surrogates": "🇸🇭"
-}, {
-    "names": ["flag_kn"],
-    "surrogates": "🇰🇳"
-}, {
-    "names": ["flag_lc"],
-    "surrogates": "🇱🇨"
-}, {
-    "names": ["flag_vc"],
-    "surrogates": "🇻🇨"
-}, {
-    "names": ["flag_ws"],
-    "surrogates": "🇼🇸"
-}, {
-    "names": ["flag_sm"],
-    "surrogates": "🇸🇲"
-}, {
-    "names": ["flag_st"],
-    "surrogates": "🇸🇹"
-}, {
-    "names": ["flag_sa"],
-    "surrogates": "🇸🇦"
-}, {
-    "names": ["flag_sn"],
-    "surrogates": "🇸🇳"
-}, {
-    "names": ["flag_rs"],
-    "surrogates": "🇷🇸"
-}, {
-    "names": ["flag_sc"],
-    "surrogates": "🇸🇨"
-}, {
-    "names": ["flag_sl"],
-    "surrogates": "🇸🇱"
-}, {
-    "names": ["flag_sg"],
-    "surrogates": "🇸🇬"
-}, {
-    "names": ["flag_sk"],
-    "surrogates": "🇸🇰"
-}, {
-    "names": ["flag_si"],
-    "surrogates": "🇸🇮"
-}, {
-    "names": ["flag_sb"],
-    "surrogates": "🇸🇧"
-}, {
-    "names": ["flag_so"],
-    "surrogates": "🇸🇴"
-}, {
-    "names": ["flag_za"],
-    "surrogates": "🇿🇦"
-}, {
-    "names": ["flag_kr"],
-    "surrogates": "🇰🇷"
-}, {
-    "names": ["flag_es"],
-    "surrogates": "🇪🇸"
-}, {
-    "names": ["flag_lk"],
-    "surrogates": "🇱🇰"
-}, {
-    "names": ["flag_sd"],
-    "surrogates": "🇸🇩"
-}, {
-    "names": ["flag_sr"],
-    "surrogates": "🇸🇷"
-}, {
-    "names": ["flag_sz"],
-    "surrogates": "🇸🇿"
-}, {
-    "names": ["flag_se"],
-    "surrogates": "🇸🇪"
-}, {
-    "names": ["flag_ch"],
-    "surrogates": "🇨🇭"
-}, {
-    "names": ["flag_sy"],
-    "surrogates": "🇸🇾"
-}, {
-    "names": ["flag_tw"],
-    "surrogates": "🇹🇼"
-}, {
-    "names": ["flag_tj"],
-    "surrogates": "🇹🇯"
-}, {
-    "names": ["flag_tz"],
-    "surrogates": "🇹🇿"
-}, {
-    "names": ["flag_th"],
-    "surrogates": "🇹🇭"
-}, {
-    "names": ["flag_tl"],
-    "surrogates": "🇹🇱"
-}, {
-    "names": ["flag_tg"],
-    "surrogates": "🇹🇬"
-}, {
-    "names": ["flag_to"],
-    "surrogates": "🇹🇴"
-}, {
-    "names": ["flag_tt"],
-    "surrogates": "🇹🇹"
-}, {
-    "names": ["flag_tn"],
-    "surrogates": "🇹🇳"
-}, {
-    "names": ["flag_tr"],
-    "surrogates": "🇹🇷"
-}, {
-    "names": ["flag_tm"],
-    "surrogates": "🇹🇲"
-}, {
-    "names": ["flag_tv"],
-    "surrogates": "🇹🇻"
-}, {
-    "names": ["flag_ug"],
-    "surrogates": "🇺🇬"
-}, {
-    "names": ["flag_ua"],
-    "surrogates": "🇺🇦"
-}, {
-    "names": ["flag_ae"],
-    "surrogates": "🇦🇪"
-}, {
-    "names": ["flag_gb"],
-    "surrogates": "🇬🇧"
-}, {
-    "names": ["flag_us"],
-    "surrogates": "🇺🇸"
-}, {
-    "names": ["flag_vi"],
-    "surrogates": "🇻🇮"
-}, {
-    "names": ["flag_uy"],
-    "surrogates": "🇺🇾"
-}, {
-    "names": ["flag_uz"],
-    "surrogates": "🇺🇿"
-}, {
-    "names": ["flag_vu"],
-    "surrogates": "🇻🇺"
-}, {
-    "names": ["flag_va"],
-    "surrogates": "🇻🇦"
-}, {
-    "names": ["flag_ve"],
-    "surrogates": "🇻🇪"
-}, {
-    "names": ["flag_vn"],
-    "surrogates": "🇻🇳"
-}, {
-    "names": ["flag_wf"],
-    "surrogates": "🇼🇫"
-}, {
-    "names": ["flag_eh"],
-    "surrogates": "🇪🇭"
-}, {
-    "names": ["flag_ye"],
-    "surrogates": "🇾🇪"
-}, {
-    "names": ["flag_zm"],
-    "surrogates": "🇿🇲"
-}, {
-    "names": ["flag_zw"],
-    "surrogates": "🇿🇼"
-}, {
-    "names": ["flag_re"],
-    "surrogates": "🇷🇪"
-}, {
-    "names": ["flag_ax"],
-    "surrogates": "🇦🇽"
-}, {
-    "names": ["flag_ta"],
-    "surrogates": "🇹🇦"
-}, {
-    "names": ["flag_io"],
-    "surrogates": "🇮🇴"
-}, {
-    "names": ["flag_bq"],
-    "surrogates": "🇧🇶"
-}, {
-    "names": ["flag_cx"],
-    "surrogates": "🇨🇽"
-}, {
-    "names": ["flag_cc"],
-    "surrogates": "🇨🇨"
-}, {
-    "names": ["flag_gg"],
-    "surrogates": "🇬🇬"
-}, {
-    "names": ["flag_im"],
-    "surrogates": "🇮🇲"
-}, {
-    "names": ["flag_yt"],
-    "surrogates": "🇾🇹"
-}, {
-    "names": ["flag_nf"],
-    "surrogates": "🇳🇫"
-}, {
-    "names": ["flag_pn"],
-    "surrogates": "🇵🇳"
-}, {
-    "names": ["flag_bl"],
-    "surrogates": "🇧🇱"
-}, {
-    "names": ["flag_pm"],
-    "surrogates": "🇵🇲"
-}, {
-    "names": ["flag_gs"],
-    "surrogates": "🇬🇸"
-}, {
-    "names": ["flag_tk"],
-    "surrogates": "🇹🇰"
-}, {
-    "names": ["flag_bv"],
-    "surrogates": "🇧🇻"
-}, {
-    "names": ["flag_hm"],
-    "surrogates": "🇭🇲"
-}, {
-    "names": ["flag_sj"],
-    "surrogates": "🇸🇯"
-}, {
-    "names": ["flag_um"],
-    "surrogates": "🇺🇲"
-}, {
-    "names": ["flag_ic"],
-    "surrogates": "🇮🇨"
-}, {
-    "names": ["flag_ea"],
-    "surrogates": "🇪🇦"
-}, {
-    "names": ["flag_cp"],
-    "surrogates": "🇨🇵"
-}, {
-    "names": ["flag_dg"],
-    "surrogates": "🇩🇬"
-}, {
-    "names": ["flag_as"],
-    "surrogates": "🇦🇸"
-}, {
-    "names": ["flag_aq"],
-    "surrogates": "🇦🇶"
-}, {
-    "names": ["flag_vg"],
-    "surrogates": "🇻🇬"
-}, {
-    "names": ["flag_ck"],
-    "surrogates": "🇨🇰"
-}, {
-    "names": ["flag_cw"],
-    "surrogates": "🇨🇼"
-}, {
-    "names": ["flag_eu"],
-    "surrogates": "🇪🇺"
-}, {
-    "names": ["flag_gf"],
-    "surrogates": "🇬🇫"
-}, {
-    "names": ["flag_tf"],
-    "surrogates": "🇹🇫"
-}, {
-    "names": ["flag_gp"],
-    "surrogates": "🇬🇵"
-}, {
-    "names": ["flag_mq"],
-    "surrogates": "🇲🇶"
-}, {
-    "names": ["flag_mp"],
-    "surrogates": "🇲🇵"
-}, {
-    "names": ["flag_sx"],
-    "surrogates": "🇸🇽"
-}, {
-    "names": ["flag_ss"],
-    "surrogates": "🇸🇸"
-}, {
-    "names": ["flag_tc"],
-    "surrogates": "🇹🇨"
-}, {
-    "names": ["flag_mf"],
-    "surrogates": "🇲🇫"
-}]
+{
+    "flag_ac": "🇦🇨",
+    "flag_af": "🇦🇫",
+    "flag_al": "🇦🇱",
+    "flag_dz": "🇩🇿",
+    "flag_ad": "🇦🇩",
+    "flag_ao": "🇦🇴",
+    "flag_ai": "🇦🇮",
+    "flag_ag": "🇦🇬",
+    "flag_ar": "🇦🇷",
+    "flag_am": "🇦🇲",
+    "flag_aw": "🇦🇼",
+    "flag_au": "🇦🇺",
+    "flag_at": "🇦🇹",
+    "flag_az": "🇦🇿",
+    "flag_bs": "🇧🇸",
+    "flag_bh": "🇧🇭",
+    "flag_bd": "🇧🇩",
+    "flag_bb": "🇧🇧",
+    "flag_by": "🇧🇾",
+    "flag_be": "🇧🇪",
+    "flag_bz": "🇧🇿",
+    "flag_bj": "🇧🇯",
+    "flag_bm": "🇧🇲",
+    "flag_bt": "🇧🇹",
+    "flag_bo": "🇧🇴",
+    "flag_ba": "🇧🇦",
+    "flag_bw": "🇧🇼",
+    "flag_br": "🇧🇷",
+    "flag_bn": "🇧🇳",
+    "flag_bg": "🇧🇬",
+    "flag_bf": "🇧🇫",
+    "flag_bi": "🇧🇮",
+    "flag_cv": "🇨🇻",
+    "flag_kh": "🇰🇭",
+    "flag_cm": "🇨🇲",
+    "flag_ca": "🇨🇦",
+    "flag_ky": "🇰🇾",
+    "flag_cf": "🇨🇫",
+    "flag_td": "🇹🇩",
+    "flag_cl": "🇨🇱",
+    "flag_cn": "🇨🇳",
+    "flag_co": "🇨🇴",
+    "flag_km": "🇰🇲",
+    "flag_cg": "🇨🇬",
+    "flag_cd": "🇨🇩",
+    "flag_cr": "🇨🇷",
+    "flag_hr": "🇭🇷",
+    "flag_cu": "🇨🇺",
+    "flag_cy": "🇨🇾",
+    "flag_cz": "🇨🇿",
+    "flag_dk": "🇩🇰",
+    "flag_dj": "🇩🇯",
+    "flag_dm": "🇩🇲",
+    "flag_do": "🇩🇴",
+    "flag_ec": "🇪🇨",
+    "flag_eg": "🇪🇬",
+    "flag_sv": "🇸🇻",
+    "flag_gq": "🇬🇶",
+    "flag_er": "🇪🇷",
+    "flag_ee": "🇪🇪",
+    "flag_et": "🇪🇹",
+    "flag_fk": "🇫🇰",
+    "flag_fo": "🇫🇴",
+    "flag_fj": "🇫🇯",
+    "flag_fi": "🇫🇮",
+    "flag_fr": "🇫🇷",
+    "flag_pf": "🇵🇫",
+    "flag_ga": "🇬🇦",
+    "flag_gm": "🇬🇲",
+    "flag_ge": "🇬🇪",
+    "flag_de": "🇩🇪",
+    "flag_gh": "🇬🇭",
+    "flag_gi": "🇬🇮",
+    "flag_gr": "🇬🇷",
+    "flag_gl": "🇬🇱",
+    "flag_gd": "🇬🇩",
+    "flag_gu": "🇬🇺",
+    "flag_gt": "🇬🇹",
+    "flag_gn": "🇬🇳",
+    "flag_gw": "🇬🇼",
+    "flag_gy": "🇬🇾",
+    "flag_ht": "🇭🇹",
+    "flag_hn": "🇭🇳",
+    "flag_hk": "🇭🇰",
+    "flag_hu": "🇭🇺",
+    "flag_is": "🇮🇸",
+    "flag_in": "🇮🇳",
+    "flag_id": "🇮🇩",
+    "flag_ir": "🇮🇷",
+    "flag_iq": "🇮🇶",
+    "flag_ie": "🇮🇪",
+    "flag_il": "🇮🇱",
+    "flag_it": "🇮🇹",
+    "flag_ci": "🇨🇮",
+    "flag_jm": "🇯🇲",
+    "flag_jp": "🇯🇵",
+    "flag_je": "🇯🇪",
+    "flag_jo": "🇯🇴",
+    "flag_kz": "🇰🇿",
+    "flag_ke": "🇰🇪",
+    "flag_ki": "🇰🇮",
+    "flag_xk": "🇽🇰",
+    "flag_kw": "🇰🇼",
+    "flag_kg": "🇰🇬",
+    "flag_la": "🇱🇦",
+    "flag_lv": "🇱🇻",
+    "flag_lb": "🇱🇧",
+    "flag_ls": "🇱🇸",
+    "flag_lr": "🇱🇷",
+    "flag_ly": "🇱🇾",
+    "flag_li": "🇱🇮",
+    "flag_lt": "🇱🇹",
+    "flag_lu": "🇱🇺",
+    "flag_mo": "🇲🇴",
+    "flag_mk": "🇲🇰",
+    "flag_mg": "🇲🇬",
+    "flag_mw": "🇲🇼",
+    "flag_my": "🇲🇾",
+    "flag_mv": "🇲🇻",
+    "flag_ml": "🇲🇱",
+    "flag_mt": "🇲🇹",
+    "flag_mh": "🇲🇭",
+    "flag_mr": "🇲🇷",
+    "flag_mu": "🇲🇺",
+    "flag_mx": "🇲🇽",
+    "flag_fm": "🇫🇲",
+    "flag_md": "🇲🇩",
+    "flag_mc": "🇲🇨",
+    "flag_mn": "🇲🇳",
+    "flag_me": "🇲🇪",
+    "flag_ms": "🇲🇸",
+    "flag_ma": "🇲🇦",
+    "flag_mz": "🇲🇿",
+    "flag_mm": "🇲🇲",
+    "flag_na": "🇳🇦",
+    "flag_nr": "🇳🇷",
+    "flag_np": "🇳🇵",
+    "flag_nl": "🇳🇱",
+    "flag_nc": "🇳🇨",
+    "flag_nz": "🇳🇿",
+    "flag_ni": "🇳🇮",
+    "flag_ne": "🇳🇪",
+    "flag_ng": "🇳🇬",
+    "flag_nu": "🇳🇺",
+    "flag_kp": "🇰🇵",
+    "flag_no": "🇳🇴",
+    "flag_om": "🇴🇲",
+    "flag_pk": "🇵🇰",
+    "flag_pw": "🇵🇼",
+    "flag_ps": "🇵🇸",
+    "flag_pa": "🇵🇦",
+    "flag_pg": "🇵🇬",
+    "flag_py": "🇵🇾",
+    "flag_pe": "🇵🇪",
+    "flag_ph": "🇵🇭",
+    "flag_pl": "🇵🇱",
+    "flag_pt": "🇵🇹",
+    "flag_pr": "🇵🇷",
+    "flag_qa": "🇶🇦",
+    "flag_ro": "🇷🇴",
+    "flag_ru": "🇷🇺",
+    "flag_rw": "🇷🇼",
+    "flag_sh": "🇸🇭",
+    "flag_kn": "🇰🇳",
+    "flag_lc": "🇱🇨",
+    "flag_vc": "🇻🇨",
+    "flag_ws": "🇼🇸",
+    "flag_sm": "🇸🇲",
+    "flag_st": "🇸🇹",
+    "flag_sa": "🇸🇦",
+    "flag_sn": "🇸🇳",
+    "flag_rs": "🇷🇸",
+    "flag_sc": "🇸🇨",
+    "flag_sl": "🇸🇱",
+    "flag_sg": "🇸🇬",
+    "flag_sk": "🇸🇰",
+    "flag_si": "🇸🇮",
+    "flag_sb": "🇸🇧",
+    "flag_so": "🇸🇴",
+    "flag_za": "🇿🇦",
+    "flag_kr": "🇰🇷",
+    "flag_es": "🇪🇸",
+    "flag_lk": "🇱🇰",
+    "flag_sd": "🇸🇩",
+    "flag_sr": "🇸🇷",
+    "flag_sz": "🇸🇿",
+    "flag_se": "🇸🇪",
+    "flag_ch": "🇨🇭",
+    "flag_sy": "🇸🇾",
+    "flag_tw": "🇹🇼",
+    "flag_tj": "🇹🇯",
+    "flag_tz": "🇹🇿",
+    "flag_th": "🇹🇭",
+    "flag_tl": "🇹🇱",
+    "flag_tg": "🇹🇬",
+    "flag_to": "🇹🇴",
+    "flag_tt": "🇹🇹",
+    "flag_tn": "🇹🇳",
+    "flag_tr": "🇹🇷",
+    "flag_tm": "🇹🇲",
+    "flag_tv": "🇹🇻",
+    "flag_ug": "🇺🇬",
+    "flag_ua": "🇺🇦",
+    "flag_ae": "🇦🇪",
+    "flag_gb": "🇬🇧",
+    "flag_us": "🇺🇸",
+    "flag_vi": "🇻🇮",
+    "flag_uy": "🇺🇾",
+    "flag_uz": "🇺🇿",
+    "flag_vu": "🇻🇺",
+    "flag_va": "🇻🇦",
+    "flag_ve": "🇻🇪",
+    "flag_vn": "🇻🇳",
+    "flag_wf": "🇼🇫",
+    "flag_eh": "🇪🇭",
+    "flag_ye": "🇾🇪",
+    "flag_zm": "🇿🇲",
+    "flag_zw": "🇿🇼",
+    "flag_re": "🇷🇪",
+    "flag_ax": "🇦🇽",
+    "flag_ta": "🇹🇦",
+    "flag_io": "🇮🇴",
+    "flag_bq": "🇧🇶",
+    "flag_cx": "🇨🇽",
+    "flag_cc": "🇨🇨",
+    "flag_gg": "🇬🇬",
+    "flag_im": "🇮🇲",
+    "flag_yt": "🇾🇹",
+    "flag_nf": "🇳🇫",
+    "flag_pn": "🇵🇳",
+    "flag_bl": "🇧🇱",
+    "flag_pm": "🇵🇲",
+    "flag_gs": "🇬🇸",
+    "flag_tk": "🇹🇰",
+    "flag_bv": "🇧🇻",
+    "flag_hm": "🇭🇲",
+    "flag_sj": "🇸🇯",
+    "flag_um": "🇺🇲",
+    "flag_ic": "🇮🇨",
+    "flag_ea": "🇪🇦",
+    "flag_cp": "🇨🇵",
+    "flag_dg": "🇩🇬",
+    "flag_as": "🇦🇸",
+    "flag_aq": "🇦🇶",
+    "flag_vg": "🇻🇬",
+    "flag_ck": "🇨🇰",
+    "flag_cw": "🇨🇼",
+    "flag_eu": "🇪🇺",
+    "flag_gf": "🇬🇫",
+    "flag_tf": "🇹🇫",
+    "flag_gp": "🇬🇵",
+    "flag_mq": "🇲🇶",
+    "flag_mp": "🇲🇵",
+    "flag_sx": "🇸🇽",
+    "flag_ss": "🇸🇸",
+    "flag_tc": "🇹🇨",
+    "flag_mf": "🇲🇫"
+}

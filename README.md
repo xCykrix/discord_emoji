@@ -8,3 +8,8 @@ You can use these files separately in other environments too, which support the 
 ```
 npm install discord-emoji --save
 ```
+
+### Usage
+```js
+var dog = require("discord-emoji").nature.dog;
+```
