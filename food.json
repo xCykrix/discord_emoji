@@ -1,0 +1,202 @@
+[{
+    "names": ["green_apple"],
+    "surrogates": "🍏"
+}, {
+    "names": ["apple"],
+    "surrogates": "🍎"
+}, {
+    "names": ["pear"],
+    "surrogates": "🍐"
+}, {
+    "names": ["tangerine"],
+    "surrogates": "🍊"
+}, {
+    "names": ["lemon"],
+    "surrogates": "🍋"
+}, {
+    "names": ["banana"],
+    "surrogates": "🍌"
+}, {
+    "names": ["watermelon"],
+    "surrogates": "🍉"
+}, {
+    "names": ["grapes"],
+    "surrogates": "🍇"
+}, {
+    "names": ["strawberry"],
+    "surrogates": "🍓"
+}, {
+    "names": ["melon"],
+    "surrogates": "🍈"
+}, {
+    "names": ["cherries"],
+    "surrogates": "🍒"
+}, {
+    "names": ["peach"],
+    "surrogates": "🍑"
+}, {
+    "names": ["pineapple"],
+    "surrogates": "🍍"
+}, {
+    "names": ["tomato"],
+    "surrogates": "🍅"
+}, {
+    "names": ["eggplant"],
+    "surrogates": "🍆"
+}, {
+    "names": ["hot_pepper"],
+    "surrogates": "🌶"
+}, {
+    "names": ["corn"],
+    "surrogates": "🌽"
+}, {
+    "names": ["sweet_potato"],
+    "surrogates": "🍠"
+}, {
+    "names": ["honey_pot"],
+    "surrogates": "🍯"
+}, {
+    "names": ["bread"],
+    "surrogates": "🍞"
+}, {
+    "names": ["cheese"],
+    "surrogates": "🧀"
+}, {
+    "names": ["poultry_leg"],
+    "surrogates": "🍗"
+}, {
+    "names": ["meat_on_bone"],
+    "surrogates": "🍖"
+}, {
+    "names": ["fried_shrimp"],
+    "surrogates": "🍤"
+}, {
+    "names": ["egg", "cooking"],
+    "surrogates": "🍳"
+}, {
+    "names": ["hamburger"],
+    "surrogates": "🍔"
+}, {
+    "names": ["fries"],
+    "surrogates": "🍟"
+}, {
+    "names": ["hotdog"],
+    "surrogates": "🌭"
+}, {
+    "names": ["pizza"],
+    "surrogates": "🍕"
+}, {
+    "names": ["spaghetti"],
+    "surrogates": "🍝"
+}, {
+    "names": ["taco"],
+    "surrogates": "🌮"
+}, {
+    "names": ["burrito"],
+    "surrogates": "🌯"
+}, {
+    "names": ["ramen"],
+    "surrogates": "🍜"
+}, {
+    "names": ["stew"],
+    "surrogates": "🍲"
+}, {
+    "names": ["fish_cake"],
+    "surrogates": "🍥"
+}, {
+    "names": ["sushi"],
+    "surrogates": "🍣"
+}, {
+    "names": ["bento"],
+    "surrogates": "🍱"
+}, {
+    "names": ["curry"],
+    "surrogates": "🍛"
+}, {
+    "names": ["rice_ball"],
+    "surrogates": "🍙"
+}, {
+    "names": ["rice"],
+    "surrogates": "🍚"
+}, {
+    "names": ["rice_cracker"],
+    "surrogates": "🍘"
+}, {
+    "names": ["oden"],
+    "surrogates": "🍢"
+}, {
+    "names": ["dango"],
+    "surrogates": "🍡"
+}, {
+    "names": ["shaved_ice"],
+    "surrogates": "🍧"
+}, {
+    "names": ["ice_cream"],
+    "surrogates": "🍨"
+}, {
+    "names": ["icecream"],
+    "surrogates": "🍦"
+}, {
+    "names": ["cake"],
+    "surrogates": "🍰"
+}, {
+    "names": ["birthday"],
+    "surrogates": "🎂"
+}, {
+    "names": ["custard"],
+    "surrogates": "🍮"
+}, {
+    "names": ["candy"],
+    "surrogates": "🍬"
+}, {
+    "names": ["lollipop"],
+    "surrogates": "🍭"
+}, {
+    "names": ["chocolate_bar"],
+    "surrogates": "🍫"
+}, {
+    "names": ["popcorn"],
+    "surrogates": "🍿"
+}, {
+    "names": ["doughnut"],
+    "surrogates": "🍩"
+}, {
+    "names": ["cookie"],
+    "surrogates": "🍪"
+}, {
+    "names": ["beer"],
+    "surrogates": "🍺"
+}, {
+    "names": ["beers"],
+    "surrogates": "🍻"
+}, {
+    "names": ["wine_glass"],
+    "surrogates": "🍷"
+}, {
+    "names": ["cocktail"],
+    "surrogates": "🍸"
+}, {
+    "names": ["tropical_drink"],
+    "surrogates": "🍹"
+}, {
+    "names": ["champagne"],
+    "surrogates": "🍾"
+}, {
+    "names": ["sake"],
+    "surrogates": "🍶"
+}, {
+    "names": ["tea"],
+    "surrogates": "🍵"
+}, {
+    "names": ["coffee"],
+    "surrogates": "☕"
+}, {
+    "names": ["baby_bottle"],
+    "surrogates": "🍼"
+}, {
+    "names": ["fork_and_knife"],
+    "surrogates": "🍴"
+}, {
+    "names": ["fork_knife_plate"],
+    "surrogates": "🍽"
+}]

@@ -1,0 +1,535 @@
+[{
+    "names": ["watch"],
+    "surrogates": "⌚"
+}, {
+    "names": ["iphone"],
+    "surrogates": "📱"
+}, {
+    "names": ["calling"],
+    "surrogates": "📲"
+}, {
+    "names": ["computer"],
+    "surrogates": "💻"
+}, {
+    "names": ["keyboard"],
+    "surrogates": "⌨"
+}, {
+    "names": ["desktop"],
+    "surrogates": "🖥"
+}, {
+    "names": ["printer"],
+    "surrogates": "🖨"
+}, {
+    "names": ["mouse_three_button"],
+    "surrogates": "🖱"
+}, {
+    "names": ["trackball"],
+    "surrogates": "🖲"
+}, {
+    "names": ["joystick"],
+    "surrogates": "🕹"
+}, {
+    "names": ["compression"],
+    "surrogates": "🗜"
+}, {
+    "names": ["minidisc"],
+    "surrogates": "💽"
+}, {
+    "names": ["floppy_disk"],
+    "surrogates": "💾"
+}, {
+    "names": ["cd"],
+    "surrogates": "💿"
+}, {
+    "names": ["dvd"],
+    "surrogates": "📀"
+}, {
+    "names": ["vhs"],
+    "surrogates": "📼"
+}, {
+    "names": ["camera"],
+    "surrogates": "📷"
+}, {
+    "names": ["camera_with_flash"],
+    "surrogates": "📸"
+}, {
+    "names": ["video_camera"],
+    "surrogates": "📹"
+}, {
+    "names": ["movie_camera"],
+    "surrogates": "🎥"
+}, {
+    "names": ["projector"],
+    "surrogates": "📽"
+}, {
+    "names": ["film_frames"],
+    "surrogates": "🎞"
+}, {
+    "names": ["telephone_receiver"],
+    "surrogates": "📞"
+}, {
+    "names": ["telephone", "phone"],
+    "surrogates": "☎"
+}, {
+    "names": ["pager"],
+    "surrogates": "📟"
+}, {
+    "names": ["fax"],
+    "surrogates": "📠"
+}, {
+    "names": ["tv"],
+    "surrogates": "📺"
+}, {
+    "names": ["radio"],
+    "surrogates": "📻"
+}, {
+    "names": ["microphone2"],
+    "surrogates": "🎙"
+}, {
+    "names": ["level_slider"],
+    "surrogates": "🎚"
+}, {
+    "names": ["control_knobs"],
+    "surrogates": "🎛"
+}, {
+    "names": ["stopwatch"],
+    "surrogates": "⏱"
+}, {
+    "names": ["timer"],
+    "surrogates": "⏲"
+}, {
+    "names": ["alarm_clock"],
+    "surrogates": "⏰"
+}, {
+    "names": ["clock"],
+    "surrogates": "🕰"
+}, {
+    "names": ["hourglass_flowing_sand"],
+    "surrogates": "⏳"
+}, {
+    "names": ["hourglass"],
+    "surrogates": "⌛"
+}, {
+    "names": ["satellite"],
+    "surrogates": "📡"
+}, {
+    "names": ["battery"],
+    "surrogates": "🔋"
+}, {
+    "names": ["electric_plug"],
+    "surrogates": "🔌"
+}, {
+    "names": ["bulb"],
+    "surrogates": "💡"
+}, {
+    "names": ["flashlight"],
+    "surrogates": "🔦"
+}, {
+    "names": ["candle"],
+    "surrogates": "🕯"
+}, {
+    "names": ["wastebasket"],
+    "surrogates": "🗑"
+}, {
+    "names": ["oil"],
+    "surrogates": "🛢"
+}, {
+    "names": ["money_with_wings"],
+    "surrogates": "💸"
+}, {
+    "names": ["dollar"],
+    "surrogates": "💵"
+}, {
+    "names": ["yen"],
+    "surrogates": "💴"
+}, {
+    "names": ["euro"],
+    "surrogates": "💶"
+}, {
+    "names": ["pound"],
+    "surrogates": "💷"
+}, {
+    "names": ["moneybag"],
+    "surrogates": "💰"
+}, {
+    "names": ["credit_card"],
+    "surrogates": "💳"
+}, {
+    "names": ["gem"],
+    "surrogates": "💎"
+}, {
+    "names": ["scales"],
+    "surrogates": "⚖"
+}, {
+    "names": ["wrench"],
+    "surrogates": "🔧"
+}, {
+    "names": ["hammer"],
+    "surrogates": "🔨"
+}, {
+    "names": ["hammer_pick"],
+    "surrogates": "⚒"
+}, {
+    "names": ["tools"],
+    "surrogates": "🛠"
+}, {
+    "names": ["pick"],
+    "surrogates": "⛏"
+}, {
+    "names": ["nut_and_bolt"],
+    "surrogates": "🔩"
+}, {
+    "names": ["gear"],
+    "surrogates": "⚙"
+}, {
+    "names": ["chains"],
+    "surrogates": "⛓"
+}, {
+    "names": ["gun"],
+    "surrogates": "🔫"
+}, {
+    "names": ["bomb"],
+    "surrogates": "💣"
+}, {
+    "names": ["knife", "hocho"],
+    "surrogates": "🔪"
+}, {
+    "names": ["dagger"],
+    "surrogates": "🗡"
+}, {
+    "names": ["crossed_swords"],
+    "surrogates": "⚔"
+}, {
+    "names": ["shield"],
+    "surrogates": "🛡"
+}, {
+    "names": ["smoking"],
+    "surrogates": "🚬"
+}, {
+    "names": ["skull_crossbones"],
+    "surrogates": "☠"
+}, {
+    "names": ["coffin"],
+    "surrogates": "⚰"
+}, {
+    "names": ["urn"],
+    "surrogates": "⚱"
+}, {
+    "names": ["amphora"],
+    "surrogates": "🏺"
+}, {
+    "names": ["crystal_ball"],
+    "surrogates": "🔮"
+}, {
+    "names": ["prayer_beads"],
+    "surrogates": "📿"
+}, {
+    "names": ["barber"],
+    "surrogates": "💈"
+}, {
+    "names": ["alembic"],
+    "surrogates": "⚗"
+}, {
+    "names": ["telescope"],
+    "surrogates": "🔭"
+}, {
+    "names": ["microscope"],
+    "surrogates": "🔬"
+}, {
+    "names": ["hole"],
+    "surrogates": "🕳"
+}, {
+    "names": ["pill"],
+    "surrogates": "💊"
+}, {
+    "names": ["syringe"],
+    "surrogates": "💉"
+}, {
+    "names": ["thermometer"],
+    "surrogates": "🌡"
+}, {
+    "names": ["label"],
+    "surrogates": "🏷"
+}, {
+    "names": ["bookmark"],
+    "surrogates": "🔖"
+}, {
+    "names": ["toilet"],
+    "surrogates": "🚽"
+}, {
+    "names": ["shower"],
+    "surrogates": "🚿"
+}, {
+    "names": ["bathtub"],
+    "surrogates": "🛁"
+}, {
+    "names": ["key"],
+    "surrogates": "🔑"
+}, {
+    "names": ["key2"],
+    "surrogates": "🗝"
+}, {
+    "names": ["couch"],
+    "surrogates": "🛋"
+}, {
+    "names": ["sleeping_accommodation"],
+    "surrogates": "🛌"
+}, {
+    "names": ["bed"],
+    "surrogates": "🛏"
+}, {
+    "names": ["door"],
+    "surrogates": "🚪"
+}, {
+    "names": ["bellhop"],
+    "surrogates": "🛎"
+}, {
+    "names": ["frame_photo"],
+    "surrogates": "🖼"
+}, {
+    "names": ["map"],
+    "surrogates": "🗺"
+}, {
+    "names": ["beach_umbrella"],
+    "surrogates": "⛱"
+}, {
+    "names": ["moyai"],
+    "surrogates": "🗿"
+}, {
+    "names": ["shopping_bags"],
+    "surrogates": "🛍"
+}, {
+    "names": ["balloon"],
+    "surrogates": "🎈"
+}, {
+    "names": ["flags"],
+    "surrogates": "🎏"
+}, {
+    "names": ["ribbon"],
+    "surrogates": "🎀"
+}, {
+    "names": ["gift"],
+    "surrogates": "🎁"
+}, {
+    "names": ["confetti_ball"],
+    "surrogates": "🎊"
+}, {
+    "names": ["tada"],
+    "surrogates": "🎉"
+}, {
+    "names": ["dolls"],
+    "surrogates": "🎎"
+}, {
+    "names": ["wind_chime"],
+    "surrogates": "🎐"
+}, {
+    "names": ["crossed_flags"],
+    "surrogates": "🎌"
+}, {
+    "names": ["izakaya_lantern", "lantern"],
+    "surrogates": "🏮"
+}, {
+    "names": ["envelope", "email"],
+    "surrogates": "✉"
+}, {
+    "names": ["envelope_with_arrow"],
+    "surrogates": "📩"
+}, {
+    "names": ["incoming_envelope"],
+    "surrogates": "📨"
+}, {
+    "names": ["email"],
+    "surrogates": "📧"
+}, {
+    "names": ["love_letter"],
+    "surrogates": "💌"
+}, {
+    "names": ["postbox"],
+    "surrogates": "📮"
+}, {
+    "names": ["mailbox_closed"],
+    "surrogates": "📪"
+}, {
+    "names": ["mailbox"],
+    "surrogates": "📫"
+}, {
+    "names": ["mailbox_with_mail"],
+    "surrogates": "📬"
+}, {
+    "names": ["mailbox_with_no_mail"],
+    "surrogates": "📭"
+}, {
+    "names": ["package"],
+    "surrogates": "📦"
+}, {
+    "names": ["postal_horn"],
+    "surrogates": "📯"
+}, {
+    "names": ["inbox_tray"],
+    "surrogates": "📥"
+}, {
+    "names": ["outbox_tray"],
+    "surrogates": "📤"
+}, {
+    "names": ["scroll"],
+    "surrogates": "📜"
+}, {
+    "names": ["page_with_curl"],
+    "surrogates": "📃"
+}, {
+    "names": ["bookmark_tabs"],
+    "surrogates": "📑"
+}, {
+    "names": ["bar_chart"],
+    "surrogates": "📊"
+}, {
+    "names": ["chart_with_upwards_trend"],
+    "surrogates": "📈"
+}, {
+    "names": ["chart_with_downwards_trend"],
+    "surrogates": "📉"
+}, {
+    "names": ["page_facing_up"],
+    "surrogates": "📄"
+}, {
+    "names": ["date"],
+    "surrogates": "📅"
+}, {
+    "names": ["calendar"],
+    "surrogates": "📆"
+}, {
+    "names": ["calendar_spiral"],
+    "surrogates": "🗓"
+}, {
+    "names": ["card_index"],
+    "surrogates": "📇"
+}, {
+    "names": ["card_box"],
+    "surrogates": "🗃"
+}, {
+    "names": ["ballot_box"],
+    "surrogates": "🗳"
+}, {
+    "names": ["file_cabinet"],
+    "surrogates": "🗄"
+}, {
+    "names": ["clipboard"],
+    "surrogates": "📋"
+}, {
+    "names": ["notepad_spiral"],
+    "surrogates": "🗒"
+}, {
+    "names": ["file_folder"],
+    "surrogates": "📁"
+}, {
+    "names": ["open_file_folder"],
+    "surrogates": "📂"
+}, {
+    "names": ["dividers"],
+    "surrogates": "🗂"
+}, {
+    "names": ["newspaper2"],
+    "surrogates": "🗞"
+}, {
+    "names": ["newspaper"],
+    "surrogates": "📰"
+}, {
+    "names": ["notebook"],
+    "surrogates": "📓"
+}, {
+    "names": ["closed_book"],
+    "surrogates": "📕"
+}, {
+    "names": ["green_book"],
+    "surrogates": "📗"
+}, {
+    "names": ["blue_book"],
+    "surrogates": "📘"
+}, {
+    "names": ["orange_book"],
+    "surrogates": "📙"
+}, {
+    "names": ["notebook_with_decorative_cover"],
+    "surrogates": "📔"
+}, {
+    "names": ["ledger"],
+    "surrogates": "📒"
+}, {
+    "names": ["books"],
+    "surrogates": "📚"
+}, {
+    "names": ["book", "open_book"],
+    "surrogates": "📖"
+}, {
+    "names": ["link"],
+    "surrogates": "🔗"
+}, {
+    "names": ["paperclip"],
+    "surrogates": "📎"
+}, {
+    "names": ["paperclips"],
+    "surrogates": "🖇"
+}, {
+    "names": ["scissors"],
+    "surrogates": "✂"
+}, {
+    "names": ["triangular_ruler"],
+    "surrogates": "📐"
+}, {
+    "names": ["straight_ruler"],
+    "surrogates": "📏"
+}, {
+    "names": ["pushpin"],
+    "surrogates": "📌"
+}, {
+    "names": ["round_pushpin"],
+    "surrogates": "📍"
+}, {
+    "names": ["triangular_flag_on_post"],
+    "surrogates": "🚩"
+}, {
+    "names": ["flag_white"],
+    "surrogates": "🏳"
+}, {
+    "names": ["flag_black"],
+    "surrogates": "🏴"
+}, {
+    "names": ["closed_lock_with_key"],
+    "surrogates": "🔐"
+}, {
+    "names": ["lock"],
+    "surrogates": "🔒"
+}, {
+    "names": ["unlock"],
+    "surrogates": "🔓"
+}, {
+    "names": ["lock_with_ink_pen"],
+    "surrogates": "🔏"
+}, {
+    "names": ["pen_ballpoint"],
+    "surrogates": "🖊"
+}, {
+    "names": ["pen_fountain"],
+    "surrogates": "🖋"
+}, {
+    "names": ["black_nib"],
+    "surrogates": "✒"
+}, {
+    "names": ["pencil", "memo"],
+    "surrogates": "📝"
+}, {
+    "names": ["pencil2"],
+    "surrogates": "✏"
+}, {
+    "names": ["crayon"],
+    "surrogates": "🖍"
+}, {
+    "names": ["paintbrush"],
+    "surrogates": "🖌"
+}, {
+    "names": ["mag"],
+    "surrogates": "🔍"
+}, {
+    "names": ["mag_right"],
+    "surrogates": "🔎"
+}]
