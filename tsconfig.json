@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2015",
+    "lib": [
+      "ES2015",
+      "ES2016",
+      "ES2017",
+      "ES2018",
+      "ES2019",
+      "ES2020",
+      "ESNext"
+    ],
+    "types": [
+      "node",
+      "chai",
+      "mocha"
+    ],
+    "outDir": "./dist/",
+    "declaration": true,
+    "removeComments": false,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "./index.ts",
+    "./lib/**/*.ts",
+    "./tests/**/*.test.js",
+    "./.eslintrc.js",
+  ]
+}

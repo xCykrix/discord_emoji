@@ -1,0 +1,28 @@
+name: Code Functionality
+
+on:
+  push:
+    branches: [main, staging, ch-dev/**]
+  pull_request:
+    branches: [main, staging, ch-dev/**]
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        node: ["10", "12", "14"]
+    name: Node.js v${{ matrix.node }} Analysis
+
+    steps:
+      - name: Checkout Latest Files
+        uses: actions/checkout@v2
+      - name: Initialize Node.js
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Initialize Project
+        run: npm install
+      - name: Analyze Project
+        run: npm run project:build
