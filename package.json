@@ -1,6 +1,6 @@
 {
   "name": "discord-emoji",
-  "description": "Emoji naming tables from Discord",
+  "description": "Unofficial but correct emoji index pulled directly from Discord with automatic updates for changes daily.",
   "version": "2.0.0",
   "license": "MIT",
   "author": "Samuel J Voeller <samuel.voeller@amethyst.live> (https://chat.amethyst.live/)",

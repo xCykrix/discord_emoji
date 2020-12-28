@@ -1,6 +1,6 @@
 # discord-emoji
 
-discord-emoji Emoji naming tables from Discord
+discord-emoji Unofficial but correct emoji index pulled directly from Discord with automatic updates for changes daily.
 
 ## Installation
 
@@ -8,6 +8,13 @@ Using your preferred Node.js Package Manager. In the following commands, we will
 
 ```bash
 npm install discord-emoji
+```
+
+## Quick Usage
+
+```js
+const discordEmoji = require('discord-emoji')
+discordEmoji.nature.dog // => 🐶
 ```
 
 ## Examples
