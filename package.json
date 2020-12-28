@@ -1,7 +1,7 @@
 {
   "name": "discord-emoji",
   "description": "Emoji naming tables from Discord",
-  "version": "2.0.0",
+  "version": "2.0.0-beta.0",
   "license": "MIT",
   "author": "Samuel J Voeller <samuel.voeller@amethyst.live> (https://chat.amethyst.live/)",
   "contributors": [],
