@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Amethyst Authority
+    url: mailto:authority@amethyst.live
+    about: For security concerns or violations of Code of Conduct.
+  - name: Amethyst Discord
+    url: https://chat.amethyst.live/
+    about: For general questions and support, use discussions or join us in Discord.
