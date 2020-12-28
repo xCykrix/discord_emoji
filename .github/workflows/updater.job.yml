@@ -8,7 +8,7 @@ on:
 jobs:
   analysis:
     runs-on: ubuntu-latest
-    name: Node.js v14 Self Updater
+    name: Build Snapshot
 
     steps:
       - name: Checkout Latest Files
@@ -30,3 +30,4 @@ jobs:
           author_email: "samuel.voeller@amethyst.live"
           message: "chore: workflow-build(updater) generate_snapshot"
           add: "_snapshot.json"
+          token: ${{ secrets.RW_ACCESS_TOKEN }}
