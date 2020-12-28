@@ -18,7 +18,8 @@ module.exports = {
   ],
   ignorePatterns: [
     '/dist/',
-    '/docs/'
+    '/docs/',
+    '/scripts/'
   ],
   env: {
     mocha: true

@@ -1,5 +1,5 @@
-import { SomeClass } from './lib/placeholder'
+import * as snapshot from './_snapshot.json'
 
-module.exports = {
-  SomeClass
+export ={
+  ...snapshot
 }

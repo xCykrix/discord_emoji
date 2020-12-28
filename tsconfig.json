@@ -19,6 +19,7 @@
     "outDir": "./dist/",
     "declaration": true,
     "removeComments": false,
+    "resolveJsonModule": true,
     "alwaysStrict": true,
     "strictNullChecks": true,
     "noImplicitReturns": true,
