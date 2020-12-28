@@ -30,4 +30,5 @@ jobs:
           author_email: "samuel.voeller@amethyst.live"
           message: "chore: workflow-build(updater) generate_snapshot"
           add: "_snapshot.json"
+          push: "origin main -u --force"
           token: ${{ secrets.RW_ACCESS_TOKEN }}
