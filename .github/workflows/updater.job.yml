@@ -1,4 +1,4 @@
-name: Code Functionality
+name: Snapshot Generator
 
 on:
   schedule:
