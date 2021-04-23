@@ -8,7 +8,7 @@ const path = require('path')
 const { js } = require('js-beautify')
 
 /**
- * Download Minified Asset from Discord
+ * Sync Discord Files to Disk and locate the emoji table.
  */
 async function process () {
   await del([path.resolve(__dirname, './discord_ui/')])
@@ -17,18 +17,18 @@ async function process () {
     directory: path.resolve(__dirname, './discord_ui/')
   })
   for (const file of fs.readdirSync(path.resolve(__dirname, './discord_ui/js/'))) {
-    const miniJs = await fs.readFileSync(path.resolve(__dirname, './discord_ui/js/', file)).toString()
-    if (miniJs.includes('"people":[')) return miniJs
+    const minified = await fs.readFileSync(path.resolve(__dirname, './discord_ui/js/', file)).toString()
+    if (minified.includes('"people":[')) return minified
   }
 }
 
 /**
  * Parses the Minified Assets
  *
- * @param {*} miniJs Minified JS Assets
+ * @param {*} minified Minified JS Assets
  */
-async function parse (miniJs) {
-  const clean = await js(miniJs, { indent_size: 2, space_in_empty_paren: true })
+async function parse (minified) {
+  const clean = await js(minified, { indent_size: 2, space_in_empty_paren: true })
   const statement = clean.split('\n').filter((v) => { return v.includes('"people":[') })[0]
 
   let json = statement.replace('e.exports = JSON.parse(\'', '')
@@ -41,14 +41,14 @@ async function parse (miniJs) {
 /**
  * Formats the Beautified and Stripped Emoji List
  *
- * @param {*} json Parsed Emoji List
+ * @param {*} expanded Parsed Emoji List
  */
-async function format (json) {
+async function format (expanded) {
   const state = {}
 
-  for (const key of Object.keys(json)) {
+  for (const key of Object.keys(expanded)) {
     state[key] = {}
-    for (const emoji of json[key]) {
+    for (const emoji of expanded[key]) {
       for (const name of emoji.names) {
         state[key][name] = emoji.surrogates
       }
@@ -67,10 +67,10 @@ async function format (json) {
 
 /**
  * Write JSON to Disk
- * @param {*} json Formatted Pretty Emoji List
+ * @param {*} tableList Formatted Pretty Emoji List
  */
-async function save (json) {
-  await fs.writeFileSync(path.resolve(__dirname, '../_snapshot.json'), JSON.stringify(json, undefined, 2))
+async function save (tableList) {
+  await fs.writeFileSync(path.resolve(__dirname, '../_snapshot.json'), JSON.stringify(tableList, undefined, 2))
 }
 
 /**
