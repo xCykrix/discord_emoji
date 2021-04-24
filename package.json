@@ -32,12 +32,6 @@
     "project:generate-docs": "typedoc --mode file --out ./docs/ ./lib/",
     "prepack": "npm run project:build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run stage:eslint",
-      "pre-push": "npm run project:build"
-    }
-  },
   "devDependencies": {
     "@types/chai": "^4.2.16",
     "@types/js-beautify": "^1.13.1",
