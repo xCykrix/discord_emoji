@@ -23,6 +23,7 @@
     "/LICENSE.md"
   ],
   "scripts": {
+    "prepare": "husky install",
     "stage:eslint": "eslint .",
     "stage:build": "npx tsc --build",
     "stage:tests": "mocha './tests/**/*.js'",
