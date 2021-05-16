@@ -1,36 +1,29 @@
 {
   "compilerOptions": {
+    "target": "es6",
     "module": "commonjs",
-    "target": "ES2015",
-    "lib": [
-      "ES2015",
-      "ES2016",
-      "ES2017",
-      "ES2018",
-      "ES2019",
-      "ES2020",
-      "ESNext"
-    ],
+    "moduleResolution": "node",
+    "declaration": true,
+    "outDir": "./dist/",
     "types": [
       "node",
       "chai",
       "mocha"
     ],
-    "outDir": "./dist/",
-    "declaration": true,
-    "removeComments": false,
-    "resolveJsonModule": true,
     "alwaysStrict": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
     "strictNullChecks": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noImplicitAny": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true
   },
   "include": [
-    "./index.ts",
-    "./lib/**/*.ts",
-    "./tests/**/*.test.js",
-    "./.eslintrc.js",
+    "./**/*.ts",
+    "./**/**.ts",
+    "./**/*.js",
+    "./**/**.js"
   ]
 }

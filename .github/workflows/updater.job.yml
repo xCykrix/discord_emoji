@@ -22,7 +22,7 @@ jobs:
       - name: Initialize Project
         run: npm install
       - name: Build Project
-        run: npm run stage:build
+        run: npm run build
       - name: Generate Snapshot
         run: node ./scripts/update.js
       - name: Apply Changes to Repository

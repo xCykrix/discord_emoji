@@ -2,9 +2,9 @@ name: Code Functionality
 
 on:
   push:
-    branches: [main, staging, ch-dev/**]
+    branches: [main, staging, dev-**]
   pull_request:
-    branches: [main, staging, ch-dev/**]
+    branches: [main, staging, dev-**]
 
 jobs:
   analysis:
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        node: ["10", "12", "14"]
+        node: ["12", "14", "16"]
     name: Node.js v${{ matrix.node }} Analysis
 
     steps:
@@ -25,4 +25,4 @@ jobs:
       - name: Initialize Project
         run: npm install
       - name: Analyze Project
-        run: npm run project:build
+        run: npm run build
