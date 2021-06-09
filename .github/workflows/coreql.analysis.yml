@@ -25,4 +25,4 @@ jobs:
       - name: Initialize Project
         run: npm install
       - name: Analyze Project
-        run: npm run build
+        run: npm run runCompiler
