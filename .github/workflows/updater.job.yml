@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: 14
       - name: Initialize Project
-        run: npm install
+        run: npm install --legacy-peer-deps
       - name: Build Project
-        run: npm run build
+        run: npm run runCompiler
       - name: Generate Snapshot
         run: node ./scripts/update.js
       - name: Apply Changes to Repository
