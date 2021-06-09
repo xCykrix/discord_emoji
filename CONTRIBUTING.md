@@ -7,7 +7,7 @@ Everything comes pre-packaged with just running `npm install`, which will config
 ```bash
 git clone https://github.com/amethyst-studio/discord-emoji
 npm install
-npm run project:build # Confirm everything is working.
+npm run runCompiler # Confirm everything is working.
 ```
 
 ## Our Environment

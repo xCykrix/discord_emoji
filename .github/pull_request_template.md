@@ -2,7 +2,7 @@
 #### Checklist for Integrity
 <!-- Please remove any items that do not apply. For completed items, change [] to [x]. -->
 
-- [] `npm run build` passes without issues. This will be automatically executing with a Matrix on GitHub Workflow.
+- [] `npm run runCompiler` passes without issues. This will be automatically executing with a Matrix on GitHub Workflow.
 - [] Tests have been updated or added to reflect your changes, if you modified existing adapters or added new adapters.
 - [] Documentation on all classes, functions, and properties have been included in added or modified source code.
 - [] All commit message(es) follow the syntax of [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#summary).

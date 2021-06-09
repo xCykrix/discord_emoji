@@ -2,9 +2,9 @@ name: Code Functionality
 
 on:
   push:
-    branches: [main, staging, dev-**]
+    branches: [main, dev, dev-**]
   pull_request:
-    branches: [main, staging, dev-**]
+    branches: [main, dev, dev-**]
 
 jobs:
   analysis:
