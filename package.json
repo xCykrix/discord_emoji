@@ -51,7 +51,7 @@
     "js-beautify": "^1.13.13",
     "mocha": "^9.0.0",
     "node-fetch": "^3.0.0-beta.9",
-    "typedoc": "^0.20.36",
+    "typedoc": "^0.21.2",
     "typescript": "^4.3.2",
     "website-scraper": "^0.3.6"
   },
