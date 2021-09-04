@@ -1,5 +1,5 @@
 
-![Amethyst Studio Logo.png](./.github/.asset/logo.png)
+![Amethyst Studio Logo.png](https://raw.githubusercontent.com/amethyst-studio/discord-emoji/main/.github/.asset/logo.png)
 
 
 # discord-emoji
@@ -14,11 +14,17 @@ $ git clone https://github.com/amethyst-studio/discord-emoji.git # Application
 $ npm install discord-emoji # Library
 ```
 
+
 ## Usage/Examples
 
 ```javascript
-const discord-emoji = require('discord-emoji')
+const discordEmoji = require('discord-emoji')
+discordEmoji.nature.dog // => 🐶
 ```
+
+You can visit our [Internal Wiki](https://github.com/amethyst-studio/discord-emoji/wiki) for additional information and examples of using our software.
+
+Automatically Generated API Documentation: [Documentation for API](https://amethyst-studio.github.io/discord-emoji/index.html)
 
 
 ## Run Locally
@@ -30,7 +36,7 @@ $ git clone https://github.com/amethyst-studio/discord-emoji.git
 $ cd discord-emoji
 $ npm install
 $ npm run build # default build:dev alternative build:production
-$ npm run start # default start:dev alternative start:production
+$ npm run start # default start:dev alternative start:production [if applicable]
 ```
 
 
@@ -39,7 +45,7 @@ $ npm run start # default start:dev alternative start:production
 To run tests, run the following command
 
 ```bash
-  npm run test # default test:dev alternative test:production
+$ npm run test # default test:dev alternative test:production
 ```
 
 
