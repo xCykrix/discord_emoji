@@ -1,10 +1,10 @@
-name: Code Functionality
+name: Build
 
 on:
   push:
-    branches: [main, dev, dev-**]
+    branches: [main, staging, dev-**]
   pull_request:
-    branches: [main, dev, dev-**]
+    branches: [main, staging, dev-**]
 
 jobs:
   analysis:
@@ -12,8 +12,8 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        node: ["12", "14", "16"]
-    name: Node.js v${{ matrix.node }} Analysis
+        node: ["14", "16"]
+    name: NodeJS v${{ matrix.node }}
 
     steps:
       - name: Checkout Latest Files
@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v2.1.2
         with:
           node-version: ${{ matrix.node }}
-      - name: Initialize Project
+      - name: npm install
         run: npm install
-      - name: Analyze Project
-        run: npm run runCompiler
+      - name: npm run build
+        run: npm run build

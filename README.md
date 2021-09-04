@@ -1,40 +1,62 @@
+
+![Amethyst Studio Logo.png](./.github/.asset/logo.png)
+
+
 # discord-emoji
 
-discord-emoji Unofficial but correct emoji index pulled directly from Discord with automatic updates for changes daily.
+Near exact emoji name tables for Discord. Allows programmatically including emojis instead of copying an escaped version.
+
 
 ## Installation
 
-Using your preferred Node.js Package Manager. In the following commands, we will be using npm:
+```bash
+$ git clone https://github.com/amethyst-studio/discord-emoji.git # Application
+$ npm install discord-emoji # Library
+```
+
+## Usage/Examples
+
+```javascript
+const discord-emoji = require('discord-emoji')
+```
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm install discord-emoji
+$ git clone https://github.com/amethyst-studio/discord-emoji.git
+$ cd discord-emoji
+$ npm install
+$ npm run build # default build:dev alternative build:production
+$ npm run start # default start:dev alternative start:production
 ```
 
-## Quick Usage
 
-```js
-const discordEmoji = require('discord-emoji')
-discordEmoji.nature.dog // => 🐶
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test # default test:dev alternative test:production
 ```
 
-## Examples
 
-You can visit our [GitHub Wiki](https://github.com/amethyst-studio/discord-emoji/wiki) for information in setting up and using this service.
+## Support
 
-If you are ever having any trouble, I would greatly recommend visiting the Wiki or opening a discussion to ask us questions directly. Issues will be converted to discussions if they do not follow the pre-determined issue templates.
+Reach out to us at https://invite-to.amethyst.live
 
-## API Documentation
+General: [mailto://support@mxsrv.amethyst.live](mailto://support@mxsrv.amethyst.live)
 
-You can find our API Auto-Generated Documentation available at our [GitHub Pages](https://amethyst-studio.github.io/discord-emoji/index.html).
+Security: [mailto://support@mxsrv.amethyst.live](mailto://support@mxsrv.amethyst.live)
 
-## Contributing
-
-Pull requests are always welcome for all of our projects.
-If you intend to provide any underlying changes to the API, please open a discussion first so we can collaborate on the changes you intend to integrate to ensure data consistency. Pull Requests may be delayed or rejected if you do not reach out first and create significant changes.
-
-## Code of Conduct
-
-You can find more information on the Code of Conduct by visiting [Contributor Covenant's](https://www.contributor-covenant.org/) Official Website.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+### Authors
+
+- [@xCykrix](https://www.github.com/xCykrix)

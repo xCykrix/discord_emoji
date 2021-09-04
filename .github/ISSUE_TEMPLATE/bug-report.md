@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 **Current Installation:**
  - Device: Desktop or Server
  - OS: `uname -a` or Windows Version if you are 32 or 64 bit OS.
- - Version: `npm list | grep 'discord-emoji'`
+ - Version: `npm list | grep 'k-value'`
 
 **Additional context**
 Add any other context about the problem here.

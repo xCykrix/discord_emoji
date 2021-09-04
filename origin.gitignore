@@ -1,9 +1,4 @@
 
-# MANAGED FILE: PLEASE MAKE MODIFICATIONS TO ./user.gitignore
-### USER GENERATED IGNOER FILE
-
-/scripts/discord_ui/
-
 # Created by https://www.toptal.com/developers/gitignore/api/node,yarn,webstorm+all,visualstudiocode,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,webstorm+all,visualstudiocode,visualstudio
 

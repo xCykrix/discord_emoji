@@ -1,5 +1,4 @@
 const del = require('del')
-const fetch = require('node-fetch')
 const scrape = require('website-scraper')
 
 const fs = require('fs')
@@ -32,7 +31,7 @@ async function parse (minified) {
   const statement = clean.split('\n').filter((v) => { return v.includes('"people":[') })[0]
 
   let json = statement.replace('e.exports = JSON.parse(\'', '')
-  json = json.substr(0, json.length - 2)
+  json = json.substring(0, json.length - 2)
   json = JSON.parse(`${json}`)
 
   return json

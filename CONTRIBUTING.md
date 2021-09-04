@@ -1,14 +1,4 @@
-# WIP - Contributing to the Project
-
-## Installing the Environment
-
-Everything comes pre-packaged with just running `npm install`, which will configure TypeScript, ESLint StandardJS/TS, and other 3rd party development dependencies.
-
-```bash
-git clone https://github.com/amethyst-studio/discord-emoji
-npm install
-npm run runCompiler # Confirm everything is working.
-```
+# Contributing to the Project
 
 ## Our Environment
 
@@ -18,15 +8,17 @@ Firstly being TypeScript, which is the branch of JavaScript we use while writing
 
 Following TypeScript, our next most prominent tool is ESLint, which allows us to strictly maintain the styling and flow of our project. We strictly follow StandardJS/TS to style our project. You can find more on it at [ts-standard on npm](https://www.npmjs.com/package/ts-standard).
 
-Mocha and Chai allow us to execute tests on the code that would be published to npm when we make a release, allowing for 100% certainty that changes will not break the active functionality of the library.
+Mocha and Chai allow us to execute tests on the code that would be published to npm when we make a release, allowing for absolute certainty that changes will not break the active functionality of the library.
+
+How to form your commit messages: https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary
 
 To enforce all of our requirements, we integrate [Husky](https://github.com/typicode/husky) to execute commands on certain Git hooks. To ensure this server side, we integrate with GitHub Workflow Actions to ensure that all of these requirements are followed when submissions are made. Such cases where actions will find an issue is when you do not correctly install the environment and make changes that may not follow our requirements.
 
 ## Creating Issues and Submitting PRs
 
-While not strictly required, we would ask that all contributors please create a issue following their feature they may be working on. This will allow us to keep track of who may be working on what and prevent duplicate PRs from appearing for the same work. These issues can be linked to later PRs and automatically closed when you are merged into the staging branch.
+While not strictly required, we would ask that all contributors create a issues or discussions following their feature(s) they may be working on. This will allow us to keep track of who may be working on certain aspects and prevent duplicate pull requests or overlapping changes by the community. These issues can be linked to pull request(s) and automatically closed when applicable pull request(s) are merged into the staging branch.
 
-When you are ready to submit a PR from your fork, please create a new PR with the template and add any applicable details. We will setup reviews and reach out to you if we have any feedback or questions regarding your changes. When your changes are approved, they will not be immediately released and will be added for the next release cycle of our staging (beta) branches.
+When you are ready to submit a pull request for your changes, please use the provided templates and fill in applicable information. This will allow us to begin the review process and reach out to you if we have any feedback or questions regarding your changes. When your changes are approved, they will not be immediately released and will be added for the next staging release build. Approved changes will fully land in the next stable release build.
 
 ## Code of Conduct
 

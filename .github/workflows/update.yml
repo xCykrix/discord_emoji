@@ -1,14 +1,17 @@
 name: Snapshot Generator
 
 on:
+  push:
+    branches: [main, staging, dev-**]
+  pull_request:
+    branches: [main, staging, dev-**]
   schedule:
     - cron: "0 0 1-31/4 * *"
-  workflow_dispatch:
 
 jobs:
   analysis:
     runs-on: ubuntu-latest
-    name: Build Snapshot
+    name: make _snapshot.json
 
     steps:
       - name: Checkout Latest Files
@@ -19,18 +22,18 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 14
-      - name: Initialize Project
-        run: npm install --legacy-peer-deps
-      - name: Build Project
-        run: npm run runCompiler
-      - name: Generate Snapshot
+      - name: npm install
+        run: npm install
+      - name: npm run build
+        run: npm run build
+      - name: ./scrips/update.js
         run: node ./scripts/update.js
-      - name: Apply Changes to Repository
+      - name: commit snapshot
         uses: EndBug/add-and-commit@v6
         with:
-          author_name: "Samuel J Voeller"
-          author_email: "samuel.voeller@amethyst.live"
-          message: "chore: workflow-build(updater) generate_snapshot"
+          author_name: "Samuel Voeller"
+          author_email: "samuel.voeller@mxsrv.amethyst.live"
+          message: "chore: workflow-build make _snapshot.json"
           add: "_snapshot.json"
           push: "origin main -u --force"
-          token: ${{ secrets.RW_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
