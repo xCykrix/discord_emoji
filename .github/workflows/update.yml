@@ -16,8 +16,6 @@ jobs:
     steps:
       - name: Checkout Latest Files
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Initialize Node.js
         uses: actions/setup-node@v2.1.4
         with:
