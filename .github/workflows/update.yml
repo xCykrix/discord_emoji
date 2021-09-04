@@ -1,12 +1,9 @@
 name: Snapshot Generator
 
 on:
-  push:
-    branches: [main, staging, dev-**]
-  pull_request:
-    branches: [main, staging, dev-**]
   schedule:
     - cron: "0 0 1-31/4 * *"
+  workflow_dispatch:
 
 jobs:
   analysis:
@@ -29,7 +26,7 @@ jobs:
       - name: make _snapshot.json
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           commit-message: "build(ci): make _snapshot.json"
           title: "[Automated] Update _snapshot.json from Discord"
           body: |
