@@ -27,7 +27,7 @@ repository:
 
 labels:
   - name: "Complexity: Critical"
-    color: 000000
+    color: "000000"
   - name: "Complexity: High"
     color: F9D0C4
   - name: "Complexity: Medium"
@@ -35,7 +35,7 @@ labels:
   - name: "Complexity: Low"
     color: D4C5F9
   - name: "Priority: Critical"
-    color: 000000
+    color: "000000"
   - name: "Priority: High"
     color: F9D0C4
   - name: "Priority: Medium"
@@ -49,7 +49,7 @@ labels:
   - name: "State: Conversation"
     color: 27828C
   - name: "State: Blocked"
-    color: 000000
+    color: "000000"
   - name: "State: Postponed"
     color: C5DEF5
   - name: "State: Unassigned"
