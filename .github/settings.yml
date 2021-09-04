@@ -85,7 +85,6 @@ branches:
       required_status_checks:
         strict: true
         contexts: []
-      enforce_admins: true
       required_pull_request_reviews:
         dismiss_stale_reviews: true
         require_code_owner_reviews: true
