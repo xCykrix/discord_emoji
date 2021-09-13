@@ -10,7 +10,6 @@ Near exact emoji name tables for Discord. Allows programmatically including emoj
 ## Installation
 
 ```bash
-$ git clone https://github.com/amethyst-studio/discord-emoji.git # Application
 $ npm install discord-emoji # Library
 ```
 
@@ -35,8 +34,7 @@ Clone the project
 $ git clone https://github.com/amethyst-studio/discord-emoji.git
 $ cd discord-emoji
 $ npm install
-$ npm run build # default build:dev alternative build:production
-$ npm run start # default start:dev alternative start:production [if applicable]
+$ npm run build
 ```
 
 
@@ -45,7 +43,7 @@ $ npm run start # default start:dev alternative start:production [if applicable]
 To run tests, run the following command
 
 ```bash
-$ npm run test # default test:dev alternative test:production
+$ npm run test
 ```
 
 
