@@ -29,43 +29,43 @@ labels:
   - name: "Complexity: Critical"
     color: "000000"
   - name: "Complexity: High"
-    color: F9D0C4
+    color: "F9D0C4"
   - name: "Complexity: Medium"
-    color: FEF2C0
+    color: "FEF2C0"
   - name: "Complexity: Low"
-    color: D4C5F9
+    color: "D4C5F9"
   - name: "Priority: Critical"
     color: "000000"
   - name: "Priority: High"
-    color: F9D0C4
+    color: "F9D0C4"
   - name: "Priority: Medium"
-    color: FEF2C0
+    color: "FEF2C0"
   - name: "Priority: Low"
-    color: D4C5F9
+    color: "D4C5F9"
   - name: "State: Help Wanted"
-    color: 0E8A16
+    color: "0E8A16"
   - name: "State: Work in Progress"
-    color: 5319E7
+    color: "5319E7"
   - name: "State: Conversation"
-    color: 27828C
+    color: "27828C"
   - name: "State: Blocked"
     color: "000000"
   - name: "State: Postponed"
-    color: C5DEF5
+    color: "C5DEF5"
   - name: "State: Unassigned"
-    color: BFDADC
+    color: "BFDADC"
   - name: "Type: Enhancement"
-    color: 1D76DB
+    color: "1D76DB"
   - name: "Type: Bug"
-    color: B60205
+    color: "B60205"
   - name: "Type: Infrastructure"
-    color: FBCA04
+    color: "FBCA04"
   - name: "Type: Dependencies"
-    color: D4C5F9
+    color: "D4C5F9"
   - name: "Meta: Question"
-    color: BFDADC
+    color: "BFDADC"
   - name: "Meta: Duplicate"
-    color: BFDADC
+    color: "BFDADC"
 
 teams:
   - name: core
@@ -84,7 +84,9 @@ branches:
     protection:
       required_status_checks:
         strict: true
-        contexts: []
+        contexts:
+          - NodeJS v14
+          - NodeJS v16
       required_pull_request_reviews:
         dismiss_stale_reviews: true
         require_code_owner_reviews: true

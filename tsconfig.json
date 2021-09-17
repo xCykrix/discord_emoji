@@ -23,6 +23,9 @@
   "include": [
     "./*.ts",
     "./**/*.ts",
-    "./.eslintrc.js",
+    "./.eslintrc.js"
+  ],
+  "exclude": [
+    "./dist/"
   ]
 }
