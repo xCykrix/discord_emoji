@@ -16,7 +16,12 @@
   "engineStrict": true,
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["/dist/", "/package.json", "/README.md", "/LICENSE.md"],
+  "files": [
+    "/dist/",
+    "/package.json",
+    "/README.md",
+    "/LICENSE.md"
+  ],
   "scripts": {
     "prepare": "husky install",
     "prepack": "npm run build:production",
