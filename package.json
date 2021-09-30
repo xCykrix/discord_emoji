@@ -29,7 +29,7 @@
     "test": "mocha './tests/**/*.js'",
     "build": "npx tsc --build && npm run test",
     "upgrade": "npx npm-check-updates -u --target latest --peer && wget https://www.toptal.com/developers/gitignore/api/node,yarn,webstorm+all,visualstudiocode,visualstudio -O ./origin.gitignore && echo '' > .gitignore && echo '# MANAGED FILE: PLEASE MAKE MODIFICATIONS TO ./user.gitignore' >> .gitignore && cat ./user.gitignore >> .gitignore && cat ./origin.gitignore >> .gitignore",
-    "docs": "typedoc --out ./docs/ ./index.ts ./lib/*.ts ./lib/**/*.ts"
+    "docs": "typedoc --out ./docs/ ./index.ts ./lib/ --entryPointStrategy expand"
   },
   "devDependencies": {
     "@types/chai": "^4.2.22",
