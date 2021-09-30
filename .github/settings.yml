@@ -2,7 +2,7 @@
 repository:
   name: discord-emoji
   description: Near exact emoticon name tables for Discord for variable-based insertion of emoticons.
-  homepage: https://invite-to.amethyst.live
+  homepage: https://npmjs.org/discord-emoji
 
   security_and_analysis:
     advanced_security:
