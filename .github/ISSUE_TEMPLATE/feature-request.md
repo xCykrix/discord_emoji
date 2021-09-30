@@ -2,7 +2,7 @@
 name: Feature Request
 about: Suggest new features to this project.
 title: '[FEATURE] Generalized Overview of the Feature Request'
-labels: 'Type: Enhancement, State: Conversation, Status: Unassigned'
+labels: 'Type: Enhancement, State: Conversation, State: Unassigned'
 assignees: ''
 ---
 

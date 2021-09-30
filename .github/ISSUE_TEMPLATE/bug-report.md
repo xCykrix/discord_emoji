@@ -2,7 +2,7 @@
 name: Bug Report
 about: Report an issue with this project.
 title: '[BUG] Generalized Overview of the Report Here'
-labels: 'Type: Bug, State: Conversation, Status: Unassigned'
+labels: 'Type: Bug, State: Conversation, State: Unassigned'
 assignees: ''
 ---
 
@@ -23,9 +23,10 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Current Installation:**
- - Device: Desktop or Server
- - OS: `uname -a` or Windows Version if you are 32 or 64 bit OS.
- - Version: `npm list | grep 'k-value'`
+ - Environment: Desktop or Server
+ - OS: `uname -a` or Windows Version
+ - Architecture: x86 / x64
+ - Version: `npm list | grep 'discord-emoji'`. If using Windows, you may just have to find `discord-emoji` in the output without `| grep 'discord-emoji'`.
 
 **Additional context**
 Add any other context about the problem here.

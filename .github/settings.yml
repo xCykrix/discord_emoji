@@ -1,7 +1,7 @@
 
 repository:
   name: discord-emoji
-  description: Near exact emoji name tables for Discord. Allows programmatically including emojis instead of copying an escaped version.
+  description: Near exact emoticon name tables for Discord for variable-based insertion of emoticons.
   homepage: https://invite-to.amethyst.live
 
   security_and_analysis:

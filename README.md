@@ -51,9 +51,9 @@ $ npm run test
 
 Reach out to us at https://invite-to.amethyst.live
 
-General: [mailto://support@mxsrv.amethyst.live](mailto://support@mxsrv.amethyst.live)
+General: [mailto:support@mxsrv.amethyst.live](mailto:support@mxsrv.amethyst.live)
 
-Security: [mailto://support@mxsrv.amethyst.live](mailto://support@mxsrv.amethyst.live)
+Security: [mailto:samuel.voeller@mxsrv.amethyst.live](mailto:samuel.voeller@mxsrv.amethyst.live)
 
 
 ## License
