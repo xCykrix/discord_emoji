@@ -22,11 +22,12 @@
     "baseUrl": "./",
     "module": "CommonJS",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "types": ["node", "mocha", "chai"],
     "declaration": true,
     "declarationMap": true,
     "downlevelIteration": true,
-    "importHelpers": true,
+    "importHelpers": false,
     "importsNotUsedAsValues": "error",
     "inlineSourceMap": true,
     "inlineSources": true,
@@ -59,6 +60,6 @@
   "typeAcquisition": {
     "enable": true
   },
-  "exclude": ["dist"],
-  "include": ["*.ts", "**/*.ts", ".eslintrc.js"]
+  "exclude": ["dist", "launcher-*.json"],
+  "include": ["*.ts", "**/*.ts", "*.json", "**/*.json"]
 }

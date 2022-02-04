@@ -1,10 +1,10 @@
-name: Build
+name: Matrix Compiler
 
 on:
   push:
-    branches: [main, staging, dev-**]
+    branches: [main, staging]
   pull_request:
-    branches: [main, staging, dev-**]
+    branches: [main, staging]
 
 jobs:
   analysis:
@@ -12,17 +12,28 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        node: ["14", "16"]
-    name: NodeJS v${{ matrix.node }}
-
+        host:
+          # Build on Windows and Ubuntu.
+          - windows-latest
+          - ubuntu-latest
+        node_version:
+          # Support for Active LTS/Current - https://nodejs.org/en/about/releases/
+          - 16
+          - 17
+        architecture:
+          - x64
+    name: Node.js ${{ matrix.architecture }} v${{ matrix.node_version }} with ${{ matrix.host }}
     steps:
+      # Checkout with the .rc module.
       - name: Checkout Latest Files
         uses: actions/checkout@v2
-      - name: Initialize Node.js
-        uses: actions/setup-node@v2.1.2
         with:
-          node-version: ${{ matrix.node }}
-      - name: npm install
-        run: npm install
-      - name: npm run build
-        run: npm run build
+          submodules: true
+      # Initialize Node.js
+      - name: Initialize Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node_version }}
+          architecture: ${{ matrix.architecture }}
+      - run: npm install
+      - run: npm start test

@@ -1,4 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run build
+npm start trunk/check/ci
+npm start trunk/fmt/ci
+npm start build/library
+npm start test

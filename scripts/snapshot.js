@@ -1,22 +1,22 @@
-const del = require('del')
-const scrape = require('website-scraper')
-
-const fs = require('fs')
-const path = require('path')
-
 const { js } = require('js-beautify')
+const { readdirSync, rmSync, readFileSync, writeFileSync } = require('fs')
+const { resolve } = require('path')
 
 /**
  * Sync Discord Files to Disk and locate the emoji table.
  */
 async function process () {
-  await del([path.resolve(__dirname, './discord_ui/')])
-  await scrape({
-    urls: ['https://discord.com/channels/@me/1'],
-    directory: path.resolve(__dirname, './discord_ui/')
+  const scrape = await import('website-scraper')
+  await rmSync(resolve(__dirname, './discord_ui/'), {
+    force: true,
+    recursive: true
   })
-  for (const file of fs.readdirSync(path.resolve(__dirname, './discord_ui/js/'))) {
-    const minified = await fs.readFileSync(path.resolve(__dirname, './discord_ui/js/', file)).toString()
+  await scrape.default({
+    urls: ['https://discord.com/channels/@me/1'],
+    directory: resolve(__dirname, './discord_ui/')
+  })
+  for (const file of readdirSync(resolve(__dirname, './discord_ui/js/'))) {
+    const minified = await readFileSync(resolve(__dirname, './discord_ui/js/', file)).toString()
     if (minified.includes('"people":[')) return minified
   }
 }
@@ -69,7 +69,7 @@ async function format (expanded) {
  * @param {*} tableList Formatted Pretty Emoji List
  */
 async function save (tableList) {
-  await fs.writeFileSync(path.resolve(__dirname, '../_snapshot.json'), JSON.stringify(tableList, undefined, 2))
+  await writeFileSync(resolve(__dirname, '../_snapshot.json'), JSON.stringify(tableList, undefined, 2))
 }
 
 /**
