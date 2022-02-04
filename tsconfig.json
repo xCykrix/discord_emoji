@@ -1,31 +1,64 @@
 {
   "compilerOptions": {
-    "target": "ES2016",
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "types": [
-      "node",
-      "mocha",
-      "chai"
-    ],
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "alwaysStrict": true,
-    "declaration": true,
-    "downlevelIteration": false,
-    "esModuleInterop": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
+    "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "strictNullChecks": true
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "baseUrl": "./",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "types": ["node", "mocha", "chai"],
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "importsNotUsedAsValues": "error",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "newLine": "LF",
+    "noEmitHelpers": false,
+    "noEmitOnError": true,
+    "outDir": "dist",
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "stripInternal": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ES5",
+      "ES2015",
+      "ES2016",
+      "ES2017",
+      "ES2018",
+      "ES2019",
+      "ES2020",
+      "ES2021",
+      "ESNext"
+    ],
+    "target": "ES6",
+    "useDefineForClassFields": true,
+    "composite": true,
+    "pretty": true
   },
-  "include": [
-    "./*.ts",
-    "./**/*.ts",
-    "./.eslintrc.js"
-  ],
-  "exclude": [
-    "./dist/"
-  ]
+  "typeAcquisition": {
+    "enable": true
+  },
+  "exclude": ["dist"],
+  "include": ["*.ts", "**/*.ts", ".eslintrc.js"]
 }

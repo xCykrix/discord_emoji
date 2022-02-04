@@ -1,0 +1,4 @@
+[submodule ".rc"]
+	path = .rc
+	url = git@github.com:amethyst-studio/.rc.git
+	branch = main
