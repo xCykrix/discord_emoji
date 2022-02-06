@@ -81,11 +81,11 @@ This package is officially compatible with Node.js `v16.0.0` or higher, and NPM 
 2. Require or Import the package in the method used by your language. Below are examples of both methods.
 
     ```js
-    const { getCipher, getHasher, getHmac } = require('discord-emoji');
+    const { activity, flags, food, nature, objects, people, symbols, travel } = require('discord-emoji');
     ```
 
     ```ts
-    import { getCipher, getHasher, getHmac } from 'discord-emoji';
+    import { activity, flags, food, nature, objects, people, symbols, travel } from 'discord-emoji';
     ```
 
 ## Usage
