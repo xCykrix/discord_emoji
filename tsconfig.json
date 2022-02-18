@@ -19,7 +19,6 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": true,
-    "baseUrl": "./",
     "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
