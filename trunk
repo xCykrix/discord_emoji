@@ -1,1 +1,7 @@
-.rc/trunk_wrapper.sh
+#!/bin/bash
+
+if [[ -f "./.rc/trunk_launcher.sh" ]]; then
+  bash ./.rc/trunk_launcher.sh "${@}"
+else
+  bash ./trunk_launcher.sh "${@}"
+fi

@@ -1,1 +1,34 @@
-./.rc/script/configuration/.trunk/_/.editorconfig
+# http://editorconfig.org
+root = true
+
+[*]
+indent_style             = space
+indent_size              = 2
+charset                  = utf-8
+end_of_line              = lf
+trim_trailing_whitespace = true
+insert_final_newline     = true
+
+[*.sh]
+shell_variant      = bash
+binary_next_line   = true
+switch_case_indent = true
+space_redirects    = true
+keep_padding       = true
+function_next_line = true
+never_split        = true
+
+[.github/**]
+ignore = true
+
+[.rc/**]
+ignore = true
+
+[.git/**]
+ignore = true
+
+[.vscode/**]
+ignore = true
+
+[node_modules/**]
+ignore = true

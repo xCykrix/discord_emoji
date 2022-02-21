@@ -1,1 +1,11 @@
-.rc/script/configuration/.trunk/_/.eslintignore
+# Disallow node_modules.
+node_modules
+
+# Ignore the following files.
+
+# Disallow distribution build artifacts.
+artifacts
+build
+dist
+distribution
+make

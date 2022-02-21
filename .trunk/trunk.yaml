@@ -1,1 +1,37 @@
-../.rc/script/configuration/.trunk/trunk.yaml
+version: 0.1
+cli:
+  version: 0.7.0-beta
+lint:
+  enabled:
+    - gitleaks@8.2.7
+    - shellcheck@0.8.0
+    - shfmt@3.4.0
+    - hadolint@2.8.0
+    - actionlint@1.6.8
+    - eslint@8.9.0
+    - semgrep@0.82.0
+    - markdownlint@0.31.1
+  linters:
+    - name: semgrep
+      environment:
+        - name: PATH
+          list:
+            - ${path}
+  ignore:
+    - linters: [ALL]
+      paths:
+        - .git/**
+        - .github/**
+        - .husky/**
+        - .rc/**
+        - .trunk/**
+        - docs/**
+        - trunk*
+
+        # Internal to .rc folder.
+        - script/configuration/.trunk/_/.eslintrc*.js
+        - trunk_launcher*.sh
+    - linters: [eslint]
+      paths:
+        - "**/*.js"
+        - "*.js"

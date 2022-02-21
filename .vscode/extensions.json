@@ -1,1 +1,29 @@
-../.rc/script/configuration/.vscode/extensions.json
+{
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    // Remote Installed (Workspace)
+    "mads-hartmann.bash-ide-vscode",
+    "matthewpi.caddyfile-support",
+    "editorconfig.editorconfig",
+    "github.copilot",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost",
+    "ms-vscode.vscode-typescript-next",
+    "msyesyan.json-sorter",
+    "ms-vscode.typescript-javascript-grammar",
+    "ms-vsliveshare.vsliveshare",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "quicktype.quicktype",
+    "christian-kohler.path-intellisense",
+    "trunk.io",
+    "visualstudioexptteam.vscodeintellicode",
+    "pascalreitermann93.vscode-yaml-sort",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-ssh-edit",
+  ],
+  // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+  "unwantedRecommendations": [
+    "dbaeumer.vscode-eslint"
+  ]
+}

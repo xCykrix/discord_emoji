@@ -1,1 +1,28 @@
-.rc/script/configuration/.trunk/_/launcher-config.json
+{
+  "scripts": {
+    "gitignore/upgrade": [
+      "echo Updating .gitignore to latest version...",
+      "wget https://www.toptal.com/developers/gitignore/api/node,yarn,webstorm+all,visualstudiocode,visualstudio -O ./.R_GIT_IGNORE > /dev/null 2>&1",
+      "touch .gitignore",
+      "echo '\n\n# MANAGED FILE: PLEASE MAKE MODIFICATIONS TO ./project.gitignore INSTEAD\n\n\n\n\n\n' > .gitignore",
+      "cat ./project.gitignore >> .gitignore",
+      "cat ./.R_GIT_IGNORE >> .gitignore",
+      "rm -f ./.R_GIT_IGNORE"
+    ],
+    "package/upgrade": [
+      "echo Scanning for package updates...",
+      "npx --yes=true npm-check-updates -u --target latest --peer"
+    ],
+    "trunk/upgrade": "./trunk upgrade && ./trunk check upgrade",
+
+    "trunk/check": "./trunk check --all --fix",
+    "trunk/check/ci": "./trunk check --all --no-fix",
+    "trunk/fmt": "./trunk fmt --all",
+    "trunk/fmt/ci": "./trunk fmt --all --no-fix",
+
+    "build/library": "tsc --project ./tsconfig.json",
+    "build/service": "tsc --project ./tsconfig.json --noEmit",
+    "test": "mocha -r ts-node/register './tests/**/*.test.*'",
+    "docs": "typedoc --out ./docs/ ./index.ts ./lib/ --entryPointStrategy expand"
+  }
+}

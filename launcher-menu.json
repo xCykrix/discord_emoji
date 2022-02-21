@@ -1,1 +1,25 @@
-.rc/script/configuration/.trunk/_/launcher-menu.json
+{
+  "menu": {
+    "description": "the script category you wish to select from.",
+    "update:Run update tasks for the project.": {
+      "description": "the tooling you wish to update.",
+      "gitignore/upgrade: Update gitignore.": "gitignore/upgrade",
+      "package/upgrade: Update package.json dependencies.": "package/upgrade",
+      "trunk/upgrade: Update trunk runtime.": "trunk/upgrade"
+    },
+    "trunk:Run linter tasks for the project.": {
+      "description": "the trunk command to use.",
+      "trunk/check:Run linter and fix issues automatically.": "trunk/check",
+      "trunk/fmt:Run linter and format with Prettier.": "trunk/fmt"
+    },
+    "build:Run build and tooling tasks for the project.": {
+      "build:Run the TypeScript compiler.": {
+        "description": "the build method to use.",
+        "build/library:Build as a published library.": "build/library",
+        "build/service:Build as a standalone application.": "build/service"
+      },
+      "test:Validate the application with tests.": "test",
+      "docs:Generate the documentation from in-line context.": "docs"
+    }
+  }
+}
