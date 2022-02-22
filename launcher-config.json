@@ -22,7 +22,7 @@
 
     "build/library": "tsc --project ./tsconfig.json",
     "build/service": "tsc --project ./tsconfig.json --noEmit",
-    "test": "mocha -r ts-node/register './tests/**/*.test.*'",
+    "test": "mocha -r ts-node/register './**/*.test.*'",
     "docs": "typedoc --out ./docs/ ./index.ts ./lib/ --entryPointStrategy expand"
   }
 }
