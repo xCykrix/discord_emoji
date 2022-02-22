@@ -1,5 +1,3 @@
-import * as snapshot from './_snapshot.json';
-
-export = {
-  ...snapshot,
-};
+export {
+  activity, flags, food, nature, objects, people, symbols, travel,
+} from './_snapshot.json';
