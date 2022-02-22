@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["dist", "launcher-*.json", "*.test.ts", "**/*.test.ts"]
+}

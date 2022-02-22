@@ -20,8 +20,8 @@
     "trunk/fmt": "./trunk fmt --all",
     "trunk/fmt/ci": "./trunk fmt --all --no-fix",
 
-    "build/library": "tsc --project ./tsconfig.json",
-    "build/service": "tsc --project ./tsconfig.json --noEmit",
+    "build/library": "tsc --project ./dist.tsconfig.json",
+    "build/service": "tsc --project ./dist.tsconfig.json --noEmit",
     "test": "mocha -r ts-node/register './**/*.test.*'",
     "docs": "typedoc --out ./docs/ ./index.ts ./lib/ --entryPointStrategy expand"
   }

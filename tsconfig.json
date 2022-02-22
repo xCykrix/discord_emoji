@@ -59,6 +59,6 @@
   "typeAcquisition": {
     "enable": true
   },
-  "exclude": ["dist", "launcher-*.json", "*.test.ts", "**/*.test.ts"],
+  "exclude": ["dist", "launcher-*.json"],
   "include": ["*.ts", "**/*.ts", "*.json", "**/*.json"]
 }
