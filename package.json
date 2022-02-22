@@ -30,9 +30,8 @@
   "scripts": {
     "start": "launch",
     "detect-dist": "node -e \"const dist = require('fs').existsSync('dist'); console.info('Distribution:', (dist ? 'Available. Using distribution.' : 'Not available. Building from source.')); if (dist) process.exit(0); process.exit(1);\"",
-    "prepare": "husky install && npm run detect-dist || npm exec --package=typescript -c 'tsc --project ./tsconfig.json'"
+    "prepare": "husky install && npm run detect-dist || npm exec --package=typescript -c 'tsc --project ./dist.tsconfig.json'"
   },
-  "root": true,
   "dependencies": {
     "@types/chai": "^4.3.0",
     "@types/js-beautify": "^1.13.3",
