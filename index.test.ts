@@ -9,7 +9,7 @@ import * as dismoji from './index';
 const location = `./${relative(process.cwd(), __filename.replace('.test', ''))}`;
 
 // Test 1: Validate integrity of the _snapshot.json exported information.
-describe(`Side-by-side ${location}`, function () {
+describe(`Side-by-side - Test 1 - Functional Integrity - '${location}'`, function () {
   it('should parse activity', async function () {
     expect(dismoji.activity.soccer).to.equal('⚽');
   });
