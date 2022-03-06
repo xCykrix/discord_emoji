@@ -68,7 +68,7 @@ This package is officially compatible with Node.js `v16.0.0` or higher, and NPM 
 
 ### Installation
 
-1. Install the package with NPM using one of the two methods listed below.
+1. Install the package via `npm` or even directly from GitHub.
 
     ```bash
     # Install from npmjs.org.
