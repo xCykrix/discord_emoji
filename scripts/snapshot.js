@@ -5,7 +5,8 @@ const { resolve } = require('path')
 /**
  * Sync Discord Files to Disk and locate the emoji table.
  */
-async function process () {
+async function process() {
+  console.info('Attempting to fetch Discord UI...')
   const scrape = await import('website-scraper')
   await rmSync(resolve(__dirname, './discord_ui/'), {
     force: true,
@@ -13,12 +14,22 @@ async function process () {
   })
   await scrape.default({
     urls: ['https://discord.com/channels/@me/1'],
-    directory: resolve(__dirname, './discord_ui/')
+    directory: resolve(__dirname, './discord_ui/'),
+    sources: [
+      {selector: 'script', attr: 'src'}
+    ]
   })
+  console.info('Fetch of the UI has finished.')
+  console.info('Attempting to locate emoji js index...')
   for (const file of readdirSync(resolve(__dirname, './discord_ui/js/'))) {
     const minified = await readFileSync(resolve(__dirname, './discord_ui/js/', file)).toString()
-    if (minified.includes('"people":[')) return minified
+    if (minified.includes('"people":[')) {
+      console.info('Found emoji js index at', file)
+      return minified
+    }
   }
+  console.info('Failed to locate the emoji js index.')
+  throw new Error('build failed')
 }
 
 /**
@@ -26,7 +37,10 @@ async function process () {
  *
  * @param {*} minified Minified JS Assets
  */
-async function parse (minified) {
+async function parse(minified) {
+  console.info('Attempting to isolate the JSON from the minified JS.')
+
+  // Isolate Logic
   const clean = await js(minified, { indent_size: 2, space_in_empty_paren: true })
   const statement = clean.split('\n').filter((v) => { return v.includes('"people":[') })[0]
 
@@ -34,6 +48,7 @@ async function parse (minified) {
   json = json.substring(0, json.length - 2)
   json = JSON.parse(`${json}`)
 
+  console.info('JSON isolation from the JS has finished.')
   return json
 }
 
@@ -45,6 +60,9 @@ async function parse (minified) {
 async function format (expanded) {
   const state = {}
 
+  console.info('Attempting to expand the emoji table.')
+
+  // Expansion Logic
   for (const key of Object.keys(expanded)) {
     state[key] = {}
     for (const emoji of expanded[key]) {
@@ -61,6 +79,7 @@ async function format (expanded) {
     }
   }
 
+  console.info('Expansion of emoji has been finished.')
   return state
 }
 
