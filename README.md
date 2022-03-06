@@ -90,7 +90,7 @@ This package is officially compatible with Node.js `v16.0.0` or higher, and NPM 
 
 ## Usage
 
-_For examples of usage, please refer to the [Documentation](https://amethyst-studio.github.io/discord-emoji/index.html) or [GitHub Wiki](https://github.com/amethyst-studio/discord-emoji/wiki)_.
+For examples of usage, please refer to the [Documentation](https://amethyst-studio.github.io/discord-emoji/index.html) or [GitHub Wiki](https://github.com/amethyst-studio/discord-emoji/wiki).
 
 If you need more assistance, please open a [Discussion](https://github.com/amethyst-studio/discord-emoji/discussions) to chat with us or join our [Community Discord Server](https://invite-to.amethyst.live) for real-time support.
 
@@ -131,7 +131,6 @@ Distributed under the MIT License. See [LICENSE](https://github.com/amethyst-stu
 
 ## Authors
 
-<!-- trunk-ignore(markdownlint/MD049) -->
 * **Samuel Voeller** - *Organization Owner* - [Samuel Voeller](https://github.com/xCykrix) - Initial Champion / Planner
 
 ## Acknowledgements
