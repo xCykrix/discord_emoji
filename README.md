@@ -8,7 +8,7 @@
     <img src="https://github.com/amethyst-studio/.github/blob/main/asset/icon_trans_512x512.png?raw=true" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Discord-Emoji</h3>
+  <h3 align="center">Discord Emoji</h3>
 
   <p align="center">
     Near exact emoticon name tables for Discord for variable-based insertion of emoticons.
