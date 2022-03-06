@@ -48,13 +48,13 @@ Join our [Community Discord Server](https://invite-to.amethyst.live) for real-ti
 
 ## Built With
 
-The latest and greatest up-to-date technologies allow us to ensure that your project flows unhindered by upstream dependencies. With full strict testing protocol and release cycles, you can entrust your reliance on our technology stacks.
+The latest and greatest up-to-date technologies allow us to ensure that your project flows unhindered by upstream dependencies. With full strict testing protocol and release cycles, you can entrust your reliance on our technology stacks. All projects utilize the MERN stack and TypeScript where possible.
 
-* [TypeScript for Developing](https://www.typescriptlang.org)
-* [Node.js for Running](https://nodejs.org)
-* [NPM for Publishing](https://npmjs.org)
-* [Trunk for Linting](https://trunk.io)
-* [Airbnb for Styling](https://github.com/iamturns/eslint-config-airbnb-typescript)
+* [TypeScript for Development](https://www.typescriptlang.org)
+* [Node.js for the Runtime](https://nodejs.org)
+* [NPM for Publishing Libraries](https://npmjs.org)
+* [Trunk for Linting and Style Enforcement](https://trunk.io)
+* [Airbnb for Styling Guides](https://github.com/iamturns/eslint-config-airbnb-typescript)
 
 ## Getting Started
 
@@ -64,7 +64,7 @@ Getting started with any of our libraries is extremely easy! Just download the l
 
 You'll obviously need the starting components of your project. This guide assumes that you already have an underlying project with Node.js installed and npm ready to use.
 
-This package is officially compatible with Node.js `v16.0.0` or higher, and NPM `v7.24.2` or higher. Earlier versions of each may work, but are not officially supported and will not be delved into deeply for support should issues arise.
+This package is officially compatible with Node.js `v16.0.0` or higher, and NPM `v7.24.2` or higher. Earlier versions of each may work, and likely do, but are not officially supported and will not be delved into deeply for support should issues arise. We attempt to leverage new technologies within Node.js and JavaScript where it is optimal, so backwards compatability is not always possible.
 
 ### Installation
 
@@ -75,10 +75,10 @@ This package is officially compatible with Node.js `v16.0.0` or higher, and NPM 
     > npm install discord-emoji
 
     # Install from github.com and build from source. This method allows you to target commits, which is recommended for production pinning.
-    > npm install git+https://github.com/amethyst-studio/discord-emoji
+    > npm install git+https://github.com/amethyst-studio/discord-emoji#main # You should probably specify a commit hash instead of #main for production.
     ```
 
-2. Require or Import the package in the method used by your language. Below are examples of both methods.
+2. `require` or `import` the package in the method used by your project. Below are examples of both methods.
 
     ```js
     const { activity, flags, food, nature, objects, people, symbols, travel } = require('discord-emoji');
