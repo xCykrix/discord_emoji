@@ -42,7 +42,7 @@
 
 ## About The Project
 
-Near exact emoticon name tables for Discord for variable-based insertion of emoticons.
+A near exact emoji tables of Discord for string-based insertion of emotes without having to escape Unicode.
 
 Join our [Community Discord Server](https://invite-to.amethyst.live) for real-time support and developer feedback.
 
