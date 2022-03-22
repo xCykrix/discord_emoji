@@ -1,5 +1,0 @@
-enable=all
-source-path=SCRIPTDIR
-disable=SC1090
-disable=SC1091
-disable=SC2154

@@ -1,4 +1,4 @@
-name: Matrix Compiler
+name: MatrixDeno
 
 on:
   push:
@@ -7,33 +7,35 @@ on:
     branches: [main, staging]
 
 jobs:
-  analysis:
+  validate:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
       matrix:
         host:
-          # Build on Windows and Ubuntu.
-          - windows-latest
+          # Build on Ubuntu.
           - ubuntu-latest
-        node_version:
-          # Support for Active LTS/Current - https://nodejs.org/en/about/releases/
-          - 16
-          - 17
-        architecture:
-          - x64
-    name: Node.js ${{ matrix.architecture }} v${{ matrix.node_version }} with ${{ matrix.host }}
+        deno_version:
+        # Latest Stable for Major
+        - vx.x.x
+        # 1.x Stable Major
+        - v1.x
+        # Canary
+        - canary
+
+    name: Deno v${{ matrix.deno_version }} with ${{ matrix.host }}
     steps:
       # Checkout with the .rc module.
       - name: Checkout Latest Files
         uses: actions/checkout@v2
         with:
           submodules: true
-      # Initialize Node.js
-      - name: Initialize Node.js
-        uses: actions/setup-node@v2
+      # Initialize Deno
+      - name: Initialize Deno
+        uses: denoland/setup-deno@v1
         with:
-          node-version: ${{ matrix.node_version }}
-          architecture: ${{ matrix.architecture }}
-      - run: npm install
-      - run: npm start test
+          deno-version: ${{ matrix.deno_version }}
+      - run: deno task lint
+      - run: deno task fmt
+      - run: deno task test
+      - run: deno task build

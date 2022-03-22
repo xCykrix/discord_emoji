@@ -1,140 +1,152 @@
-<!-- trunk-ignore-all(markdownlint/MD013) -->
-<!-- trunk-ignore-all(markdownlint/MD033) -->
+# discord-emoji
 
-<!-- trunk-ignore(markdownlint/MD041) -->
-<br/>
-<p align="center">
-  <a href="https://github.com/amethyst-studio/discord-emoji">
-    <img src="https://github.com/amethyst-studio/.github/blob/main/asset/icon_trans_512x512.png?raw=true" alt="Logo" width="80" height="80">
-  </a>
+Library for Deno. A near exact emoji tables of Discord for
+string-based insertion of emotes without having to escape
+Unicode.
 
-  <h3 align="center">Discord Emoji</h3>
+**Support and Tooling**
 
-  <p align="center">
-    Near exact emoticon name tables for Discord for variable-based insertion of emoticons.
-    <br/>
-    <br/>
-    <a href="https://github.com/amethyst-studio/discord-emoji/wiki"><strong>Explore our Documentation »</strong></a>
-    <br/>
-    <br/>
-    <a href="https://github.com/amethyst-studio/discord-emoji/issues">Report Bug</a>
-    .
-    <a href="https://github.com/amethyst-studio/discord-emoji/issues">Request Feature</a>
-  </p>
-</p>
+Visit our [GitHub Wiki](/wiki) or
+[Deno's Dynamic Documentation](https://doc.deno.land/https://deno.land/x/discord-emoji/mod.ts)
+for assistance with using this tool.
 
-![Contributors](https://img.shields.io/github/contributors/amethyst-studio/discord-emoji?color=dark-green) ![Forks](https://img.shields.io/github/forks/amethyst-studio/discord-emoji?style=social) ![Stargazers](https://img.shields.io/github/stars/amethyst-studio/discord-emoji?style=social) ![Issues](https://img.shields.io/github/issues/amethyst-studio/discord-emoji) ![License](https://img.shields.io/github/license/amethyst-studio/discord-emoji)
-
-<!-- trunk-ignore(markdownlint/MD002) -->
-## Table Of Contents
-
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
-
-## About The Project
-
-A near exact emoji tables of Discord for string-based insertion of emotes without having to escape Unicode.
-
-Join our [Community Discord Server](https://invite-to.amethyst.live) for real-time support and developer feedback.
+Join the [Amethyst Discord](https://invite-to.amethyst.live/)
+for real-time assistance and to report issues.
 
 ## Built With
 
-The latest and greatest up-to-date technologies allow us to ensure that your project flows unhindered by upstream dependencies. With full strict testing protocol and release cycles, you can entrust your reliance on our technology stacks. All projects utilize the MERN stack and TypeScript where possible.
+We strive to use the latest and greated up-to-date technologies.
+Our goal is to allow project's using our tools and libraries to
+flow seemlessly and unhindered by their upstream dependencies
+(our tools). With strict testing protocols and release cycles,
+you can entrust your reliance on our technology stacks.
 
-* [TypeScript for Development](https://www.typescriptlang.org)
-* [Node.js for the Runtime](https://nodejs.org)
-* [NPM for Publishing Libraries](https://npmjs.org)
-* [Trunk for Linting and Style Enforcement](https://trunk.io)
-* [Airbnb for Styling Guides](https://github.com/iamturns/eslint-config-airbnb-typescript)
+Generally speaking, all of our tooling and applications follow
+the same stack:
+
+- [TypeScript for Development](https://www.typescriptlang.org/)
+- [Deno for the Runtime](https://deno.land/)
+- [deno.land /x/ for Publishing Releases](https://deno.land/x/)
+- [githooked for Linting and Style Enforcement](https://deno.land/x/githooked)
+
+With these as our backend technologies:
+
+- [MongoDB](https://www.mongodb.com/) for all database storage.
+- [Oak](https://deno.land/x/oak/) for API and frontend hosting.
+- [Deno](https://deno.land/) for all server-side activities.
 
 ## Getting Started
 
-Getting started with any of our libraries is extremely easy! Just download the library from npm or even build it from source right with npm. You just plug it in and get to work.
+Getting started is as simple as leveraging your respective
+platform's import, Node.js require, or simply running a command
+in the terminal.
 
 ### Prerequisites
 
-You'll obviously need the starting components of your project. This guide assumes that you already have an underlying project with Node.js installed and npm ready to use.
+You'll obviously need the starting components of your project.
+This guide assumes that you already have an underlying project
+with Deno and `deno` installed and ready to use. Optionally, you
+can use Node.js with this specific distributed package.
 
-This package is officially compatible with Node.js `v16.0.0` or higher, and NPM `v7.24.2` or higher. Earlier versions of each may work, and likely do, but are not officially supported and will not be delved into deeply for support should issues arise. We attempt to leverage new technologies within Node.js and JavaScript where it is optimal, so backwards compatability is not always possible.
+This project is officially compatible with Deno `v1.20.1` or
+higher. Earlier versions of Deno may work, and likely do, but
+are not officially supported and will not be delved into deeply
+for support should issues arise. We attempt to leverage new
+technologies within Deno and JavaScript where it is optimal, so
+backwards compatability is not always possible.
 
 ### Installation
 
-1. Install the package via `npm` or even directly from GitHub.
+1. Install or import the tool using the method respective to
+   your language selected.
 
-    ```bash
-    # Install from npmjs.org.
-    > npm install discord-emoji
+   ```bash
+   # Node.js NPM
+   > npm install discord-emoji
+   ```
 
-    # Install from github.com and build from source. This method allows you to target commits, which is recommended for production pinning.
-    > npm install git+https://github.com/amethyst-studio/discord-emoji#main # You should probably specify a commit hash instead of #main for production.
-    ```
+   ```js
+   // Import with Node.js JavaScript.
+   const dismoji = require('discord-emoji');
+   ```
 
-2. `require` or `import` the package in the method used by your project. Below are examples of both methods.
+   ```ts
+   // Import with Node.js TypeScript.
+   import * as dismoji from 'discord-emoji';
 
-    ```js
-    const { activity, flags, food, nature, objects, people, symbols, travel } = require('discord-emoji');
-    ```
-
-    ```ts
-    import { activity, flags, food, nature, objects, people, symbols, travel } from 'discord-emoji';
-    ```
+   // Import with Deno via URL.
+   import * as dismoji from 'https://deno.land/x/discord-emoji/mod.ts'; // I would recommend you pin the expected version!
+   ```
 
 ## Usage
 
-For examples of usage, please refer to the [Documentation](https://amethyst-studio.github.io/discord-emoji/index.html) or [GitHub Wiki](https://github.com/amethyst-studio/discord-emoji/wiki).
-
-If you need more assistance, please open a [Discussion](https://github.com/amethyst-studio/discord-emoji/discussions) to chat with us or join our [Community Discord Server](https://invite-to.amethyst.live) for real-time support.
+Visit our [GitHub Wiki](/wiki) or
+[Deno's Dynamic Documentation](https://doc.deno.land/https://deno.land/x/discord-emoji/mod.ts)
+for assistance with this tooling.
 
 ## Roadmap
 
-See the [open issues](https://github.com/amethyst-studio/discord-emoji/issues) for a list of proposed features (and known issues).
+See the [Open Issues](/issues) for a list of proposed features
+and known issues.
 
 ## Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are absolutely appreciated.
+Contributions are what make the open-source community such an
+amazing place to learn, inspire, and create. Any contributions
+you make are absolutely appreciated.
 
-If you have suggestions for adding or removing from the project, please open a discussion with us first to ensure the scope of the project is upheld. If you want to work on an issue, look for the "State: Help Wanted" label and leave a comment saying you are going to try and take it on!
+If you have suggestions for adding or removing from the project,
+please open a discussion with us first to ensure the scope of
+the project is upheld. If you want to work on an issue, look for
+the "State: Help Wanted" label and leave a comment saying you
+are going to try and take it on!
 
 Some tips for the smooth flow of contribution:
 
-1. Take a look at our [Code of Conduct](https://github.com/amethyst-studio/.github/blob/main/.github/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/amethyst-studio/github/blob/main/.github/CONTRIBUTING.md) before starting to make your contributions. This will help smooth the workflow and adjustments needed to submitted contributions.
-2. Please make sure you check your spelling and grammar and ensure that your code is clean and formatted to the project standard (Airbnb).
-3. Ensure that you create an individual pull request for each suggestion. Lumping large changes together will require you to rework them into individual changes.
+1. Take a look at our
+   [Code of Conduct](https://github.com/amethyst-studio/.github/blob/main/.github/CODE_OF_CONDUCT.md)
+   and
+   [Contributing Guidelines](https://github.com/amethyst-studio/github/blob/main/.github/CONTRIBUTING.md)
+   before starting to make your contributions. This will help
+   smooth the workflow and adjustments needed to submitted
+   contributions.
+2. Please make sure you check your spelling and grammar and
+   ensure that your code is clean and formatted to the project
+   standard (Deno's built-in fmt).
+3. Ensure that you create an individual pull request for each
+   suggestion. Lumping large changes together will require you
+   to rework them into individual changes.
 
 ### Creating A Pull Request
 
 1. Create a fork of the project.
-2. Check into your feature, fix, or refactor branch. The `/issue_id` is optional if no issue is related to this branch's work.
-    1. `git checkout -b feat/username/issue_id`
-    2. `git checkout -b fix/username/issue_id`
-    3. `git checkout -b refactor/username/issue_id`
-3. Commit your changes incrementally, or as a single commit. Incremental commits are preferred for reviewability.
-    1. `git commit -m "feat: some new feature"`
-    2. `git commit -m "fix: fixed some issue"`
+2. Check into your feature, fix, or refactor branch. The
+   `/issue_id` is optional if no issue is related to this
+   branch's work.
+   1. `git checkout -b feat/username/issue_id`
+   2. `git checkout -b fix/username/issue_id`
+   3. `git checkout -b refactor/username/issue_id`
+3. Commit your changes incrementally, or as a single commit.
+   Incremental commits are preferred for reviewability.
+   1. `git commit -m "feat: some new feature"`
+   2. `git commit -m "fix: fixed some issue"`
 4. Push to the branch you are working in.
-    1. `git push origin <branch_name_from_above>`
+   1. `git push origin <branch_name_from_above>`
 
-Finally, open a pull request and fill out the supplied template. After that, one of our contributors will review or approve your changes. Following that, your contribution will land in a later commit once a release window is ready. Usually, this is within 5 days of the contribution being officially accepted.
+Finally, open a pull request and fill out the supplied template.
+After that, one of our contributors will review or approve your
+changes. Following that, your contribution will land in a later
+commit once a release window is ready. Usually, this is within 5
+days of the contribution being officially accepted.
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/amethyst-studio/discord-emoji/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See
+[LICENSE](https://github.com/amethyst-studio/discord-emoji/blob/main/LICENSE)
+for more information.
 
 ## Authors
 
-* **Samuel Voeller** - *Organization Owner* - [Samuel Voeller](https://github.com/xCykrix) - Initial Champion / Planner
-
-## Acknowledgements
-
-* [ShaanCoding - README.md](https://github.com/ShaanCoding/)
-* [Othneil Drew - README.md](https://github.com/othneildrew/Best-README-Template)
-* [Shields.io - Badges](https://shields.io/)
+- **Samuel Voeller** - _Organization Owner_ -
+  [Samuel Voeller](https://github.com/xCykrix) - Initial
+  Champion / Planner

@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# Configure the hook with these options.
+HOOK_DEBUG=0          # Set to 1 to enable debug mode. This will print additional output.
+HOOK_DISABLE_NOTICE=0 # Set to 1 to disable the notice when the hook exits with an error code.
+
+# Import the git-hooked wrapper to prepare the env and execute the script below.
+. "$(dirname "$0")/_util/git-hooked.sh"
+
+# Your script begins here.
+# The last command to run, or explicit "exit" commands, will determine the status code to Git.
+
+# From: https://dev.to/craicoverflow/enforcing-conventional-commits-using-git-hooks-1o5p
+# Build the Regular Expression Options.
+types="build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test"
+keyword="close|closes|closed|fix|fixes|fixed|resolve|resolves|resolved"
+scope_minlen=1
+scope_maxlen=16
+scope_regexp="[a-z0-9_.-]{${scope_minlen},${scope_maxlen}}"
+subject_minlen=4
+subject_maxlen=120
+subject_regexp="[a-z0-9_. -]{${subject_minlen},${subject_maxlen}}"
+
+# Build the Regular Expression String.
+regexp="^(revert: )?(${types})(\(${scope_regexp}\))?!?: ${subject_regexp}[^.]{1,}$"
+
+# Validate the commit message.
+if [[ ! "$(head -1 $1)" =~ ${regexp} ]]; then
+  # Print the hook error message.
+  echo
+  echo "The commit message was not formatted correctly. Rejecting the commit request."
+  echo " - https://www.conventionalcommits.org/en/v1.0.0/"
+  echo " - https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional"
+  echo
+  echo " Having trouble with the format? Just not sure of how to commit correctly? https://commitlint.io/"
+  echo " Something weird happening? Use https://regexr.com/ with the following expression to validate your commit."
+  echo "  - Expression: /${regexp}/"
+  echo
+  exit 1
+fi
+
+# Print the hook success message.
+echo "The commit message has validated successfully. Approving the commit request."
+exit 0
