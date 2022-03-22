@@ -75,7 +75,7 @@ backwards compatability is not always possible.
    import * as dismoji from 'discord-emoji';
 
    // Import with Deno via URL.
-   import * as dismoji from 'https://deno.land/x/discord-emoji/mod.ts'; // I would recommend you pin the expected version!
+   import * as dismoji from 'https://deno.land/x/discord_emoji/mod.ts'; // I would recommend you pin the expected version!
    ```
 
 ## Usage
