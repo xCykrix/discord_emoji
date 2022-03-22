@@ -21,10 +21,10 @@ await build({
     author:
       'Samuel Voeller <samuel.voeller@amethyst.live> (https://invite-to.amethyst.live)',
     homepage:
-      'https://github.com/amethyst-studio/discord-emoji',
+      'https://github.com/amethyst-studio/discord_emoji',
     repository: {
       type: 'git',
-      url: 'git@github.com/amethyst-studio/discord-emoji.git',
+      url: 'git@github.com/amethyst-studio/discord_emoji.git',
     },
   },
 });

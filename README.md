@@ -7,7 +7,7 @@ Unicode.
 **Support and Tooling**
 
 Visit our [GitHub Wiki](/wiki) or
-[Deno's Dynamic Documentation](https://doc.deno.land/https://deno.land/x/discord-emoji/mod.ts)
+[Deno's Dynamic Documentation](https://doc.deno.land/https://deno.land/x/discord_emoji/mod.ts)
 for assistance with using this tool.
 
 Join the [Amethyst Discord](https://invite-to.amethyst.live/)
@@ -81,7 +81,7 @@ backwards compatability is not always possible.
 ## Usage
 
 Visit our [GitHub Wiki](/wiki) or
-[Deno's Dynamic Documentation](https://doc.deno.land/https://deno.land/x/discord-emoji/mod.ts)
+[Deno's Dynamic Documentation](https://doc.deno.land/https://deno.land/x/discord_emoji/mod.ts)
 for assistance with this tooling.
 
 ## Roadmap
@@ -142,7 +142,7 @@ days of the contribution being officially accepted.
 ## License
 
 Distributed under the MIT License. See
-[LICENSE](https://github.com/amethyst-studio/discord-emoji/blob/main/LICENSE)
+[LICENSE](https://github.com/amethyst-studio/discord_emoji/blob/main/LICENSE)
 for more information.
 
 ## Authors
