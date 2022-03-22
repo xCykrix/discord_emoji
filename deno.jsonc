@@ -10,7 +10,7 @@ The official configuration file used by Amethyst Studio for all Deno projects.
     "build": "deno cache --no-check=remote --reload ./scripts/build-mod.ts && deno run --allow-run=deno --allow-net --allow-write=./mod.ts ./scripts/build-mod.ts",
     "test": "deno test --no-check=remote --config deno.jsonc",
     // Spec Tasks
-    "cross-build": "deno cache --no-check=remote --reload ./scripts/build-npm.ts && deno run -A ./scripts/build-npm.ts"
+    "dnt": "deno cache --no-check=remote --reload ./scripts/build-npm.ts && deno run -A ./scripts/build-npm.ts"
   },
   "compilerOptions": {
     "allowJs": false,
