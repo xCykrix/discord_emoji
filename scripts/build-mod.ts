@@ -8,6 +8,7 @@ interface IndividualEmojiIndex {
   [key: string]: {
     names: string[];
     surrogates: string;
+    diversityChildren?: IndividualEmojiIndex;
   };
 }
 
@@ -97,6 +98,13 @@ for (const k of Object.keys(result)) {
   for (const i of Object.values(result[k]!)) {
     for (const n of i.names) {
       scope.push({ name: n, value: i.surrogates });
+    }
+    if (i.diversityChildren !== undefined) {
+      for (const d of Object.values(i.diversityChildren!)) {
+        for (const n of d.names) {
+          scope.push({ name: n, value: d.surrogates });
+        }
+      }
     }
   }
 

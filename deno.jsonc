@@ -5,10 +5,10 @@ The official configuration file used by Amethyst Studio for all Deno projects.
   "tasks": {
     "initialize": "deno install -f --no-check=remote --allow-run=deno,git --allow-read=.git,.git-hooks --allow-write=.git-hooks https://deno.land/x/githooked/mod.ts && githooked install",
     "upgrade": "deno cache --no-check=remote --reload ./mod.ts",
-    "lint": "deno lint --config deno.jsonc",
-    "fmt": "deno fmt --check --config deno.jsonc",
+    "lint": "deno lint --ignore=build-for-npm --config deno.jsonc",
+    "fmt": "deno fmt --check --ignore=build-for-npm --config deno.jsonc",
     "build": "deno cache --no-check=remote --reload ./scripts/build-mod.ts && deno run --allow-run=deno --allow-net --allow-write=./mod.ts ./scripts/build-mod.ts",
-    "test": "deno test --no-check=remote --config deno.jsonc",
+    "test": "deno test --no-check=remote --ignore=build-for-npm --config deno.jsonc",
     // Spec Tasks
     "dnt": "deno cache --no-check=remote --reload ./scripts/build-npm.ts && deno run -A ./scripts/build-npm.ts"
   },
