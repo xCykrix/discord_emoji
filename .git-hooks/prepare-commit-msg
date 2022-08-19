@@ -40,5 +40,5 @@ if [[ ! "$(head -1 $1)" =~ ${regexp} ]]; then
 fi
 
 # Print the hook success message.
-echo "The commit message has validated successfully. Approving the commit request."
+echo "The commit message has validated."
 exit 0
