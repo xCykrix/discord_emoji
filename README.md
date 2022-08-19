@@ -1,43 +1,44 @@
-# discord-emoji
+# Discord Emoji - xCykrix
 
-Library for Deno. A near exact emoji tables of Discord for string-based insertion of emotes without having to escape Unicode.
+[Library/Deno, Node] A near exact emoji tables of Discord for string-based insertion of emotes without having to escape Unicode.
 
-**Support and Tooling**
+## Installation, Configuration, and Deployment
 
-Visit our [GitHub Wiki](/wiki) or [Deno's Dynamic Documentation](https://doc.deno.land/https://deno.land/x/discord_emoji/mod.ts) for assistance with using this tool.
+Please refer to the [GitHub Wiki](../../wiki/) for the setup and update processes, if available. The README does not contain this information.
 
-Join the [Amethyst Discord](https://invite-to.amethyst.live/) for real-time assistance and to report issues.
+## Contributing
 
-## Built With
+Contributions are always welcome to all of our projects. Each project in our organization is defined using a [A/B] format in our description. You can find the reference guide in our [Guidelines for Contribution](./CONTRIBUTING.md).
 
-We strive to use the latest and greated up-to-date technologies. Our goal is to allow project's using our tools and libraries to flow seemlessly and unhindered by their upstream dependencies (our tools). With strict testing protocols and release cycles,
-you can entrust your reliance on our technology stacks.
+Please ensure that you have reviewed and agree to our [Guidelines for Contribution](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md). By submitting an issue or pull request, you are agreeing to each respectively.
 
-Generally speaking, all of our tooling and applications follow the same stack:
+## Acknowledgements and Technology Usage
 
-- [TypeScript for Development](https://www.typescriptlang.org/)
-- [Deno for the Runtime](https://deno.land/)
-- [deno.land /x/ for Publishing Releases](https://deno.land/x/)
-- [githooked for Linting and Style Enforcement](https://deno.land/x/githooked)
+General:
 
-With these as our backend technologies:
+- [Ubuntu](https://ubuntu.com/)
+- [Docker](https://docs.docker.com/)
 
-- [MongoDB](https://www.mongodb.com/) for all database storage.
-- [Oak](https://deno.land/x/oak/) for API and frontend hosting.
-- [Deno](https://deno.land/) for all server-side activities.
+Source Control:
 
-## Getting Started
+- [GitHub](https://github.com/)
+- [GitHooked](https://github.com/amethyst-studio/githooked)
 
-Getting started is as simple as leveraging your respective platform's import, Node.js require, or simply running a command in the terminal.
+Software Usage:
 
-### Prerequisites
+- PLEASE FILL OUT THE APPLICABLE SOFTWARE
 
-You'll obviously need the starting components of your project. This guide assumes that you already have an underlying project with Deno and `deno` installed and ready to use. Optionally, you can use Node.js with this specific distributed package.
+## Contributors / Users
 
-This project is officially compatible with Deno `v1.20.1` or higher. Earlier versions of Deno may work, and likely do, but are not officially supported and will not be delved into deeply for support should issues arise. We attempt to leverage new
-technologies within Deno and JavaScript where it is optimal, so backwards compatability is not always possible.
+- [@xCykrix](https://github.com/xCykrix) - Last Known Champion / Maintainer
 
-### Installation
+## License
+
+[MIT-Modern-Variant](https://spdx.org/licenses/MIT-Modern-Variant.html)
+
+## Template and Updates
+
+This project uses our 'meta' template to maintain cross-organizational information. To update this, please run the `UPDATE_TEMPLATE.sh` shell script during maintenance and updates.
 
 1. Install or import the tool using the method respective to your language selected.
 
@@ -103,4 +104,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/amethyst-stu
 
 ## Authors
 
-- **Samuel Voeller** - _Organization Owner_ - [Samuel Voeller](https://github.com/xCykrix) - Initial Champion / Planner
+- **Samuel Voeller** - _Organization Owner_ - [Samuel Voeller](https://github.com/xCykrix) - Initial Champion / Planner -->

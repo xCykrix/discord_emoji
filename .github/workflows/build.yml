@@ -35,8 +35,4 @@ jobs:
         uses: denoland/setup-deno@v1
         with:
           deno-version: ${{ matrix.deno_version }}
-      - run: deno task lint
-      - run: deno task fmt
-      - run: deno task build
-      - run: deno task dnt
-      - run: deno task test
+      - run: deno task enforce-cq
