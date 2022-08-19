@@ -1,53 +1,145 @@
-/**
-The official configuration file used by Amethyst Studio for all Deno projects.
-*/
+//     "build": "deno cache --no-check=remote --reload ./scripts/build-mod.ts && deno run --allow-run=deno --allow-net --allow-write=./mod.ts ./scripts/build-mod.ts",
+//     "test": "deno test --no-check=remote --ignore=build-for-npm --config deno.jsonc",
+//     // Spec Tasks
+//     "dnt": "deno cache --no-check=remote --reload ./scripts/build-npm.ts && deno run -A ./scripts/build-npm.ts"
+
 {
   "tasks": {
-    "initialize": "deno install -f --no-check=remote --allow-run=deno,git --allow-read=.git,.git-hooks --allow-write=.git-hooks https://deno.land/x/githooked/mod.ts && githooked install",
-    "upgrade": "deno cache --no-check=remote --reload ./mod.ts",
-    "lint": "deno lint --ignore=build-for-npm --config deno.jsonc",
-    "fmt": "deno fmt --check --ignore=build-for-npm --config deno.jsonc",
-    "build": "deno cache --no-check=remote --reload ./scripts/build-mod.ts && deno run --allow-run=deno --allow-net --allow-write=./mod.ts ./scripts/build-mod.ts",
-    "test": "deno test --no-check=remote --ignore=build-for-npm --config deno.jsonc",
-    // Spec Tasks
-    "dnt": "deno cache --no-check=remote --reload ./scripts/build-npm.ts && deno run -A ./scripts/build-npm.ts"
+    // Tooling Scripts
+    "initialize": "deno task githooked && deno task dmm",
+    "update": "deno task dmm && deno task cache",
+    "cache": "deno cache --no-check=remote --reload ./deps.ts",
+
+    // Wrapped Scripts for Tooling
+    "githooked": "deno cache --reload https://deno.land/x/githooked/mod.ts && deno run --no-check=remote --allow-run=deno,git --allow-read --allow-write=.git-hooks https://deno.land/x/githooked/mod.ts install",
+    "dmm": "deno run --no-check=remote --allow-net='cdn.deno.land,api.deno.land,x.nest.land,raw.githubusercontent.com,github.com,api.github.com' --allow-read='deps.ts' --allow-write='deps.ts' https://deno.land/x/dmm/mod.ts update",
+
+    // Code Quality Scripts
+    "enforce-cq": "deno task build && deno task lint && deno task fmt && deno task test && deno task coverage",
+    "build": "deno cache --no-check=remote ./scripts/build-mod.ts && deno run -A ./scripts/build-mod.ts",
+    "dnt": "deno cache --no-check=remote --reload ./scripts/build-npm.ts && deno run -A ./scripts/build-npm.ts",
+
+    // Wrappers for Code Quality
+    "lint": "deno lint --ignore=build-for-npm",
+    "fmt": "deno fmt --check --ignore=build-for-npm",
+    "test": "rm -rf coverage && deno test --ignore=build-for-npm --coverage=./coverage/base/ --no-check -A",
+    "coverage": "deno coverage --unstable ./coverage/base/ --lcov --output=./coverage/lcov_output && genhtml -o ./coverage/profile ./coverage/lcov_output"
   },
+
+  // Compiler Options
   "compilerOptions": {
-    "allowJs": false,
+    "lib": [
+      "dom.asynciterable",
+      "deno.worker",
+      "deno.ns",
+      "deno.unstable"
+    ],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "checkJs": false,
-    "experimentalDecorators": true,
-    "lib": [
-      "deno.ns",
-      "deno.unstable",
-      "deno.worker",
-      "dom.asynciterable"
-    ],
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noStrictGenericChecks": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "strict": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
     "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "allowJs": false,
+    "checkJs": false,
+    "keyofStringsOnly": true,
+    // "experimentalDecorators": true,
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false
   },
+
+  // Linting Options
+  "lint": {
+    "rules": {
+      "tags": ["recommended"],
+      "include": [
+        "ban-untagged-todo",
+        "camelcase",
+        "default-param-last",
+        "eqeqeq",
+        "explicit-function-return-type",
+        "explicit-module-boundary-types",
+        "no-await-in-loop",
+        "no-const-assign",
+        "no-eval",
+        "no-undef",
+        "prefer-ascii"
+      ]
+    }
+  },
+
+  // Formatting Options
   "fmt": {
     "options": {
       "useTabs": false,
-      "lineWidth": 64,
+      "lineWidth": 255,
       "indentWidth": 2,
       "singleQuote": true,
       "proseWrap": "always"
     }
   }
 }
+
+// /**
+// The official configuration file used by Amethyst Studio for all Deno projects.
+// */
+// {
+//   "tasks": {
+//     "initialize": "deno install -f --no-check=remote --allow-run=deno,git --allow-read=.git,.git-hooks --allow-write=.git-hooks https://deno.land/x/githooked/mod.ts && githooked install",
+//     "upgrade": "deno cache --no-check=remote --reload ./mod.ts",
+//     "lint": "deno lint --ignore=build-for-npm --config deno.jsonc",
+//     "fmt": "deno fmt --check --ignore=build-for-npm --config deno.jsonc",
+//   },
+//   "compilerOptions": {
+//     "allowJs": false,
+//     "allowUnreachableCode": false,
+//     "allowUnusedLabels": false,
+//     "checkJs": false,
+//     "experimentalDecorators": true,
+//     "lib": [
+//       "deno.ns",
+//       "deno.unstable",
+//       "deno.worker",
+//       "dom.asynciterable"
+//     ],
+//     "noFallthroughCasesInSwitch": true,
+//     "noImplicitAny": true,
+//     "noImplicitOverride": true,
+//     "noImplicitReturns": true,
+//     "noImplicitThis": true,
+//     "noStrictGenericChecks": false,
+//     "noUnusedLocals": true,
+//     "noUnusedParameters": false,
+//     "noUncheckedIndexedAccess": true,
+//     "strict": true,
+//     "strictBindCallApply": true,
+//     "strictFunctionTypes": true,
+//     "strictPropertyInitialization": true,
+//     "strictNullChecks": true,
+//     "suppressExcessPropertyErrors": false,
+//     "suppressImplicitAnyIndexErrors": false
+//   },
+//   "fmt": {
+//     "options": {
+//       "useTabs": false,
+//       "lineWidth": 64,
+//       "indentWidth": 2,
+//       "singleQuote": true,
+//       "proseWrap": "always"
+//     }
+//   }
+// }

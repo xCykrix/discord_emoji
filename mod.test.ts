@@ -1,3 +1,4 @@
+// deno-lint-ignore-file prefer-ascii
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
 import * as dismoji from './mod.ts';
 

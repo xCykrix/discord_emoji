@@ -1,7 +1,4 @@
-import {
-  build,
-  emptyDir,
-} from 'https://deno.land/x/dnt/mod.ts';
+import { build, emptyDir } from 'https://deno.land/x/dnt/mod.ts';
 
 import { description, name, version } from '../deps.ts';
 
@@ -18,10 +15,8 @@ await build({
     description: description,
     version: version,
     license: 'MIT',
-    author:
-      'Samuel Voeller <samuel.voeller@amethyst.live> (https://invite-to.amethyst.live)',
-    homepage:
-      'https://github.com/amethyst-studio/discord_emoji',
+    author: 'Samuel Voeller <samuel.voeller@amethyst.live> (https://invite-to.amethyst.live)',
+    homepage: 'https://github.com/amethyst-studio/discord_emoji',
     repository: {
       type: 'git',
       url: 'git@github.com/amethyst-studio/discord_emoji.git',

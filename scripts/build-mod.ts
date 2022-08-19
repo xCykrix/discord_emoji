@@ -34,16 +34,16 @@ async function assets(): Promise<string[]> {
     `Finished building the indexed asset list. Found: ${urls.length}.`,
   );
 
-  return urls.filter((v) =>
-    v !== undefined && v.endsWith('.js')
-  );
+  return urls.filter((v) => v !== undefined && v.endsWith('.js'));
 }
 
 console.info('Processing the list of indexed assets.');
 let result: EmojiIndex = {};
 for (const asset of await assets()) {
   // Download and convert the asset to text in memory.
+  // deno-lint-ignore no-await-in-loop
   const source = await fetch(`https://discord.com${asset}`);
+  // deno-lint-ignore no-await-in-loop
   const js = await source.text();
 
   // Skip the assets which do not include the expected snippet.
@@ -84,8 +84,9 @@ for (const asset of await assets()) {
 const groups: string[] = [];
 const output: string[] = [
   // NOTE: This is the output file. Not this build file directly. Changes to THIS file are potentially accepted.
-  '// This file is generated automatically with "deno run -A ./scripts/build-mod.ts" and should not be modified manually.',
-  '// Please do not commit changes to this file. They will be rejected despite the proposed changes.',
+  '// deno-lint-ignore-file prefer-ascii',
+  '// This file is generated automatically with "deno task build" and should not be modified manually.',
+  '// Please do not commit changes to this file. They will be rejected regardless of proposed changes.',
   '',
 ];
 let group = '';
