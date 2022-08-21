@@ -23,7 +23,8 @@
     "lint": "deno lint --ignore=build-for-npm",
     "fmt": "deno fmt --check --ignore=build-for-npm",
     "test": "rm -rf coverage && deno test --ignore=build-for-npm --coverage=./coverage/base/ --no-check -A",
-    "coverage": "deno coverage --unstable ./coverage/base/ --lcov --output=./coverage/lcov_output && genhtml -o ./coverage/profile ./coverage/lcov_output"
+    "coverage": "deno coverage --unstable ./coverage/base/ --lcov --output=./coverage/lcov_output",
+    "genhtml": "genhtml -o ./coverage/profile ./coverage/lcov_output"
   },
 
   // Compiler Options
