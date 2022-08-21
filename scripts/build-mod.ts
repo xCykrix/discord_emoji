@@ -1,4 +1,4 @@
-import { cheerio } from 'https://deno.land/x/cheerio@1.0.4/mod.ts';
+import * as cheerio from 'https://esm.sh/cheerio@1.0.0-rc.12';
 import { deno } from '../util/deno.ts';
 
 interface EmojiIndex {
