@@ -1,6 +1,8 @@
 // deno-lint-ignore-file prefer-ascii
 // This file is generated automatically with "deno task build" and should not be modified manually.
 // Please do not commit changes to this file. They will be rejected regardless of proposed changes.
+//
+// GENERATED: Thu Feb 02 2023 14:04:20 GMT-0500 (Eastern Standard Time)
 
 /** The 'people' set of emojis from Discord. */
 const people = {
@@ -2183,17 +2185,11 @@ const people = {
   'man_gesturing_no_tone5': '🙅🏿‍♂️',
   'man_gesturing_no_dark_skin_tone': '🙅🏿‍♂️',
   'person_gesturing_ok': '🙆',
-  'ok_woman': '🙆',
   'person_gesturing_ok_tone1': '🙆🏻',
-  'ok_woman_tone1': '🙆🏻',
   'person_gesturing_ok_tone2': '🙆🏼',
-  'ok_woman_tone2': '🙆🏼',
   'person_gesturing_ok_tone3': '🙆🏽',
-  'ok_woman_tone3': '🙆🏽',
   'person_gesturing_ok_tone4': '🙆🏾',
-  'ok_woman_tone4': '🙆🏾',
   'person_gesturing_ok_tone5': '🙆🏿',
-  'ok_woman_tone5': '🙆🏿',
   'woman_gesturing_ok': '🙆‍♀️',
   'woman_gesturing_ok_tone1': '🙆🏻‍♀️',
   'woman_gesturing_ok_light_skin_tone': '🙆🏻‍♀️',

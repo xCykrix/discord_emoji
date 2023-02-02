@@ -87,6 +87,8 @@ const output: string[] = [
   '// deno-lint-ignore-file prefer-ascii',
   '// This file is generated automatically with "deno task build" and should not be modified manually.',
   '// Please do not commit changes to this file. They will be rejected regardless of proposed changes.',
+  '//',
+  `// GENERATED: ${new Date()}`,
   '',
 ];
 let group = '';
