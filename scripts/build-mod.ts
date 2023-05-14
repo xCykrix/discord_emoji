@@ -138,5 +138,5 @@ await Deno.writeFile(
   './mod.ts',
   new TextEncoder().encode(output.join('\n')),
 );
-const format = await deno(['deno', 'fmt', 'mod.ts']);
-console.info(`Formatter Status: ${format.status.code}`);
+const format = await deno(['fmt', 'mod.ts']);
+console.info(`Formatter Status: ${format.status}`);

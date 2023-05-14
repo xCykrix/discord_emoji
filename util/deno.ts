@@ -8,52 +8,31 @@
 export async function deno(
   command: string[],
 ): Promise<{
-  proc: Deno.Process<
-    {
-      cmd: string[];
-      stdout: 'piped';
-      stderr: 'piped';
-    }
-  >;
-  status: Deno.ProcessStatus;
+  proc: Deno.Command;
+  status: number;
   stdout: string;
   stderr: string;
 }> {
-  if (
-    command[
-      0
-    ] !== 'deno'
-  ) {
-    command
-      .unshift(
-        'deno',
-      );
-  }
-
   // Execute the command and collect results. Exit the application on failure to locate git.
-  const proc = Deno.run({
-    cmd: command,
-    stdout: 'piped',
-    stderr: 'piped',
+  console.info(command.join(' '));
+  const proc = new Deno.Command(Deno.execPath(), {
+    args: command,
   });
-  const status = await proc
-    .status();
-  const stdout = new TextDecoder()
+  const { code: status, stdout, stderr } = await proc.output();
+  const stdoutString = new TextDecoder()
     .decode(
-      await proc
-        .output(),
+      stdout,
     );
-  const stderr = new TextDecoder()
+  const stderrString = new TextDecoder()
     .decode(
-      await proc
-        .stderrOutput(),
+      stderr,
     );
 
   // Send the response to the caller.
   return {
     proc,
     status,
-    stdout,
-    stderr,
+    stdout: stdoutString,
+    stderr: stderrString,
   };
 }
