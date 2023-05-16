@@ -10,15 +10,14 @@
 
     // Code Quality Scripts
     "enforce-cq": "deno task build && deno task lint && deno task fmt && deno task test && deno task coverage",
-    "build": "deno cache --no-check=remote ./scripts/build-mod.ts && deno run -A ./scripts/build-mod.ts",
-    "dnt": "deno cache --no-check=remote --reload ./scripts/build-npm.ts && deno run -A ./scripts/build-npm.ts",
+    "build": "bash scripts/build.sh",
+    "dnt": "bash scripts/dnt.sh",
 
     // Wrappers for Code Quality
     "lint": "deno lint --ignore=build-for-npm",
     "fmt": "deno fmt --check --ignore=build-for-npm",
     "test": "rm -rf coverage && deno test --ignore=build-for-npm --coverage=./coverage/base/ --no-check -A",
-    "coverage": "deno coverage --unstable ./coverage/base/ --lcov --output=./coverage/lcov_output",
-    "genhtml": "genhtml -o ./coverage/profile ./coverage/lcov_output"
+    "coverage": "deno coverage --unstable ./coverage/base/ --lcov --output=./coverage/lcov_output"
   },
 
   // Compiler Options
