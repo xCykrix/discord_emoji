@@ -1,5 +1,19 @@
 {
-  "version": "2",
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:ua-parser-js": "npm:ua-parser-js@1.0.35"
+    },
+    "npm": {
+      "ua-parser-js@1.0.35": {
+        "integrity": "sha512-fKnGuqmTBnIE+/KXSzCn4db8RTigUzw1AN0DmdU6hJovUTbYJKyqj+8Mt1c4VfRDnOVJnENmfYkIPZ946UrSAA==",
+        "dependencies": {}
+      }
+    }
+  },
+  "redirects": {
+    "https://deno.land/x/dnt/mod.ts": "https://deno.land/x/dnt@0.39.0/mod.ts"
+  },
   "remote": {
     "https://deno.land/std@0.129.0/fmt/colors.ts": "30455035d6d728394781c10755351742dd731e3db6771b1843f9b9e490104d37",
     "https://deno.land/std@0.129.0/testing/_diff.ts": "9d849cd6877694152e01775b2d93f9d6b7aef7e24bfe3bfafc4d7a1ac8e9f392",
@@ -91,6 +105,39 @@
     "https://deno.land/std@0.182.0/path/posix.ts": "8b7c67ac338714b30c816079303d0285dd24af6b284f7ad63da5b27372a2c94d",
     "https://deno.land/std@0.182.0/path/separator.ts": "0fb679739d0d1d7bf45b68dacfb4ec7563597a902edbaf3c59b50d5bcadd93b1",
     "https://deno.land/std@0.182.0/path/win32.ts": "d186344e5583bcbf8b18af416d13d82b35a317116e6460a5a3953508c3de5bba",
+    "https://deno.land/std@0.209.0/assert/_constants.ts": "8a9da298c26750b28b326b297316cdde860bc237533b07e1337c021379e6b2a9",
+    "https://deno.land/std@0.209.0/assert/_diff.ts": "2c9371f17cf08cbb843c924bc31ca77af422ec4fe162f73d42c651d547573fa8",
+    "https://deno.land/std@0.209.0/assert/_format.ts": "335ce8e15c65b679ad142dbc9e5e97e5d58602c39dd3c9175cef6c85fe22d6d5",
+    "https://deno.land/std@0.209.0/assert/assert.ts": "e265ad50a9341f3b40e51dd4cb41ab253d976943ba78a977106950e52e0302ab",
+    "https://deno.land/std@0.209.0/assert/assert_almost_equals.ts": "a70d637856e1c6128dc733346d32aa73c67058489495116ca85091c39a60c767",
+    "https://deno.land/std@0.209.0/assert/assert_array_includes.ts": "59d005d8897c1fbcbd5792170833f13a867f6a5ecd5a6b34a3d86b4b430de63c",
+    "https://deno.land/std@0.209.0/assert/assert_equals.ts": "991b0c2b437a015d623654f758e48bfd931068211a52e8131b397cdf005c595f",
+    "https://deno.land/std@0.209.0/assert/assert_exists.ts": "f24ecb0d3febad358a6cee235f012551077e07692517ebfe0630a561ba40a703",
+    "https://deno.land/std@0.209.0/assert/assert_false.ts": "99cf237fe374cabf57072d2fb41b3eaff389029f850fbb96f643c875792f10ce",
+    "https://deno.land/std@0.209.0/assert/assert_greater.ts": "e0bba9ac76a780573a864ab6eeb8b9fd71435b750bdd36d56a270e22ab9a79d9",
+    "https://deno.land/std@0.209.0/assert/assert_greater_or_equal.ts": "aea1c7dc868926ba55f1e59f8c3560bb44706b5e3b6b009453ee4064eecf6746",
+    "https://deno.land/std@0.209.0/assert/assert_instance_of.ts": "7c093d36b1a86666d5a60a8c290c91a51a627153b821a5a4dc40b24cab69f1e7",
+    "https://deno.land/std@0.209.0/assert/assert_is_error.ts": "a8a758581661edec514c453910bee2f9c91b1346a515c58404963b130d81cd80",
+    "https://deno.land/std@0.209.0/assert/assert_less.ts": "855aa58e49afa6a9e825f1abcd5947dc789c5878fc1b6f48b8a08115d48da32b",
+    "https://deno.land/std@0.209.0/assert/assert_less_or_equal.ts": "2ae5246bd0e83da26e5c8e2815d1493252f71f7dc02afb83dc2fc0e0fb0bd894",
+    "https://deno.land/std@0.209.0/assert/assert_match.ts": "e541a9769cf5726312ff9e15031e2faa2df3c59fbdc5573c8758b1f4668ccc62",
+    "https://deno.land/std@0.209.0/assert/assert_not_equals.ts": "6bce4b28f3316029c0aef107f8390796798835c382d31c1004160baef0b80db0",
+    "https://deno.land/std@0.209.0/assert/assert_not_instance_of.ts": "866243fd28bc6665e2ffcc027a9df1d2a69cb644aef1e9b8d1ce34377c6b8a84",
+    "https://deno.land/std@0.209.0/assert/assert_not_match.ts": "59707eceb0d2b16d6892fbf92ec86f92fd76fcfc55f8b61508299db7d2972cab",
+    "https://deno.land/std@0.209.0/assert/assert_not_strict_equals.ts": "c84b8e229450e8dfc44b9910d602788313ff7333d67d5bd8528371567b6a3632",
+    "https://deno.land/std@0.209.0/assert/assert_object_match.ts": "ebeff248d48e5810f787e8742ae4f6b39904f4640edc2f69796596ceb6dbcdf8",
+    "https://deno.land/std@0.209.0/assert/assert_rejects.ts": "f7e83272d816e1b39710012a0597ed950db2de6b193adcc5e50ddbcd9e177767",
+    "https://deno.land/std@0.209.0/assert/assert_strict_equals.ts": "4007dabef1c2e9d6f1bb0e948ba7ba99ec9b1bee97ba34d67f7c10e7e5d794f7",
+    "https://deno.land/std@0.209.0/assert/assert_string_includes.ts": "108a30d9348e5ff7a8b0b7cc836cf0a8cff27d5b33e861b8c56b52cc60b8219a",
+    "https://deno.land/std@0.209.0/assert/assert_throws.ts": "a8767e6a06e94bac42ca9eebdad5d4e2decbc0c48bc892da7e06aa1fe0b388ba",
+    "https://deno.land/std@0.209.0/assert/assertion_error.ts": "26ed1863d905005f00785c89750c001c3522c5417e4f58f95044b8143cfc1593",
+    "https://deno.land/std@0.209.0/assert/equal.ts": "6f81c8a3b12c08bdc3510c8a1293b4db1c083692219d7e3828d2234b448d3d3d",
+    "https://deno.land/std@0.209.0/assert/fail.ts": "f56fc64f9a141f98c1be5ff1005ddf158db888b7b206510e955bb3fedc69021c",
+    "https://deno.land/std@0.209.0/assert/mod.ts": "37c49a26aae2b254bbe25723434dc28cd7532e444cf0b481a97c045d110ec085",
+    "https://deno.land/std@0.209.0/assert/unimplemented.ts": "4e3e504792c87c485dbc5f4020489d8806ef697741403af2008dfa7b5a4711e8",
+    "https://deno.land/std@0.209.0/assert/unreachable.ts": "1af8c99421cc5fb7332454b2b9eca074a4e394895a180bc837750dedcca75338",
+    "https://deno.land/std@0.209.0/fmt/colors.ts": "34b3f77432925eb72cf0bfb351616949746768620b8e5ead66da532f93d10ba2",
+    "https://deno.land/std@0.209.0/testing/asserts.ts": "605bbd2ef0695e2a4324d810c4ad22e56041d51afb9584fc0b4e81084b14b1d6",
     "https://deno.land/x/code_block_writer@12.0.0/mod.ts": "2c3448060e47c9d08604c8f40dee34343f553f33edcdfebbf648442be33205e5",
     "https://deno.land/x/code_block_writer@12.0.0/utils/string_utils.ts": "60cb4ec8bd335bf241ef785ccec51e809d576ff8e8d29da43d2273b69ce2a6ff",
     "https://deno.land/x/deno_cache@0.4.1/auth_tokens.ts": "5fee7e9155e78cedf3f6ff3efacffdb76ac1a76c86978658d9066d4fb0f7326e",
@@ -189,16 +236,5 @@
     "https://esm.sh/v120/parse5-htmlparser2-tree-adapter@7.0.0/deno/parse5-htmlparser2-tree-adapter.mjs": "a7cefc65ae588008d21d3409adc3795fca59f0758fe49bf97849141097e514fb",
     "https://esm.sh/v120/parse5@7.1.2/deno/parse5.mjs": "769869d8a5f1fb84c7a81c7cb86633180c8dc6e0836fdd454a40a480e678ae0f",
     "https://raw.githubusercontent.com/faisalman/ua-parser-js/master/dist/ua-parser.min.js": "83edbef136a3199ec2ee974a34f4ec2822f6fb456cf682a93a5b87e76abadc88"
-  },
-  "npm": {
-    "specifiers": {
-      "ua-parser-js": "ua-parser-js@1.0.35"
-    },
-    "packages": {
-      "ua-parser-js@1.0.35": {
-        "integrity": "sha512-fKnGuqmTBnIE+/KXSzCn4db8RTigUzw1AN0DmdU6hJovUTbYJKyqj+8Mt1c4VfRDnOVJnENmfYkIPZ946UrSAA==",
-        "dependencies": {}
-      }
-    }
   }
 }

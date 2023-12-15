@@ -6,7 +6,7 @@ await emptyDir('./build-for-npm');
 
 await build({
   entryPoints: ['./mod.ts'],
-  outDir: './build-for-npm/',
+  outDir: './dist/',
   shims: {
     deno: true,
   },

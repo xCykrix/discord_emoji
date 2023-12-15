@@ -1,25 +1,9 @@
 {
-  "tasks": {
-    // Tooling Scripts
-    "initialize": "deno task githooked && deno task dmm",
-    "update": "deno task dmm && deno cache --no-check=remote --reload ./deps.ts",
-
-    // Wrapped Scripts for Tooling
-    "githooked": "deno cache --reload https://deno.land/x/githooked/mod.ts && deno run --no-check=remote --allow-run=deno,git --allow-read --allow-write=.git-hooks https://deno.land/x/githooked/mod.ts install",
-    "dmm": "deno run --no-check=remote --allow-net='cdn.deno.land,api.deno.land,x.nest.land,raw.githubusercontent.com,github.com,api.github.com' --allow-read='deps.ts' --allow-write='deps.ts' https://deno.land/x/dmm/mod.ts update",
-
-    // Code Quality Scripts
-    "enforce-cq": "deno task build && deno task lint && deno task fmt && deno task test && deno task coverage",
-    "build": "bash scripts/build.sh",
-    "dnt": "bash scripts/dnt.sh",
-
-    // Wrappers for Code Quality
-    "lint": "deno lint --ignore=build-for-npm",
-    "fmt": "deno fmt --check --ignore=build-for-npm",
-    "test": "rm -rf coverage && deno test --ignore=build-for-npm --coverage=./coverage/base/ --no-check -A",
-    "coverage": "deno coverage --unstable ./coverage/base/ --lcov --output=./coverage/lcov_output"
-  },
-
+  // "tasks": {
+  //   "enforce-cq": "deno task build && deno task lint && deno task fmt && deno task test && deno task coverage",
+  //   "build": "bash scripts/build.sh",
+  //   "dnt": "bash scripts/dnt.sh",
+  
   // Compiler Options
   "compilerOptions": {
     "lib": [
