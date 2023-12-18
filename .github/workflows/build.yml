@@ -30,5 +30,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
-        run: make setup
-        run: make build-production
+        run: |
+          make setup
+          make build-production
