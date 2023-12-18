@@ -11,6 +11,9 @@ rm ./githooked.prod
 # Dependency: deno - https://deno.land/
 sudo snap install deno && sudo snap refresh deno
 
+# Dependancy: node - https://nodejs.org/
+sudo snap install node --classic && sudo snap refresh node
+
 # Initialize: deno
 deno run --no-check=remote --allow-net='cdn.deno.land,api.deno.land,x.nest.land,raw.githubusercontent.com,github.com,api.github.com' --allow-read='deps.ts' --allow-write='deps.ts' https://deno.land/x/dmm/mod.ts update
 deno cache --no-check=remote --reload ./deps.ts

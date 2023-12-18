@@ -1,4 +1,4 @@
-import * as cheerio from 'https://esm.sh/cheerio@1.0.0-rc.12';
+import { cheerio } from 'https://deno.land/x/cheerio@1.0.7/mod.ts';
 import { deno } from '../util/deno.ts';
 
 interface EmojiIndex {
@@ -13,7 +13,7 @@ interface IndividualEmojiIndex {
 }
 
 async function assets(): Promise<string[]> {
-  console.info('Downloadng Discord UI...');
+  console.info('Downloading UI...');
   const result = await fetch(
     'https://discord.com/channels/@me/1',
   );
@@ -40,43 +40,51 @@ async function assets(): Promise<string[]> {
 console.info('Processing the list of indexed assets.');
 let result: EmojiIndex = {};
 for (const asset of await assets()) {
-  // Download and convert the asset to text in memory.
+  // Download and convert the asset to text in memory individually.
   // deno-lint-ignore no-await-in-loop
   const source = await fetch(`https://discord.com${asset}`);
   // deno-lint-ignore no-await-in-loop
   const js = await source.text();
 
   // Skip the assets which do not include the expected snippet.
-  if (!js.includes('"people":[')) continue;
+  if (!js.includes('e.exports={people')) continue;
   console.info(`Found emoji-index within: ${asset}`);
 
-  // Extract the JSON.parse snippet.
-  const re = /;e\.exports=JSON.parse\((.*)\)/g;
-  let pos: RegExpExecArray | null = null;
-  let val: string | null = null;
+  // Extract to file and build with eval.
+  const extract = `
+    class EIndex {
+      webpackChunkdiscord_app = []
+      e = { exports: {} }
 
-  do {
-    pos = re.exec(js);
-    if (pos) {
-      if (pos[1]?.includes('"people":[')) {
-        val = pos[1];
-        break;
+      constructor() {
+        _REPLACE_ME_WITH_JS_SRC
+      }
+
+      extract() {
+        this.webpackChunkdiscord_app[0][1]['838426'](this.e)
+      }
+
+      recall() {
+        return this.e;
       }
     }
-  } while (pos);
 
-  if (val === null) {
-    throw new Error(
-      'Failed to locate the emoji index. Intervention is required.',
-    );
-  }
+    let r = new EIndex();
+    r.extract()
+    console.info(JSON.stringify(r.recall()))
+  `.replace('_REPLACE_ME_WITH_JS_SRC', js);
+  Deno.writeFileSync('./js_temp', new TextEncoder().encode(extract));
+  const run = new Deno.Command(Deno.execPath(), {
+    args: [
+      'run',
+      '--no-prompt',
+      './js_temp',
+    ],
+  });
+  // deno-lint-ignore no-await-in-loop
+  const { stdout } = await run.output();
+  result = JSON.parse(new TextDecoder().decode(stdout)).exports as EmojiIndex;
   console.info('Extracted the emoji-index.');
-
-  // Apply to the result.
-  val = val.substring(1, val.length - 1);
-  result = JSON.parse(`${val}`) as EmojiIndex;
-
-  // Break out to stop the loop.
   break;
 }
 
@@ -125,6 +133,7 @@ for (const k of Object.keys(result)) {
   scope = [];
 }
 
+// Process the compiled category to output.
 const state = [
   'export {',
 ];
@@ -134,9 +143,12 @@ for (const g of groups) {
 state.push('}', '');
 output.push(state.join('\n'));
 
+// Write to the output.
 await Deno.writeFile(
   './mod.ts',
   new TextEncoder().encode(output.join('\n')),
 );
+
+// Format the output.
 const format = await deno(['fmt', 'mod.ts']);
 console.info(`Formatter Status: ${format.status}`);

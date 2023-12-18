@@ -1,9 +1,4 @@
 {
-  // "tasks": {
-  //   "enforce-cq": "deno task build && deno task lint && deno task fmt && deno task test && deno task coverage",
-  //   "build": "bash scripts/build.sh",
-  //   "dnt": "bash scripts/dnt.sh",
-  
   // Compiler Options
   "compilerOptions": {
     "lib": [
