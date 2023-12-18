@@ -10,8 +10,8 @@ HOOK_DISABLE_NOTICE=0 # Set to 1 to disable the notice when the hook exits with 
 # Your script begins here.
 # The last command to run, or explicit "exit" commands, will determine the status code to Git.
 
-echo "Running 'enforce-cq' script."
-# deno task enforce-cq
+echo "Running validation script."
+make validate
 
 # Print the hook success message.
 echo "The state of the application has been validated successfully. Approving the commit request."
