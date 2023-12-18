@@ -25,15 +25,10 @@ jobs:
 
     name: Deno v${{ matrix.deno_version }} with ${{ matrix.host }}
     steps:
-      # Checkout with the .rc module.
+      # Checkout Project, Setup, and Build.
       - name: Checkout Latest Files
         uses: actions/checkout@v2
         with:
           submodules: true
-      # Initialize Project
-      - name: Initialize Project
-        with:
-          deno-version: ${{ matrix.deno_version }}
         run: make setup
-      - name: Validate Project
         run: make build-production
