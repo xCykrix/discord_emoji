@@ -18,6 +18,10 @@ keep_padding       = true
 function_next_line = true
 never_split        = true
 
+[Makefile]
+indent_style = tab
+indent_size = 4
+
 [.github/**]
 ignore = true
 

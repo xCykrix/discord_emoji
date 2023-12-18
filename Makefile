@@ -48,3 +48,11 @@ build-production:
 	@chmod +x ./dev/build-production.sh
 	sh ./dev/build-production.sh
 	make validate
+
+build-distribution:
+	@echo "Task: build-distribution"
+	@mkdir -p "dev"
+	@touch ./dev/build-distribution.sh
+	@chmod +x ./dev/build-distribution.sh
+	sh ./dev/build-distribution.sh
+	make validate
