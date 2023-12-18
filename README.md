@@ -1,4 +1,3 @@
-
 # githooked
 
 Library | Functional - Stable - A near exact emoji tables of Discord for string-based insertion of emotes without having to escape Unicode.
@@ -17,7 +16,6 @@ https://xcykrix.github.io/discord_emoji.html#discord-emoji-installation-and-help
 ## Usage
 
 ```js
-
 // Deno
 import * as dismoji from 'https://deno.land/x/discord_emoji/mod.ts';
 
@@ -38,7 +36,8 @@ assertEquals(dismoji.flags.flag_us, '🇺🇸');
 
 ## Contributing
 
-This project utilizes a Makefile to control the development, workflow, and distribution of the project. This project requires the Snap Store to be installed on your Linux Operating System. These projects are designed for development with Ubuntu Linux 22.04.
+This project utilizes a Makefile to control the development, workflow, and distribution of the project. This project requires the Snap Store to be installed on your Linux Operating System. These projects are designed for development with Ubuntu Linux
+22.04.
 
 When creating a clone, please execute the following command(s):
 
