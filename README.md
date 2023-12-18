@@ -1,41 +1,58 @@
-# Discord Emoji - xCykrix
 
-[Library/Deno, Node] A near exact emoji tables of Discord for string-based insertion of emotes without having to escape Unicode.
+# githooked
 
-## Installation, Configuration, and Deployment
+Library | Functional - Stable - A near exact emoji tables of Discord for string-based insertion of emotes without having to escape Unicode.
 
-Please refer to the [GitHub Wiki](../../wiki/) for the setup and update processes, if available. The README does not contain this information.
+Find more in-depth guidance and documentation at https://xcykrix.github.io/discord-emoji.html
+
+![GitHub License](https://img.shields.io/github/license/xCykrix/discord_emoji?style=for-the-badge&logo=github&cacheSeconds=86400)
+![GitHub issues](https://img.shields.io/github/issues/xCykrix/discord_emoji?style=for-the-badge&logo=github&cacheSeconds=3600)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/xCykrix/discord_emoji?style=for-the-badge&logo=github&cacheSeconds=3600)
+![GitHub Discussions](https://img.shields.io/github/discussions/xCykrix/discord_emoji?style=for-the-badge&logo=github&cacheSeconds=3600)
+
+## Installation
+
+https://xcykrix.github.io/discord_emoji.html#discord-emoji-installation-and-help
+
+## Usage
+
+```js
+
+// Deno
+import * as dismoji from 'https://deno.land/x/discord_emoji/mod.ts';
+
+// Node.js
+// $ npm install discord-emoji
+const dismoji = require('discord-emoji');
+
+// API
+assertEquals(dismoji.people.grinning, '😀');
+assertEquals(dismoji.nature.dog, '🐶');
+assertEquals(dismoji.food.hamburger, '🍔');
+assertEquals(dismoji.activity.basketball, '🏀');
+assertEquals(dismoji.travel.airplane, '✈️');
+assertEquals(dismoji.objects.watch, '⌚');
+assertEquals(dismoji.symbols.eight_pointed_black_star, '✴️');
+assertEquals(dismoji.flags.flag_us, '🇺🇸');
+```
 
 ## Contributing
 
-Contributions are always welcome to all of our projects. Each project in our organization is defined using a [A/B] format in our description. You can find the reference guide in our [Guidelines for Contribution](./CONTRIBUTING.md).
+This project utilizes a Makefile to control the development, workflow, and distribution of the project. This project requires the Snap Store to be installed on your Linux Operating System. These projects are designed for development with Ubuntu Linux 22.04.
 
-Please ensure that you have reviewed and agree to our [Guidelines for Contribution](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md). By submitting an issue or pull request, you are agreeing to each respectively.
+When creating a clone, please execute the following command(s):
 
-## Acknowledgements and Technology Usage
+```sh
+$ make setup
+$ make build-dev
+```
 
-General:
+Application is built to `./dist/` when compiled and generates `mod.ts` dynamically by the `make build-dev` task.
 
-- [Ubuntu](https://ubuntu.com/)
-- [Docker](https://docs.docker.com/)
+## Support
 
-Source Control:
+For support, please open an issue or discussion on GitHub for this project.
 
-- [GitHub](https://github.com/)
-- [GitHooked](https://github.com/amethyst-studio/githooked)
+## Acknowledgements
 
-Software Usage:
-
-- PLEASE FILL OUT THE APPLICABLE SOFTWARE
-
-## Contributors / Users
-
-- [@xCykrix](https://github.com/xCykrix) - Last Known Champion / Maintainer
-
-## License
-
-[MIT-Modern-Variant](https://spdx.org/licenses/MIT-Modern-Variant.html)
-
-## Template and Updates
-
-This project uses our 'meta' template to maintain cross-organizational information. To update this, please run the `UPDATE_TEMPLATE.sh` shell script during maintenance and updates.
+- Necktrox: Original Author
