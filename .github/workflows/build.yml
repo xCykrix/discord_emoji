@@ -31,7 +31,9 @@ jobs:
         with:
           submodules: true
       # Initialize Project
-      - name: Initialize Deno
+      - name: Initialize Project
         with:
           deno-version: ${{ matrix.deno_version }}
-      - run: make setup && make build-production
+        run: make setup
+      - name: Validate Project
+        run: make build-production
