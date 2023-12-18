@@ -11,3 +11,4 @@ DENO_CACHE=$HOME$(deno eval 'console.info(Deno.execPath().replace(/\/deno$/, "/.
 
 # Run Build (with Security Scope)
 deno run --no-prompt --allow-net=discord.com --allow-read=$DENO_CACHE,$DENO_EXEC,./ --allow-write=$DENO_CACHE,mod.ts,js_temp --allow-run=$DENO_EXEC ./dev/build.ts
+

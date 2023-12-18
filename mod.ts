@@ -2,7 +2,7 @@
 // This file is generated automatically with "deno task build" and should not be modified manually.
 // Please do not commit changes to this file. They will be rejected regardless of proposed changes.
 //
-// GENERATED: Mon Dec 18 2023 13:58:24 GMT-0500 (Eastern Standard Time)
+// GENERATED: Mon Dec 18 2023 15:18:57 GMT-0500 (Eastern Standard Time)
 
 /** The 'people' set of emojis from Discord. */
 const people = {
