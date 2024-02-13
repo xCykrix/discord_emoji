@@ -43,7 +43,7 @@ When creating a clone, please execute the following command(s):
 
 ```sh
 $ make setup
-$ make build-dev
+$ make build
 ```
 
 Application is built to `./dist/` when compiled and generates `mod.ts` dynamically by the `make build-dev` task.
