@@ -4,4 +4,4 @@ export const description = 'A near exact emoji tables of Discord for string-base
 export const version = '2.4.0';
 
 /** assert */
-export { assert, assertEquals } from 'https://deno.land/std@0.209.0/testing/asserts.ts';
+export { assert, assertEquals } from 'https://deno.land/std@0.215.0/testing/asserts.ts';
