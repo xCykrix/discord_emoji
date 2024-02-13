@@ -20,4 +20,4 @@ jobs:
       - name: Initialize Project
         run: make setup
       - name: Build Project
-        run: make build-production
+        run: make build

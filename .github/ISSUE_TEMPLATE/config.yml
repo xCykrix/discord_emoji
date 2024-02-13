@@ -1,0 +1,7 @@
+blank_issues_enabled: false
+contact_links:
+    - name: Support
+      about: Please reach out via the Discussions Page or Issue Tracker.
+    - name: Security
+      about: Report Critical Vulnerabilities or Abusable Behavior.
+      url: mailto:report@amethyst.live

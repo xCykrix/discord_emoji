@@ -14,7 +14,6 @@ export async function deno(
   stderr: string;
 }> {
   // Execute the command and collect results. Exit the application on failure to locate git.
-  console.info(command.join(' '));
   const proc = new Deno.Command(Deno.execPath(), {
     args: command,
   });
