@@ -9,9 +9,7 @@ validate_fmt() {
 }
 
 validate_core() {
-    rm -r coverage
-    deno test --ignore=dist --coverage=./coverage/base/ --no-check -A
-    deno coverage --unstable ./coverage/base/ --lcov --output=./coverage/lcov_output
+    deno test --ignore=dist --no-check -A
 }
 
 validate_lint
