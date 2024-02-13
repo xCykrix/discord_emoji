@@ -46,7 +46,7 @@ $ make setup
 $ make build
 ```
 
-Application is built to `./dist/` when compiled and generates `mod.ts` dynamically by the `make build-dev` task.
+Application is built to `./dist/` when compiled and generates `mod.ts` dynamically by the `make build` task.
 
 ## Support
 
