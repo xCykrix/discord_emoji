@@ -10,19 +10,15 @@ labels:
 
 ---
 
-**Describe the Request**: A clear and concise description of what you are
-requesting.
+**Describe the Request**: A clear and concise description of what you are requesting.
 
 **Information**:
 
 1. How would you like to see this implemented?
 2. How do you feel this will benefit the project?
 3. Is there any existing functionality that may need changed to support this?
-4. Will this functionality replace or otherwise deprecate existing
-   functionality?
+4. Will this functionality replace or otherwise deprecate existing functionality?
 
-**Expected Behavior**: Please explain the behavior you are expecting the
-application to implement.
+**Expected Behavior**: Please explain the behavior you are expecting the application to implement.
 
-**Additional Context**: Please provide any additional information you feel
-should be shared, if applicable.
+**Additional Context**: Please provide any additional information you feel should be shared, if applicable.

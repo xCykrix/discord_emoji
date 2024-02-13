@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Wipe and create 'dist' for clean build.
 rm -r dist && mkdir -p dist
