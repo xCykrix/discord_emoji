@@ -24,10 +24,10 @@ async function assets(): Promise<string[]> {
 
   const urls: string[] = [];
   console.info('Building the list of indexed assets...');
-  scripts.each((_index, element) => {
+  scripts.each((_index: number, element: unknown) => {
     urls.push($(element).attr('src')!);
   });
-  links.each((_index, element) => {
+  links.each((_index: number, element: unknown) => {
     urls.push($(element).attr('href')!);
   });
   console.info(

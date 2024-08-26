@@ -1,0 +1,15 @@
+#!/usr/bin/env nu
+  # git-hook: pre-commit
+
+  use std log;
+
+  def main [0?: string, 1?: string] {
+    log info "hook: pre-commit";
+
+    # Default Hook Error
+    log warning "hook behavior has not yet been configured";
+    # error make --unspanned {
+    #   msg: "Failed to execute hook 'pre-commit'."
+    #   help: "Please review the above output to resolve this issue."
+    # };
+  }

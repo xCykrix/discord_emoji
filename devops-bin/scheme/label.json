@@ -1,0 +1,66 @@
+[
+    {
+        "color": "0E8A16",
+        "name": "State: Help Wanted"
+    },
+    {
+        "color": "000000",
+        "name": "State: Blocked"
+    },
+    {
+        "color": "C5DEF5",
+        "name": "State: Postponed"
+    },
+    {
+        "color": "5319E7",
+        "name": "State: Work in Progress"
+    },
+    {
+        "color": "1D76DB",
+        "name": "Type: Enhancement"
+    },
+    {
+        "color": "B60205",
+        "name": "Type: Bug"
+    },
+    {
+        "color": "FBCA04",
+        "name": "Type: Infrastructure"
+    },
+    {
+        "color": "D4C5F9",
+        "name": "Type: Dependencies"
+    },
+    {
+        "color": "BFDADC",
+        "name": "Meta: Question"
+    },
+    {
+        "color": "BFDADC",
+        "name": "Meta: Duplicate"
+    },
+    {
+        "color": "000000",
+        "name": "Priority: 0 Critical"
+    },
+    {
+        "color": "F9D0C4",
+        "name": "Priority: 1 High"
+    },
+    {
+        "color": "FEF2C0",
+        "name": "Priority: 2 Medium"
+    },
+    {
+        "color": "D4C5F9",
+        "name": "Priority: 3 Low"
+    },
+    {
+        "color": "808080",
+        "name": "Meta: Abandoned / No Fix"
+    },
+    {
+        "color": "27828C",
+        "name": "Meta: Conversation"
+    }
+]
