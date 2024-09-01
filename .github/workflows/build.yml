@@ -5,19 +5,28 @@ on:
     branches: [main, staging]
   pull_request:
     branches: [main, staging]
+defaults:
+  run:
+    shell: nu {0}
 
 jobs:
   validate:
     runs-on: ubuntu-latest
-    name: Deno snapd Validation Action
+    name: Deno Validation Action
     steps:
-      # Checkout with the .rc module.
-      - name: Checkout Latest Files
-        uses: actions/checkout@v4
+      # Setup
+      - uses: actions/checkout@v4
         with:
           submodules: true
-      # Initialize Project
-      - name: Initialize Project
-        run: make setup
+      - uses: hustcer/setup-nu@main
+        with:
+          version: '0.97.1'
+      # Languages
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: vx.x.x
+      # Handle
       - name: Build Project
-        run: make build
+        run: nu devops.nu run-stage 20
+      - name: Test Project
+        run: nu devops.nu run-stage 30

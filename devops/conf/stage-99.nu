@@ -5,6 +5,4 @@ use std log;
 
 def main [] {
   log info "stage-99.nu [automation]";
-
-  deno 
 }

@@ -8,5 +8,4 @@ def main [] {
 
   rm -rf dist;
   mkdir dist;
-  
 }
