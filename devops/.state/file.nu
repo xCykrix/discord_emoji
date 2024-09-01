@@ -1,14 +1,8 @@
 
 export def conf [] {
-  mkdir devops-conf
-  mkdir git-hooks
-  mkdir .github
-
-  # .gitignore
-  (add
-    "devops-conf"
-    ".gitignore"
-    $'env.jsonc' 6)
+  mkdir devops/.state
+  mkdir devops/conf
+  mkdir devops/hook
 }
 
 export def add [path: string, name: string, content: string, space: int = 6] {

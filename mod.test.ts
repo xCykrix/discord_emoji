@@ -1,13 +1,12 @@
-// deno-lint-ignore-file prefer-ascii
-import { assertEquals } from 'https://deno.land/std@0.244.0/assert/mod.ts';
+import { assertEquals } from 'https://deno.land/std@0.224.0/assert/mod.ts';
 import * as dismoji from './mod.ts';
 
 /**
- * ID: GENERAL_API.
- * Description: Test to validate the API the main application code.
+ * ID: Function.
+ * Description: Test to validate the function the main application code.
  * Scope: mod.ts
  */
-Deno.test('General API', async (t) => {
+Deno.test('Function', async (t) => {
   await t.step('validate', () => {
     assertEquals(dismoji.people.grinning, '😀');
     assertEquals(dismoji.nature.dog, '🐶');

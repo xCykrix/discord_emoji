@@ -1,5 +1,4 @@
 import { cheerio } from 'https://deno.land/x/cheerio@1.0.7/mod.ts';
-import { deno } from '../util/deno.ts';
 
 interface EmojiIndex {
   [key: string]: IndividualEmojiIndex;
@@ -14,29 +13,39 @@ interface IndividualEmojiIndex {
 
 async function assets(): Promise<string[]> {
   console.info('Downloading UI...');
+
+  // Build Request State
   const result = await fetch(
     'https://discord.com/channels/@me/1',
   );
   const html = await result.text();
   const $ = cheerio.load(html);
-  const scripts = $('script');
-  const links = $('link');
-
+  
+  // Pull all script assets from discord.com
   const urls: string[] = [];
+
+  // Parse Script Tags
+  const scripts = $('script');
   console.info('Building the list of indexed assets...');
   scripts.each((_index: number, element: unknown) => {
     urls.push($(element).attr('src')!);
   });
+
+  // Parse Link Tags
+  const links = $('link');
   links.each((_index: number, element: unknown) => {
     urls.push($(element).attr('href')!);
   });
+  
+  // Return Filtered & Log Count
+  const filtered = urls.filter((v) => v !== undefined && v.endsWith('.js'));
   console.info(
-    `Finished building the indexed asset list. Found: ${urls.length}.`,
+    `Finished building the indexed asset list. Found: ${filtered.length}.`
   );
-
-  return urls.filter((v) => v !== undefined && v.endsWith('.js'));
+  return filtered;
 }
 
+// Process Indexed Assets
 console.info('Processing the list of indexed assets.');
 let result: EmojiIndex = {};
 for (const asset of await assets()) {
@@ -44,14 +53,19 @@ for (const asset of await assets()) {
   // deno-lint-ignore no-await-in-loop
   const source = await fetch(`https://discord.com${asset}`);
   // deno-lint-ignore no-await-in-loop
-  const js = await source.text();
+  let js = await source.text();
 
   // Skip the assets which do not include the expected snippet.
-  if (!js.includes('e.exports={people')) continue;
-  console.info(`Found emoji-index within: ${asset}`);
+  if (!js.includes(`e.exports=JSON.parse('{"people":[`)) {
+    console.info(`Skipped: ${asset}`);
+    continue;
+  };
 
+  // Asset found. Extract emoji index.
+  console.info(`Found emoji-index within: ${asset}`);
+  js = js.toString().match(/(e\.exports=JSON.parse\('{"people":.*"unicodeVersion":6}]}'\))/gm)![0]
   // Extract to file and build with eval.
-  const extract = `
+  const src = `
     class EIndex {
       webpackChunkdiscord_app = []
       e = { exports: {} }
@@ -68,22 +82,11 @@ for (const asset of await assets()) {
         return this.e;
       }
     }
+    new EIndex();
+  `.replace('_REPLACE_ME_WITH_JS_SRC', js).replace('e.exports', 'this.e.exports');
 
-    let r = new EIndex();
-    r.extract()
-    console.info(JSON.stringify(r.recall()))
-  `.replace('_REPLACE_ME_WITH_JS_SRC', js);
-  Deno.writeFileSync('./js_temp', new TextEncoder().encode(extract));
-  const run = new Deno.Command(Deno.execPath(), {
-    args: [
-      'run',
-      '--no-prompt',
-      './js_temp',
-    ],
-  });
-  // deno-lint-ignore no-await-in-loop
-  const { stdout } = await run.output();
-  result = JSON.parse(new TextDecoder().decode(stdout)).exports as EmojiIndex;
+  const extract = eval(src);
+  result = extract.e.exports as EmojiIndex;
   console.info('Extracted the emoji-index.');
   break;
 }
@@ -148,7 +151,3 @@ await Deno.writeFile(
   './mod.ts',
   new TextEncoder().encode(output.join('\n')),
 );
-
-// Format the output.
-const format = await deno(['fmt', 'mod.ts']);
-console.info(`Formatter Status: ${format.status}`);
