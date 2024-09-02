@@ -7,63 +7,75 @@ use std log;
 # module
 use "./devops/.state/execute.nu" [can_execute];
 use "./devops/.state/file.nu" [add, conf];
-use "./devops/.state/handle.nu" [fexit];
 
 ### --- Setup State --- ###
 def "main setup" [] {
   can_execute "git" true;
+
+  # Ensure FS
+  log info "Ensuring require path(s) exist...";
   conf;
 
   # Configure Base
-  main add-stage 10 "validate";
+  log info "Adding default stage(s) [10, 20, 30] if not exist...";
+  main add-stage 10 "lint";
   main add-stage 20 "build";
   main add-stage 30 "test";
-  main add-stage 99 "automation";
 
   # Add Default Hooks
+  log info "Adding default hook(s) [pre-commit, commt-msg] if not exist...";
   main add-hook "pre-commit";
   main add-hook "commit-msg";
 
   # Configure hooksPath
+  log info "Configuring 'core.hooksPath' for current git repository..";
   git config core.hooksPath "./devops/hook";
-  main update-github;
 
   # chmod
   if ((can_execute "chmod" false) == true) {
+    log info "Applying 'chmod' to git hooks for Linux support.";
     chmod +x devops/hook/*
+  }
+
+  # Update GitHub Repository
+  log info "Using 'gh' cli to apply master configuration.";
+  main update-github;}
+
+### --- Execute a Stage --- ###
+def "main run-stage" [...stages: int] {
+  for $stage in $stages {
+    if ($"./devops/conf/stage-($stage).nu" | path exists) {
+      try {
+        log info $"Preparing to run 'stage-($stage)' for run-stage call.";
+        nu $"./devops/conf/stage-($stage).nu";
+      } catch {
+        log error $"Failed to run 'stage-($stage)' due to an unknown error. Please review above output.";
+        exit $env.LAST_EXIT_CODE;
+      }
+    } else {
+      log warning $"Unable to run 'stage-($stage)' as it was not found in './devops/conf/' path.";
+    }
   }
 }
 
-### --- Execute a Stage --- ###
-def "main run-stage" [id: int, description: string = '-'] {
-  log info $"run-stage|start = './devops/stage-($id).nu';";
-  nu $"./devops/conf/stage-($id).nu";
-  let exit_code: int = $env.LAST_EXIT_CODE;
-  fexit $exit_code $description;
-}
-
 ### --- Create a Stage --- ###
-def "main add-stage" [id: int, description: string] {
+def "main add-stage" [stage: int, description: string] {
   conf;
 
-  log info $"add-stage|($id) ($description)";
+  log info $"Adding stage '($stage)' '($description)'.";
   (add
     $"./devops/conf"
-    $"stage-($id).nu"
+    $"stage-($stage).nu"
     $'#!/usr/bin/env nu
-      # stage-($id).nu [($description)]
+      # stage-($stage).nu [($description)]
 
       use std log;
 
       def main [] {
-        log info "stage-($id).nu [($description)]";
+        log info "run-stage: ($stage)";
 
         # Default Stage Error
-        log warning "stage behavior has not yet been configured";
-        error make --unspanned {
-          msg: "Failed to execute stage [($id)] '($description)'."
-          help: "Please review the above output to resolve this issue."
-        };
+        log warning "stage not configured";
       }' 6)
 }
 
@@ -71,7 +83,7 @@ def "main add-stage" [id: int, description: string] {
 def "main add-hook" [hook: string] {
   conf;
 
-  log info $"hook[create]|hook add ($hook)";
+  log info $"Adding hook '($hook)'.";
   (add
     $"./devops/hook"
     $"($hook)"
@@ -81,26 +93,27 @@ def "main add-hook" [hook: string] {
       use std log;
 
       def main [0?: string, 1?: string] {
-        log info "hook: ($hook)";
+        log info "run-hook: ($hook)";
 
         # Default Hook Error
-        log warning "hook behavior has not yet been configured";
-        error make --unspanned {
-          msg: "Failed to execute hook '($hook)'."
-          help: "Please review the above output to resolve this issue."
-        };
+        log warning "hook not configured";
       }' 6)
 }
 
 ### --- Upgrade Script from GitHub --- ###
-def "main upgrade" [] {
-
+def "main upgrade" [--reference (-r): string = "main"] {
+  if ($env.PWD | str ends-with 'Base') {
+    return (log warning $"Local guard triggered. This is the origin of devops.nu and upgrade should not be called here. [ends-with 'Base']");
+  }
+  http get $"https://raw.githubusercontent.com/xCykrix/Base/($reference)/devops-install.nu" | save -fp devops-install.nu
+  nu devops-install.nu
 }
 
 ### --- Sync Settings to GitHub Repository --- ###
 def "main update-github" [] {
   conf;
 
+  # Verify Repository
   let detail = (git remote get-url origin | into string | parse --regex '(?:https://|git@)github.com[/:]{1}([A-Za-z0-9]{1,})/([A-Za-z0-9_.-]{1,})(?:.git)?')
   if (($detail | length) == 0) {
     return (log error $"Invalid 'git remote get-url origin' response. Found '($detail)' but expected a git compatbile uri.");
@@ -144,6 +157,6 @@ def "main update-github" [] {
   }
 }
 
-### --- Expose Entrypoints  --- ###
+### --- Expose Entrypoints --- ###
 def main [] {
 }

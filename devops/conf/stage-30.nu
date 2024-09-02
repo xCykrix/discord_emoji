@@ -4,7 +4,7 @@
 use std log;
 
 def main [] {
-  log info "stage-30.nu [test]";
+  log info "run-stage: 30";
 
-  deno test --ignore=dist
+  deno test --ignore=dist;
 }

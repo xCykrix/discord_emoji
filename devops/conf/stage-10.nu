@@ -1,8 +1,11 @@
 #!/usr/bin/env nu
-# stage-10.nu [validate]
+# stage-10.nu [lint]
 
 use std log;
 
 def main [] {
-  log info "stage-10.nu [validate]";
+  log info "run-stage: 10";
+
+  # Default Stage Error
+  log warning "stage not configured";
 }

@@ -26,7 +26,5 @@ jobs:
         with:
           deno-version: vx.x.x
       # Handle
-      - name: Build Project
-        run: nu devops.nu run-stage 20
-      - name: Test Project
-        run: nu devops.nu run-stage 30
+      - name: Build & Test
+        run: nu devops.nu run-stage 10 20 30
