@@ -1,0 +1,23 @@
+{
+  "events": [
+    "create",
+    "delete",
+    "gollum",
+    "issues",
+    "issue_comment",
+    "member",
+    "milestone",
+    "package",
+    "pull_request",
+    "push",
+    "release",
+    "watch",
+    "workflow_job"
+  ],
+  "config": {
+    "url": "https://discord.com/api/webhooks/1275197112392482817/z-FWiKV0F5ZZ6g7EvtJ929NjK6xmwSgcq8kp595jRmLHFjzoyt4ytSyuuJ7IwUuEBl5P/github",
+    "content_type": "json",
+    "insecure_ssl": "0"
+  },
+  "active": true
+}
