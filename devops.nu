@@ -135,7 +135,7 @@ def "main update-github" [] {
     }
   }
   if ($has == true) {
-    gh api -X PATCH /repos/{owner}/{repo}/($id) --input devops/.state/scheme/patch-hook.json | from json;
+    gh api -X PATCH /repos/{owner}/{repo}/hooks/($id) --input devops/.state/scheme/patch-hook.json | from json;
   } else {
     gh api -X POST /repos/{owner}/{repo}/hooks --input devops/.state/scheme/post-hook.json | from json;
   }
