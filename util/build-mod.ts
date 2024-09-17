@@ -1,4 +1,4 @@
-import { cheerio } from 'https://deno.land/x/cheerio@1.0.7/mod.ts';
+import { cheerio } from "https://deno.land/x/cheerio@1.0.7/mod.ts";
 
 interface EmojiIndex {
   [key: string]: IndividualEmojiIndex;
@@ -12,41 +12,41 @@ interface IndividualEmojiIndex {
 }
 
 async function assets(): Promise<string[]> {
-  console.info('Downloading UI...');
+  console.info("Downloading UI...");
 
   // Build Request State
   const result = await fetch(
-    'https://discord.com/channels/@me/1',
+    "https://discord.com/channels/@me/1",
   );
   const html = await result.text();
   const $ = cheerio.load(html);
-  
+
   // Pull all script assets from discord.com
   const urls: string[] = [];
 
   // Parse Script Tags
-  const scripts = $('script');
-  console.info('Building the list of indexed assets...');
+  const scripts = $("script");
+  console.info("Building the list of indexed assets...");
   scripts.each((_index: number, element: unknown) => {
-    urls.push($(element).attr('src')!);
+    urls.push($(element).attr("src")!);
   });
 
   // Parse Link Tags
-  const links = $('link');
+  const links = $("link");
   links.each((_index: number, element: unknown) => {
-    urls.push($(element).attr('href')!);
+    urls.push($(element).attr("href")!);
   });
-  
+
   // Return Filtered & Log Count
-  const filtered = urls.filter((v) => v !== undefined && v.endsWith('.js'));
+  const filtered = urls.filter((v) => v !== undefined && v.endsWith(".js"));
   console.info(
-    `Finished building the indexed asset list. Found: ${filtered.length}.`
+    `Finished building the indexed asset list. Found: ${filtered.length}.`,
   );
   return filtered;
 }
 
 // Process Indexed Assets
-console.info('Processing the list of indexed assets.');
+console.info("Processing the list of indexed assets.");
 let result: EmojiIndex = {};
 for (const asset of await assets()) {
   // Download and convert the asset to text in memory individually.
@@ -59,11 +59,14 @@ for (const asset of await assets()) {
   if (!js.includes(`e.exports=JSON.parse('{"people":[`)) {
     console.info(`Skipped: ${asset}`);
     continue;
-  };
+  }
 
   // Asset found. Extract emoji index.
   console.info(`Found emoji-index within: ${asset}`);
-  js = js.toString().match(/(e\.exports=JSON.parse\('{"people":.*"unicodeVersion":6}]}'\))/gm)![0]
+  js =
+    js.toString().match(
+      /(e\.exports=JSON.parse\('{"people":.*"unicodeVersion":6}]}'\))/gm,
+    )![0];
   // Extract to file and build with eval.
   const src = `
     class EIndex {
@@ -83,11 +86,14 @@ for (const asset of await assets()) {
       }
     }
     new EIndex();
-  `.replace('_REPLACE_ME_WITH_JS_SRC', js).replace('e.exports', 'this.e.exports');
+  `.replace("_REPLACE_ME_WITH_JS_SRC", js).replace(
+    "e.exports",
+    "this.e.exports",
+  );
 
   const extract = eval(src);
   result = extract.e.exports as EmojiIndex;
-  console.info('Extracted the emoji-index.');
+  console.info("Extracted the emoji-index.");
   break;
 }
 
@@ -95,14 +101,14 @@ for (const asset of await assets()) {
 const groups: string[] = [];
 const output: string[] = [
   // NOTE: This is the output file. Not this build file directly. Changes to THIS file are potentially accepted.
-  '// deno-lint-ignore-file prefer-ascii',
+  "// deno-lint-ignore-file prefer-ascii",
   '// This file is generated automatically with "deno task build" and should not be modified manually.',
-  '// Please do not commit changes to this file. They will be rejected regardless of proposed changes.',
-  '//',
+  "// Please do not commit changes to this file. They will be rejected regardless of proposed changes.",
+  "//",
   `// GENERATED: ${new Date()}`,
-  '',
+  "",
 ];
-let group = '';
+let group = "";
 let scope: { name: string; value: string }[] = [];
 
 for (const k of Object.keys(result)) {
@@ -130,24 +136,24 @@ for (const k of Object.keys(result)) {
   for (const v of scope) {
     state.push(`  "${v.name}": "${v.value}",`);
   }
-  state.push('}', '');
-  output.push(state.join('\n'));
-  group = '';
+  state.push("}", "");
+  output.push(state.join("\n"));
+  group = "";
   scope = [];
 }
 
 // Process the compiled category to output.
 const state = [
-  'export {',
+  "export {",
 ];
 for (const g of groups) {
   state.push(`  ${g},`);
 }
-state.push('}', '');
-output.push(state.join('\n'));
+state.push("}", "");
+output.push(state.join("\n"));
 
 // Write to the output.
 await Deno.writeFile(
-  './mod.ts',
-  new TextEncoder().encode(output.join('\n')),
+  "./mod.ts",
+  new TextEncoder().encode(output.join("\n")),
 );
