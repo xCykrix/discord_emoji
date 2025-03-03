@@ -1,4 +1,4 @@
-import { build } from "https://deno.land/x/dnt@0.40.0/mod.ts";
+import { build } from "jsr:@deno/dnt@0.41.3";
 import { DNTConfig } from "../dnt.conf.ts";
 
 await build({
