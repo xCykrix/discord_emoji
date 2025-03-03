@@ -31,14 +31,6 @@ assertEquals(dismoji.symbols.eight_pointed_black_star, "✴️");
 assertEquals(dismoji.flags.flag_us, "🇺🇸");
 ```
 
-## Contributing
-
-Please review my
-[CONTRIBUTING.md](https://github.com/xCykrix/.github/blob/main/.github/CONTRIBUTING.md)
-for the basis of the development environment.
-
-Use of nushell is required for scripting.
-
 ## Support
 
 For support, please open an issue or reach out via Discord.

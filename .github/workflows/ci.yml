@@ -5,9 +5,6 @@ on:
     branches: [main, staging]
   pull_request:
     branches: [main, staging]
-defaults:
-  run:
-    shell: nu {0}
 
 jobs:
   validate:
@@ -18,13 +15,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-      - uses: hustcer/setup-nu@main
-        with:
-          version: '0.97.1'
       # Languages
-      - uses: denoland/setup-deno@v1
+      - uses: denoland/setup-deno@v2
         with:
-          deno-version: vx.x.x
-      # Handle
-      - name: Build & Test
-        run: nu devops.nu run-stage 10 20 30
+          deno-version: v2.x
+      # Test
+      - name: Execute Quality Tests
+        run: deno test -A

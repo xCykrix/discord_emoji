@@ -27,13 +27,15 @@ async function assets(): Promise<string[]> {
   // Parse Script Tags
   const scripts = $("script");
   console.info("Building the list of indexed assets...");
-  scripts.each((_index: number, element: unknown) => {
+  // deno-lint-ignore no-explicit-any
+  scripts.each((_index: number, element: any) => {
     urls.push($(element).attr("src")!);
   });
 
   // Parse Link Tags
   const links = $("link");
-  links.each((_index: number, element: unknown) => {
+  // deno-lint-ignore no-explicit-any
+  links.each((_index: number, element: any) => {
     urls.push($(element).attr("href")!);
   });
 
@@ -63,10 +65,9 @@ for (const asset of await assets()) {
 
   // Asset found. Extract emoji index.
   console.info(`Found emoji-index within: ${asset}`);
-  js =
-    js.toString().match(
-      /(e\.exports=JSON.parse\('{"people":.*"unicodeVersion":6}]}'\))/gm,
-    )![0];
+  js = js.toString().match(
+    /(e\.exports=JSON.parse\('{"people":.*"unicodeVersion":6}]}'\))/gm,
+  )![0];
   // Extract to file and build with eval.
   const src = `
     class EIndex {
