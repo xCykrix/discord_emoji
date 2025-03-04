@@ -1,13 +1,14 @@
 // deno-lint-ignore no-external-import
 import { build } from 'jsr:@deno/dnt';
+import { parse } from '../deps.ts';
 import { DNTConfig } from '../dnt.conf.ts';
 
-// const configuration = await parse(await Deno.readTextFile(new URL('../deno.jsonc', import.meta.url))) as {
-//   version: string;
-// };
+const configuration = await parse(await Deno.readTextFile(new URL('../deno.jsonc', import.meta.url))) as {
+  version: string;
+};
 
 await build({
-  entryPoints: ['/mod.ts'],
+  entryPoints: ['./mod.ts'],
   outDir: './dist/',
   shims: {
     deno: true,
@@ -15,7 +16,7 @@ await build({
   package: {
     name: DNTConfig.name,
     description: DNTConfig.description,
-    version: '2.5.2',
+    version: configuration.version,
     license: 'MIT',
     author: 'Samuel Voeller <sammyvoeller@gmail.com> (https://github.com/xCykrix/discord_emoji)',
     homepage: 'https://github.com/xCykrix/discord_emoji',
@@ -23,6 +24,10 @@ await build({
       type: 'git',
       url: 'git@github.com/xCykrix/discord_emoji.git',
     },
+  },
+  filterDiagnostic(diagnostic): boolean {
+    if (diagnostic.file?.fileName.includes('@std')) return false;
+    return true;
   },
 });
 

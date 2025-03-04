@@ -1,5 +1,6 @@
 // deno-lint-ignore-file no-console
-import { cheerio } from '../deps.ts';
+// deno-lint-ignore no-external-import
+import { cheerio } from 'https://deno.land/x/cheerio@1.0.7/mod.ts';
 
 interface EmojiIndex {
   [key: string]: IndividualEmojiIndex;

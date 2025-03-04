@@ -1,4 +1,5 @@
-import { assertEquals } from './deps.ts';
+// deno-lint-ignore no-external-import
+import { assertEquals } from 'jsr:@std/assert@1.0.11';
 import * as dismoji from './mod.ts';
 
 /**
