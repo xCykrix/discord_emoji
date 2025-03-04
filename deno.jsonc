@@ -1,6 +1,6 @@
 {
   "name": "@amethyst/discord-emoji",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "exports": {
     ".": "./mod.ts"
   },
