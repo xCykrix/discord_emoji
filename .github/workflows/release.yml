@@ -16,7 +16,7 @@ jobs:
           deno-version: v2.x
       - uses: devcontainers/ci@v0.3
         with:
-          runCmd: deno test -A
+          runCmd: make validate
       # Publish
       - uses: softprops/action-gh-release@v2
         with:
@@ -26,4 +26,4 @@ jobs:
             LICENSE
             README.md
       - name: 'Publish Package'
-        run: deno publish --set-version ${{ github.ref_name }}
+        run: deno publish

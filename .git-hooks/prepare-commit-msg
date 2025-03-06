@@ -10,6 +10,34 @@ HOOK_DISABLE_NOTICE=0 # Set to 1 to disable the notice when the hook exits with 
 # Your script begins here.
 # The last command to run, or explicit "exit" commands, will determine the status code to Git.
 
-# Default Hook: Full List of Hooks at https://git-scm.com/docs/githooks#_hooks
-exit 0 # NO OP. This quietly passes to prevent spam during configuration.
+# From: https://dev.to/craicoverflow/enforcing-conventional-commits-using-git-hooks-1o5p
+# Build the Regular Expression Options.
+types="build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test"
+scope_minlen=1
+scope_maxlen=16
+scope_regexp="[a-z0-9_.-]{${scope_minlen},${scope_maxlen}}"
+subject_minlen=4
+subject_maxlen=120
+subject_regexp="[A-Za-z0-9_. -]{${subject_minlen},${subject_maxlen}}"
 
+# Build the Regular Expression String.
+regexp="^(revert: )?(${types})(\(${scope_regexp}\))?!?: ${subject_regexp}[^A-Z.,?]{1,}$"
+
+# Validate the commit message.
+if [[ ! "$(head -1 $1)" =~ ${regexp} ]]; then
+  # Print the hook error message.
+  echo
+  echo "The commit message was not formatted correctly. Rejecting the commit request."
+  echo " - https://www.conventionalcommits.org/en/v1.0.0/"
+  echo " - https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional"
+  echo
+  echo " Having trouble with the format? Just not sure of how to commit correctly? https://commitlint.io/"
+  echo " Something weird happening? Use https://regexr.com/ with the following expression to validate your commit."
+  echo "  - Expression: /${regexp}/"
+  echo
+  exit 1
+fi
+
+# Print the hook success message.
+echo "Validated 'prepare-commit-msg' hook."
+exit 0

@@ -6,7 +6,7 @@ If you believe you have discovered a vulnerability in this project, please
 report it through responsible disclosure.
 
 > [!CAUTION]
-> Please do NOT use a GitHub Issue, Discussion, Pull Request, or Public Forum.**
+> Please do NOT use a GitHub Issue, Discussion, Pull Request, or Public Forum.
 
 Reports are accepted via:
 

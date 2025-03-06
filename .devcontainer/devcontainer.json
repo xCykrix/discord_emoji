@@ -1,7 +1,13 @@
 {
   "name": "Deno",
-  "build": {
-    "dockerfile": "Dockerfile"
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/deno:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "latest"
+    }
   },
   "customizations": {
     "vscode": {

@@ -2,6 +2,8 @@
 // deno-lint-ignore no-external-import
 import { cheerio } from 'https://deno.land/x/cheerio@1.0.7/mod.ts';
 
+// TODO(xCykrix): Refactor to not update generated date unless diff was found.
+
 interface EmojiIndex {
   [key: string]: IndividualEmojiIndex;
 }

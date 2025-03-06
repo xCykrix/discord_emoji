@@ -1,10 +1,14 @@
 // deno-lint-ignore no-external-import
 import { build } from 'jsr:@deno/dnt';
 import { parse } from '../deps.ts';
-import { DNTConfig } from '../dnt.conf.ts';
 
 const configuration = await parse(await Deno.readTextFile(new URL('../deno.jsonc', import.meta.url))) as {
   version: string;
+};
+
+export const DNTConfig = {
+  name: 'discord-emoji',
+  description: 'A near exact emoji tables of Discord for string-based insertion of emotes without having to escape Unicode.',
 };
 
 await build({
