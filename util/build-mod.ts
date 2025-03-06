@@ -96,6 +96,7 @@ for (const asset of await assets()) {
     'this.e.exports',
   );
 
+  // deno-lint-ignore no-eval
   const extract = eval(src);
   result = extract.e.exports as EmojiIndex;
   console.info('Extracted the emoji-index.');
