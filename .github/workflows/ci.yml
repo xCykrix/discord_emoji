@@ -13,12 +13,7 @@ jobs:
     steps:
       # Setup
       - uses: actions/checkout@v4
-        with:
-          submodules: true
       # Languages
-      - uses: denoland/setup-deno@v2
+      - uses: devcontainers/ci@v0.3
         with:
-          deno-version: v2.x
-      # Test
-      - name: Execute Quality Tests
-        run: deno test -A
+          runCmd: deno test -A

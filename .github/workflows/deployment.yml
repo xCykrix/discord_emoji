@@ -1,18 +1,30 @@
-name: 'Deno JSR Deployment'
+name: Automatic Release
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'
 
 jobs:
-  publish:
+  candidate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
     steps:
       - uses: actions/checkout@v4
+      # Languages
       - uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
+      - uses: devcontainers/ci@v0.3
+        with:
+          runCmd: deno test -A
+      # Publish
+      - uses: softprops/action-gh-release@v2
+        with:
+          discussion_category_name: Announcements
+          generate_release_notes: true
+          files: |
+            LICENSE
+            README.md
       - name: 'Publish Package'
-        run: deno publish
+        run: deno publish --set-version ${{ github.ref_name }}

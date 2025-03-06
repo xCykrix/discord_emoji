@@ -27,6 +27,7 @@ await build({
   },
   filterDiagnostic(diagnostic): boolean {
     if (diagnostic.file?.fileName.includes('@std')) return false;
+    if (diagnostic.file?.fileName.includes('.test.ts')) return false;
     return true;
   },
 });
