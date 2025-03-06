@@ -31,6 +31,10 @@ assertEquals(dismoji.flags.flag_us, '🇺🇸');
 
 For support, please open an issue or reach out via Discord.
 
+## Releases
+
+Providence Release Automation is available to JSR.io for each update. Npm is subject to manual release by Maintainers due to being transformed to Node.js compatible format.
+
 ## Acknowledgements
 
 - Necktrox: Previous Author (Marek Kulik)
