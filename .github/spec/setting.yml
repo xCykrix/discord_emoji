@@ -1,0 +1,29 @@
+settings:
+  private: false
+  visibility: public
+  security_and_analysis:
+    secret_scanning:
+      status: enabled
+    secret_scanning_push_protection:
+      status: enabled
+    secret_scanning_ai_detection:
+      status: enabled
+    secret_scanning_non_provider_patterns:
+      status: enabled
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  is_template: false
+  default_branch: main
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: true
+  allow_auto_merge: false
+  delete_branch_on_merge: false
+  allow_update_branch: true
+  squash_merge_commit_title: COMMIT_OR_PR_TITLE
+  squash_merge_commit_message: COMMIT_MESSAGES
+  allow_forking: true
+  web_commit_signoff_required: true
+  enable_automated_security_fixes: true
+  enable_vulnerability_alerts: true

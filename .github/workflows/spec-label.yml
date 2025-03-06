@@ -11,8 +11,11 @@ jobs:
     permissions:
       issues: write
     steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/spec/label.yml
       - uses: EndBug/label-sync@v2
         with:
-          config-file: https://raw.githubusercontent.com/TSLedger/.github/refs/heads/main/.github/spec/label.yml
+          config-file: .github/spec/label.yml
           delete-other-labels: true
           token: ${{ secrets.GITHUB_TOKEN }}

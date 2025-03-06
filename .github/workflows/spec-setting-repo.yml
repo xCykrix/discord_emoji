@@ -1,0 +1,19 @@
+name: Setting Specification Repo
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  setting-spec:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/spec/setting.yml
+      - uses: actuarysailor/gha-repo-manager@v2
+        with:
+          action: apply
+          settings_file: .github/spec/setting.yml
+          token: ${{ secrets.GH_TOKEN }}
