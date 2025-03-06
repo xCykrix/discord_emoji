@@ -2,8 +2,6 @@
 // deno-lint-ignore no-external-import
 import { cheerio } from 'https://deno.land/x/cheerio@1.0.7/mod.ts';
 
-// TODO(xCykrix): Refactor to not update generated date unless diff was found.
-
 interface EmojiIndex {
   [key: string]: IndividualEmojiIndex;
 }
@@ -158,8 +156,17 @@ for (const g of groups) {
 state.push('}', '');
 output.push(state.join('\n'));
 
-// Write to the output.
-await Deno.writeFile(
-  './mod.ts',
-  new TextEncoder().encode(output.join('\n')),
-);
+// Read Comparison
+const current = await Deno.readTextFile('./mod.ts');
+const next = output.join('\n');
+
+if (current.replace(/\/\/ GENERATED:.*$/gm, 'COMP_DIFF') !== next.replace(/\/\/ GENERATED:.*$/gm, 'COMP_DIFF')) {
+  // Write to the output.
+  console.info('File Different.');
+  await Deno.writeTextFile(
+    './mod.ts',
+    next,
+  );
+} else {
+  console.info('File Identical.');
+}

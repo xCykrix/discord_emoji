@@ -2,7 +2,7 @@
 // This file is generated automatically with "deno task build" and should not be modified manually.
 // Please do not commit changes to this file. They will be rejected regardless of proposed changes.
 //
-// GENERATED: Thu Mar 06 2025 19:32:59 GMT+0000 (Coordinated Universal Time)
+// GENERATED: Thu Mar 06 2025 22:01:04 GMT+0000 (Coordinated Universal Time)
 
 /** The 'people' set of emojis from Discord. */
 const people = {
@@ -5977,5 +5977,12 @@ const flags = {
 }
 
 export {
-  activity, flags, food, nature, objects, people, symbols, travel
+  people,
+  nature,
+  food,
+  activity,
+  travel,
+  objects,
+  symbols,
+  flags,
 }
